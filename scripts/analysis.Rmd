@@ -1,0 +1,48 @@
+---
+title: "analysis"
+author: "Nick Kathios"
+date: '2022-12-02'
+output: html_document
+---
+#loading in necessary packages
+```{r}
+library(tidyverse)
+library(lmerTest)
+library(lme4)
+```
+
+#loading in data
+```{r}
+timeseries <- read.csv(file='../data/roitimeseries.csv')
+```
+
+#data cleaning
+```{r}
+timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
+
+average_activation <-
+timeseries %>%
+  group_by(SUBID, older_younger, self_other) %>% ## here you can add which variables you'd be interested in looking at 
+  summarise_at(vars(pMTGR), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+
+names(average_activation)[4] = "average" #renaming the output of previous function
+
+average_activation$older_younger<-as.factor(average_activation$older_younger)#if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
+
+contrasts(average_activation$older_younger)<-c(-0.5,0.5) #if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
+
+test<-lmer(average~older_younger + (1|SUBID), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
+summary(test)
+```
+
+#plotting timeseries
+```{r}
+timeseries_stimothervocal <- subset(timeseries, Stim == 15) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+
+ggplot(timeseries_stimothervocal, aes(x=TR, y=pMTGL)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth()
+
+timeseries_stimothernonvocal <- subset(timeseries, Stim == 16) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
+ggplot(timeseries_stimothernonvocal, aes(x=TR, y=pMTGL)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth()
+```
