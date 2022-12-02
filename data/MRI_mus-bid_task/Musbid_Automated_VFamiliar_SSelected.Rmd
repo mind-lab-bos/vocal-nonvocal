@@ -1,0 +1,361 @@
+---
+title: "Musbid_Automated"
+author: "Dylan Gong"
+date: "6/15/2020"
+output: html_document
+---
+
+```{r Package}
+if(!require(tidyverse)){install.packages("tidyverse")}
+if(!require(car)){install.packages("car")}
+```
+
+```{r Table}
+## do not library(plyr) since it will elicit "Error: `n()` must only be used inside dplyr verbs" when using FUN n()
+library(tidyverse)
+library(data.table)
+
+
+# Create Musbid file index _musbid_files_subset_
+#### Listing file that are .txt
+file.list <- list.files(pattern="*.txt", recursive = TRUE, full.names = TRUE)
+
+#### listing target file
+target_string1 <- "mus-bid-biddata"    ## ! generic filtering, meaning pre post are mix in this listing
+checkVec <- {}
+musbid_files_subset <-{}
+
+for (i in 1:length(file.list)) {
+  checkVec[i] <- grepl(target_string1, file.list[i]) 
+  if(checkVec[i] == TRUE){musbid_files_subset <- c(musbid_files_subset, file.list[i])}
+}
+
+
+
+# Combine all PP Musbid Raw Data _df_ using musbid file index _musbid_files_subset_
+df.list <- lapply(musbid_files_subset, read_csv)
+df <- bind_rows(df.list, .id = "File ID")
+
+#Musbid Raw Data cleanup to _musbid_
+#### separate column "0 0;" by ' '
+df_cleaned <- separate(df, "0 0;", c("Liking", "Familiarity"),' ', extra = 'merge')
+#### delete ';' in Familiarity column
+df_cleaned$Familiarity <- str_replace_all(df_cleaned$Familiarity, ";", "")
+#### Familiarity 1 = VeryUnfamiliar, 2 = Unfamiliar, 3 = Familiar, 4 = VeryFamiliar
+df_cleaned$Familiarity <- str_replace_all(df_cleaned$Familiarity, "1","VeryUnfamiliar") %>%
+  str_replace_all("2","Unfamiliar") %>% 
+  str_replace_all("3","Familiar") %>% 
+  str_replace_all("4","VeryFamiliar") %>%
+  na_if("0") %>%
+  factor(levels = c("VeryUnfamiliar","Unfamiliar","Familiar","VeryFamiliar"))
+#### Liking: 1 = Hate, 2 = Neutral, 3 = Like, 4 = Love
+df_cleaned$Liking <- str_replace_all(df_cleaned$Liking, "1","Hate") %>%
+  str_replace_all("2","Neutral") %>% 
+  str_replace_all("3","Like") %>% 
+  str_replace_all("4","Love") %>%
+  na_if("0") %>%
+  factor(levels = c("Hate","Neutral","Like","Love"))
+#### Stimuli: 1-6 = ss, 7-16 = fw, 17-20 = bp, 21-24 = nw
+names(df_cleaned)[2] <- "Stimuli"
+key <- data_frame("Stimuli" = 1:24, "Stim" = c("ss","ss","ss","ss","ss","ss","fw","fw","fw","fw","fw","fw","fw","fw","fw","fw","bp","bp","bp","bp","nw","nw","nw","nw"))
+key$Stim <- factor(key$Stim, c("ss", "fw", "bp", "nw"))
+df_cleaned <- left_join(df_cleaned,key, by = c("Stimuli"="Stimuli"))
+
+# Add Subject info (PPID, Session, Subject)
+#### create a dataframe _id_df_ with PPID, Session, and Subject
+id_df <- data.frame(File.ID = as.character(1:length(file.list)), PPID = file.list)
+id_df$PPID <- str_replace_all(id_df$PPID, "3_mus-bid-biddata.txt","3_post") %>%
+  str_replace_all("1_mus-bid-biddata.txt","1_pre") %>%
+  str_replace_all("./","")
+id_df <- separate(id_df, "PPID", c("PPID", "Session"), '_') %>%
+  mutate(Subject = str_extract(id_df$PPID, "[:alpha:][:alpha:][:alpha:][:alpha:]"))
+
+#### Integrate
+musbid <- full_join(df_cleaned, id_df, by = c("File ID" = "File.ID")) %>%
+  group_by(PPID) %>%
+  mutate(TrialNumber = seq(1:n()), Onset = seq(from = 1, to = 60*(n()-1)+1,  by = 60))  %>%
+  select(Subject, PPID, Session, TrialNumber, Stim, Liking, Familiarity, Onset) 
+
+
+#QA 
+#### How many missing responses? Which PPID? on Liking trial or Familiarity trial?
+QA_missing <- musbid %>%
+  group_by(PPID) %>%
+  summarize(missing_familiarity_response = sum(is.na(Familiarity)), missing_liking_response = sum(is.na(Liking)))
+QA_missing
+
+#### How many were not chosen? Which PPID? on Liking trial or Familiarity trial? Which not chosen?
+```
+
+``` {r write}
+
+# Musbid Tidy Table
+write_excel_csv(musbid, "musbid_tidy_table.csv")
+
+# Musbid_Stim Onset Compile  
+musbid_stim_onset <- musbid %>%
+  mutate(Type = "Stimulus") %>%
+  group_by(PPID, Stim) %>%
+  mutate(Stim_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Stim, Stim_TrialNumber)  %>%
+  pivot_wider(names_from = Stim_TrialNumber, values_from = Onset) %>%
+  arrange(Stim, .by_group = TRUE) 
+
+write_excel_csv(musbid_stim_onset, "musbid_stim_onset.csv", na = "")
+
+# Musbid_Liking Onset Compile  
+musbid_liking_onset <- musbid %>%
+  mutate(Type = "Liking") %>%
+  group_by(PPID, Liking) %>%
+  mutate(Liking_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Liking, Liking_TrialNumber)  %>%
+  pivot_wider(names_from = Liking_TrialNumber, values_from = Onset) %>%
+  arrange(Liking, .by_group = TRUE)
+
+write_excel_csv(musbid_liking_onset, "musbid_liking_onset.csv", na = "")
+
+# Musbid_Familiarity Onset Compile  
+musbid_familiarity_onset <- musbid %>%
+  mutate(Type = "Familiarity") %>%
+  group_by(PPID, Familiarity) %>%
+  mutate(Familiarity_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Familiarity, Familiarity_TrialNumber)  %>%
+  pivot_wider(names_from = Familiarity_TrialNumber, values_from = Onset) %>%
+  arrange(Familiarity, .by_group = TRUE)
+
+write_excel_csv(musbid_familiarity_onset, "musbid_familiarity_onset.csv", na = "")
+
+``` 
+
+``` {r familiarity and self-selction}
+
+##musbid without 200204JKAY1
+musbid_no20020JKAY1 <- filter(musbid, PPID !="200204JKAY1")
+
+## Onsets for VeryFamiliar and Self-Selected
+
+## VeryFamiliar
+vfamiliar <- filter(musbid_no20020JKAY1, Familiarity == "VeryFamiliar") %>%
+  group_by(PPID) %>%
+  mutate(Familiarity_TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, Familiarity, Familiarity_TrialNumber)  %>%
+  pivot_wider(names_from = Familiarity_TrialNumber, values_from = Onset) %>%
+  arrange(Familiarity, .by_group = TRUE)
+
+## Self-Selected
+sselected <- filter(musbid_no20020JKAY1, Stim == "ss") %>%  
+  group_by(PPID) %>%
+  mutate(Stim_TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, Stim, Stim_TrialNumber)  %>%
+  pivot_wider(names_from = Stim_TrialNumber, values_from = Onset) %>%
+  arrange(Stim, .by_group = TRUE)
+
+## Not Self-Select and Not VeryFamiliar
+nonsselected_and_nonvfamiliar <- filter(musbid_no20020JKAY1, Stim != "ss", Familiarity != "VeryFamiliar", .preserve = TRUE) %>%
+  #mutate(Type = "Stimulus") %>%
+  group_by(PPID, Familiarity, Stim) %>%
+  mutate(TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, Familiarity, Stim, TrialNumber)  %>%
+  pivot_wider(names_from = TrialNumber, values_from = Onset) %>%
+  arrange(Familiarity, .by_group = TRUE) %>%
+  arrange(Stim, .by_group = TRUE)
+
+
+###Onsets for SPM first-level analysis ###
+
+## *(1) Self-Select and VeryFamiliar* ## 
+sselected_and_vfamiliar <- filter(musbid_no20020JKAY1, Stim == "ss", Familiarity == "VeryFamiliar") %>%
+  group_by(PPID) %>%
+  mutate(OnsetNumber = seq(1:n())) %>%
+  select(PPID, Onset, OnsetNumber,Familiarity, Stim)  %>%
+  pivot_wider(names_from = OnsetNumber, values_from = Onset)
+
+##Create a csv file for ss and vf 
+write_excel_csv(sselected_and_vfamiliar, "musbid_ss_vf_onset.csv", na = "")
+
+
+## *(2) Familiar Western and VeryFamiliar* ## 
+fwestern_and_vfamiliar <- filter(musbid_no20020JKAY1, Stim == "fw", Familiarity == "VeryFamiliar") %>%
+  group_by(PPID) %>%
+  mutate(OnsetNumber = seq(1:n())) %>%
+  select(PPID, Onset, OnsetNumber,Familiarity, Stim)  %>%
+  pivot_wider(names_from = OnsetNumber, values_from = Onset)
+
+##Create a csv file for fw and vf 
+write_excel_csv(fwestern_and_vfamiliar, "musbid_fw_vf_onset.csv", na = "")
+
+
+
+## *(3) Self-Selected and Not VeryFamiliar for (all conditions correspond to one PP only)* ##
+sselected_and_nonvfamiliar_pp <- filter(musbid_no20020JKAY1, Stim == "ss", Familiarity != "VeryFamiliar", .preserve = TRUE) %>%
+  #mutate(Type = "Stimulus") %>%
+  group_by(PPID) %>%
+  mutate(TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, TrialNumber)  %>%
+  pivot_wider(names_from = TrialNumber, values_from = Onset) %>%
+  arrange(.by_group = TRUE) %>%
+  arrange(.by_group = TRUE)
+
+##Create a csv file for nonss and nonvf
+write_excel_csv(sselected_and_nonvfamiliar_pp, "musbid_ss_nonvf_onset.csv", na = "") 
+
+
+
+## *(4) Familiar Western and Not VeryFamiliar* ##
+fwestern_and_nonvfamiliar_pp <- filter(musbid_no20020JKAY1, Stim == "fw", Familiarity != "VeryFamiliar", .preserve = TRUE) %>%
+  #mutate(Type = "Stimulus") %>%
+  group_by(PPID) %>%
+  mutate(TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, TrialNumber)  %>%
+  pivot_wider(names_from = TrialNumber, values_from = Onset) %>%
+  arrange(.by_group = TRUE) %>%
+  arrange(.by_group = TRUE)
+
+##Create a csv file for fw and nonvf
+write_excel_csv(fwestern_and_nonvfamiliar_pp, "musbid_fw_nonvf_onset.csv", na = "")
+
+
+
+
+
+## Creating table with frequency data for each condition ##
+
+##Frequency of Very Familiar 
+frequency_vfamiliar <- filter(musbid_no20020JKAY1, Familiarity == "VeryFamiliar") %>%
+  group_by(PPID,Familiarity) %>%
+  count()
+
+##Frequency for Self-Selected
+frequency_sselected <- filter(musbid_no20020JKAY1, Stim == "ss") %>%
+  group_by(PPID,Stim) %>%
+  count()
+
+#Frequency for Self-Selected and Very Familiar
+frequency_sselected_and_vfamiliar <- filter(musbid_no20020JKAY1, Stim == "ss", Familiarity == "VeryFamiliar") %>%
+  group_by(PPID,Familiarity, Stim) %>%
+  count()
+
+#Frequency for Non Self-Selected and Non Very Familiar
+frequency_nonsselected_and_nonvfamiliar <- filter(musbid_no20020JKAY1, Stim != "ss", Familiarity != "VeryFamiliar") %>%
+  group_by(PPID,Familiarity, Stim) %>%
+  count()
+
+
+
+##Frequency and mean/sd for all familiarity conditions
+frequency_familiarity <- group_by(musbid_no20020JKAY1, PPID, Familiarity)%>%
+count()
+
+mean_sd_familiarity <- frequency_familiarity %>%
+  group_by(Familiarity) %>%
+  summarize(mean_familiar = mean(n), 
+            sd_familiar = sd(n), 
+            .groups = "drop") 
+
+
+##Frequency and mean/sd for all Stim conditions 
+frequency_Stim <- drop_na(musbid_no20020JKAY1, Familiarity) %>%
+  group_by(PPID, Stim)%>%
+count()
+
+mean_sd_Stim <- frequency_Stim %>%
+  group_by(Stim) %>%
+  summarize(mean_Stim = mean(n), 
+            sd_Stim = sd(n), 
+            .groups = "drop") 
+
+
+##Frequency and mean/sd for All Familiarity and Stim conditions
+frequency_familiarity_allconditions <- group_by(musbid_no20020JKAY1, Familiarity, Stim)%>% 
+  count(PPID,Familiarity, Stim) 
+  
+
+mean_sd_familiarity_allconditions <- frequency_familiarity_allconditions %>%
+  group_by(Familiarity, Stim) %>%
+  summarize(mean_familiar = mean(n), 
+            sd_familiar = sd(n), 
+            .groups = "drop") 
+
+
+
+##Frequency and mean/sd for Selef-Selected (all Familiarity conditions)
+frequency_familiarity_ss <- group_by(musbid_no20020JKAY1, Familiarity, Stim)%>% 
+  filter(Stim == "ss") %>%
+  count(PPID,Familiarity) 
+  
+
+mean_sd_familiarity_ss <- frequency_familiarity_ss %>%
+  group_by(Familiarity) %>%
+  summarize(mean_familiar = mean(n), 
+            sd_familiar = sd(n), 
+            .groups = "keep") 
+
+
+##Frequency and mean/sd for all fw (all Familiarity Conditions)
+frequency_familiarity_Stim <- group_by(musbid_no20020JKAY1, Familiarity, Stim)%>% 
+  filter(Stim == "fw") %>%
+  count(PPID,Familiarity) 
+  
+
+mean_sd_familiarity_stim <- frequency_familiarity_Stim %>%
+  group_by(Familiarity) %>%
+  summarize(mean_familiar = mean(n), 
+            sd_familiar = sd(n), 
+            .groups = "keep") 
+
+
+
+
+
+
+##Pie Charts##
+
+##Pie Chart Familiarity 
+summary <- musbid_no20020JKAY1 %>%
+  ##filter(PPID != "200204JKAY1") %>%
+  group_by(Familiarity) %>%
+  summarize(f = n()) %>%
+  mutate(pct = round(prop.table(f)*100))
+
+lbls <- paste(summary$Familiarity, summary$pct) # create labels
+lbls <- paste(lbls,"%",sep="") # ad to labels
+pie(summary$f, labels = lbls, main="Familiarity Conditions")
+
+##Pie Chart Familiarity for Self-Selected
+summary_ss <- musbid_no20020JKAY1 %>%
+  filter(Stim == "ss") %>%
+  group_by(Familiarity) %>%
+  summarize(f = n()) %>%
+  mutate(pct = round(prop.table(f)*100))
+
+lbls <- paste(summary_ss$Familiarity, summary_ss$pct) # create labels
+lbls <- paste(lbls,"%",sep="") # ad to labels
+pie(summary_ss$f, labels = lbls, main="Familiarity Conditions for Self-Selected Music")
+
+##Pie Chart Familiarity for Familiar Western
+summary_fw <- musbid_no20020JKAY1%>%
+  filter(Stim == "fw") %>%
+  group_by(Familiarity) %>%
+  summarize(f = n()) %>%
+  mutate(pct = round(prop.table(f)*100))
+
+lbls <- paste(summary_fw$Familiarity, summary_fw$pct) # create labels
+lbls <- paste(lbls,"%",sep="") # ad to labels
+pie(summary_fw$f, labels = lbls, main="Familiarity Conditions for Familiar Western Music")
+
+## *(2) Non Self-Selected and Not VeryFamiliar for (all conditions correspond to one PP only)* ##
+nonsselected_and_nonvfamiliar_pp <- filter(musbid_no20020JKAY1, Stim != "ss", Familiarity != "VeryFamiliar", .preserve = TRUE) %>%
+  #mutate(Type = "Stimulus") %>%
+  group_by(PPID) %>%
+  mutate(TrialNumber = seq(1:n())) %>%
+  select(PPID, Onset, TrialNumber)  %>%
+  pivot_wider(names_from = TrialNumber, values_from = Onset) %>%
+  arrange(.by_group = TRUE) %>%
+  arrange(.by_group = TRUE)
+
+##Create a csv file for nonss and nonvf
+write_excel_csv(nonsselected_and_nonvfamiliar_pp, "musbid_nonss_nonvf_onset.csv", na = "") 
+
+
+ 
+```

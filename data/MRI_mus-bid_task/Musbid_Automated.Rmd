@@ -1,0 +1,129 @@
+---
+title: "Musbid_Automated"
+author: "Dylan Gong"
+date: "6/15/2020"
+output: html_document
+---
+
+```{r Package}
+if(!require(tidyverse)){install.packages("tidyverse")}
+if(!require(car)){install.packages("car")}
+```
+
+```{r Table}
+## do not library(plyr) since it will elicit "Error: `n()` must only be used inside dplyr verbs" when using FUN n()
+library(tidyverse)
+library(data.table)
+
+
+# Create Musbid file index _musbid_files_subset_
+#### Listing file that are .txt
+file.list <- list.files(pattern="*.txt", recursive = TRUE, full.names = TRUE)
+
+#### listing target file
+target_string1 <- "mus-bid-biddata"    ## ! generic filtering, meaning pre post are mix in this listing
+checkVec <- {}
+musbid_files_subset <-{}
+
+for (i in 1:length(file.list)) {
+  checkVec[i] <- grepl(target_string1, file.list[i]) 
+  if(checkVec[i] == TRUE){musbid_files_subset <- c(musbid_files_subset, file.list[i])}
+}
+
+
+
+# Combine all PP Musbid Raw Data _df_ using musbid file index _musbid_files_subset_
+df.list <- lapply(musbid_files_subset, read_csv)
+df <- bind_rows(df.list, .id = "File ID")
+
+#Musbid Raw Data cleanup to _musbid_
+#### separate column "0 0;" by ' '
+df_cleaned <- separate(df, "0 0;", c("Liking", "Familiarity"),' ', extra = 'merge')
+#### delete ';' in Familiarity column
+df_cleaned$Familiarity <- str_replace_all(df_cleaned$Familiarity, ";", "")
+#### Familiarity 1 = VeryUnfamiliar, 2 = Unfamiliar, 3 = Familiar, 4 = VeryFamiliar
+df_cleaned$Familiarity <- str_replace_all(df_cleaned$Familiarity, "1","VeryUnfamiliar") %>%
+  str_replace_all("2","Unfamiliar") %>% 
+  str_replace_all("3","Familiar") %>% 
+  str_replace_all("4","VeryFamiliar") %>%
+  na_if("0") %>%
+  factor(levels = c("VeryUnfamiliar","Unfamiliar","Familiar","VeryFamiliar"))
+#### Liking: 1 = Hate, 2 = Neutral, 3 = Like, 4 = Love
+df_cleaned$Liking <- str_replace_all(df_cleaned$Liking, "1","Hate") %>%
+  str_replace_all("2","Neutral") %>% 
+  str_replace_all("3","Like") %>% 
+  str_replace_all("4","Love") %>%
+  na_if("0") %>%
+  factor(levels = c("Hate","Neutral","Like","Love"))
+#### Stimuli: 1-6 = ss, 7-16 = fw, 17-20 = bp, 21-24 = nw
+names(df_cleaned)[2] <- "Stimuli"
+key <- data_frame("Stimuli" = 1:24, "Stim" = c("ss","ss","ss","ss","ss","ss","fw","fw","fw","fw","fw","fw","fw","fw","fw","fw","bp","bp","bp","bp","nw","nw","nw","nw"))
+key$Stim <- factor(key$Stim, c("ss", "fw", "bp", "nw"))
+df_cleaned <- left_join(df_cleaned,key, by = c("Stimuli"="Stimuli"))
+
+# Add Subject info (PPID, Session, Subject)
+#### create a dataframe _id_df_ with PPID, Session, and Subject
+id_df <- data.frame(File.ID = as.character(1:length(file.list)), PPID = file.list)
+id_df$PPID <- str_replace_all(id_df$PPID, "3_mus-bid-biddata.txt","3_post") %>%
+  str_replace_all("1_mus-bid-biddata.txt","1_pre") %>%
+  str_replace_all("./","")
+id_df <- separate(id_df, "PPID", c("PPID", "Session"), '_') %>%
+  mutate(Subject = str_extract(id_df$PPID, "[:alpha:][:alpha:][:alpha:][:alpha:]"))
+
+#### Integrate
+musbid <- full_join(df_cleaned, id_df, by = c("File ID" = "File.ID")) %>%
+  group_by(PPID) %>%
+  mutate(TrialNumber = seq(1:n()), Onset = seq(from = 1, to = 60*(n()-1)+1,  by = 60))  %>%
+  select(Subject, PPID, Session, TrialNumber, Stim, Liking, Familiarity, Onset) 
+
+
+#QA 
+#### How many missing responses? Which PPID? on Liking trial or Familiarity trial?
+QA_missing <- musbid %>%
+  group_by(PPID) %>%
+  summarize(missing_familiarity_response = sum(is.na(Familiarity)), missing_liking_response = sum(is.na(Liking)))
+QA_missing
+
+#### How many were not chosen? Which PPID? on Liking trial or Familiarity trial? Which not chosen?
+```
+
+``` {r write}
+
+# Musbid Tidy Table
+write_excel_csv(musbid, "musbid_tidy_table.csv")
+
+# Musbid_Stim Onset Compile  
+musbid_stim_onset <- musbid %>%
+  mutate(Type = "Stimulus") %>%
+  group_by(PPID, Stim) %>%
+  mutate(Stim_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Stim, Stim_TrialNumber)  %>%
+  pivot_wider(names_from = Stim_TrialNumber, values_from = Onset) %>%
+  arrange(Stim, .by_group = TRUE) 
+
+write_excel_csv(musbid_stim_onset, "musbid_stim_onset.csv", na = "")
+
+# Musbid_Liking Onset Compile  
+musbid_liking_onset <- musbid %>%
+  mutate(Type = "Liking") %>%
+  group_by(PPID, Liking) %>%
+  mutate(Liking_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Liking, Liking_TrialNumber)  %>%
+  pivot_wider(names_from = Liking_TrialNumber, values_from = Onset) %>%
+  arrange(Liking, .by_group = TRUE)
+
+write_excel_csv(musbid_liking_onset, "musbid_liking_onset.csv", na = "")
+
+# Musbid_Familiarity Onset Compile  
+musbid_familiarity_onset <- musbid %>%
+  mutate(Type = "Familiarity") %>%
+  group_by(PPID, Familiarity) %>%
+  mutate(Familiarity_TrialNumber = seq(1:n())) %>%
+  select(PPID, Type, Onset, Familiarity, Familiarity_TrialNumber)  %>%
+  pivot_wider(names_from = Familiarity_TrialNumber, values_from = Onset) %>%
+  arrange(Familiarity, .by_group = TRUE)
+
+write_excel_csv(musbid_familiarity_onset, "musbid_familiarity_onset.csv", na = "")
+
+```
+
