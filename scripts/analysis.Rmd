@@ -37,12 +37,17 @@ summary(test)
 
 #plotting timeseries
 ```{r}
+timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475
 timeseries_stimothervocal <- subset(timeseries, Stim == 15) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+timeseries$scaled_activation <-
+  timeseries %>%
+  group_by(SUBID) %>%
+  scale(pMTGL)
 
-ggplot(timeseries_stimothervocal, aes(x=TR, y=pMTGL)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth()
+ggplot(timeseries_stimothervocal, aes(x=seconds, y=scale(pMTGL))) + #to change the ROI you're plotting, change this y-value
+  geom_point()
 
 timeseries_stimothernonvocal <- subset(timeseries, Stim == 16) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
-ggplot(timeseries_stimothernonvocal, aes(x=TR, y=pMTGL)) + #to change the ROI you're plotting, change this y-value
+ggplot(timeseries_stimothernonvocal, aes(x=seconds, y=PCC)) + #to change the ROI you're plotting, change this y-value
   geom_smooth()
 ```
