@@ -9,17 +9,18 @@ output: html_document
 library(tidyverse)
 library(lmerTest)
 library(lme4)
+library(misty)
 ```
 
 #loading in data
 ```{r}
 timeseries <- read.csv(file='../data/roitimeseries.csv')
+timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
+timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475 # adding seconds to df
 ```
 
 #data cleaning
 ```{r}
-timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
-
 average_activation <-
 timeseries %>%
   group_by(SUBID, older_younger, self_other) %>% ## here you can add which variables you'd be interested in looking at 
@@ -37,17 +38,79 @@ summary(test)
 
 #plotting timeseries
 ```{r}
-timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475
-timeseries_stimothervocal <- subset(timeseries, Stim == 15) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-timeseries$scaled_activation <-
-  timeseries %>%
+## Plotting timeseries of other-selected vocal trial
+timeseries_stimothervocal <- subset(timeseries, Stim == 12) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+
+onset_value <- 
+  timeseries_stimothervocal %>%
   group_by(SUBID) %>%
-  scale(pMTGL)
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGR #update ROI here
+  )
+onset_value <- cbind(onset_value[3],onset_value[35])
 
-ggplot(timeseries_stimothervocal, aes(x=seconds, y=scale(pMTGL))) + #to change the ROI you're plotting, change this y-value
-  geom_point()
+timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
+timeseries_stimothervocal <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
+  mutate(
+    scaled = ((pMTGR  - onset_value)/sd(pMTGR)) #update ROI here as well
+  )
 
-timeseries_stimothernonvocal <- subset(timeseries, Stim == 16) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
-ggplot(timeseries_stimothernonvocal, aes(x=seconds, y=PCC)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth()
+ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth() +
+  theme_light()
+
+## Plotting timeseries of other-selected non-vocal trial
+timeseries_stimothernonvocal <- subset(timeseries, Stim == 9) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
+
+onset_value <- 
+  timeseries_stimothernonvocal %>%
+  group_by(SUBID) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGL #update ROIs here
+  )
+onset_value <- cbind(onset_value[3],onset_value[35])
+
+timeseries_stimothernonvocal <- merge(timeseries_stimothernonvocal, onset_value, by.x="SUBID", by.y="SUBID")
+
+timeseries_stimothernonvocal <- 
+  timeseries_stimothernonvocal %>%
+  group_by(SUBID) %>%
+  mutate(
+    scaled = ((pMTGL  - onset_value)/sd(pMTGL)) #update ROIs here
+  )
+
+ggplot(timeseries_stimothernonvocal, aes(x=round(seconds), y=scaled)) +
+  geom_smooth()+
+  theme_light()
+
+## doing roi-analyses for all music (i.e. vocal v non-vocal)
+timeseries_other <- subset(timeseries, self_other=="other")
+
+onset_value <- 
+  timeseries_other %>%
+  group_by(SUBID, Stim) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = PCC #update ROIs here
+  )
+
+onset_value <- cbind(onset_value[3],onset_value[5],onset_value[35])
+
+timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+
+
+timeseries_stimother <-
+  timeseries_stimother %>%
+  group_by(SUBID, Stim) %>%
+  mutate(
+    scaled = ((PCC  - onset_value)/sd(PCC)) #update ROIs here
+  )
+
+ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) + 
+  geom_smooth(aes(color=vocal, fill=vocal))+
+  theme_light()
 ```
