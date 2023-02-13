@@ -1,1393 +1,1393 @@
-fMRI_ID,participant_ID,stim_ID,vocal,onset_seconds,onset_time,stim_name,liking,familiarity,older_younger,age,sex,self_other,happy_sad,MCI,Multiple Voices?,stim_order
-sub-005,LGEN,1,Y,285.475,601,Young at Heart,4,4,older,64,Female,self,,,,11
-sub-005,LGEN,2,N,57.475,121,Gnossienne,4,4,older,64,Female,self,,~ 24 old adults,,3
-sub-005,LGEN,3,N,513.475,1081,Clare de Lune,4,4,older,64,Female,self,,~ 24 young adults,,19
-sub-005,LGEN,4,N,598.975,1261,Fur Elise,4,4,older,64,Female,self,,,,22
-sub-005,LGEN,5,Y,28.975,61,The Highway Man,4,4,older,64,Female,self,,delete 17-24 (BP clips),,2
-sub-005,LGEN,6,N,427.975,901,The Hours,4,4,older,64,Female,self,,,,16
-sub-005,LGEN,7,N,541.975,1141,Adagio for Strings,4,3,older,64,Female,other,,work/mindlab/nubic/mci_study/raw_bids for all subjects - readme will have subids ,,20
-sub-005,LGEN,8,N,399.475,841,"Symphony No. 2, Finale",3,3,older,64,Female,other,,,,15
-sub-005,LGEN,9,N,456.475,961,Cavatina Op. 130,4,3,older,64,Female,other,,,,17
-sub-005,LGEN,10,Y,256.975,541,John Wayne Gacy Jr.,3,2,older,64,Female,other,,,,10
-sub-005,LGEN,11,Y,342.475,721,Hurt,3,2,older,64,Female,other,,,,13
-sub-005,LGEN,12,Y,655.975,1381,Sound of Silence,4,4,older,64,Female,other,,,,24
-sub-005,LGEN,13,Y,370.975,781,Reckoner,3,2,older,64,Female,other,,,,14
-sub-005,LGEN,14,N,484.975,1021,Nocturne in C Sharp Minor,4,4,older,64,Female,other,,,,18
-sub-005,LGEN,15,Y,228.475,481,Nessun Dorma,3,2,older,64,Female,other,,,,9
-sub-005,LGEN,16,N,199.975,421,"Symphony No. 6, movement 1",4,3,older,64,Female,other,,,,8
-sub-005,LGEN,17,,114.475,241,BP,3,1,,,,,,,,5
-sub-005,LGEN,18,,171.475,361,BP,3,1,,,,,,,,7
-sub-005,LGEN,19,,627.475,1321,BP,4,3,,,,,,,,23
-sub-005,LGEN,20,,570.475,1201,BP,3,2,,,,,,,,21
-sub-005,LGEN,21,,313.975,661,Unfamiliar West,3,3,,,,,,,,12
-sub-005,LGEN,22,,0.475,1,Unfamiliar West,4,2,,,,,,,,1
-sub-005,LGEN,23,,142.975,301,Unfamiliar West,3,2,,,,,,,,6
-sub-005,LGEN,24,,85.975,181,Unfamiliar West,2,1,,,,,,,,4
-sub-019,DFAI,1,Y,342.475,721,Nevermind,4,4,older,66,Female,self,,,,13
-sub-019,DFAI,2,Y,541.975,1141,Copperline,4,4,older,66,Female,self,,,,20
-sub-019,DFAI,3,Y,456.475,961,Ode to Billie Joe,4,4,older,66,Female,self,,,,17
-sub-019,DFAI,4,Y,228.475,481,Running Up That Hill,4,4,older,66,Female,self,,,,9
-sub-019,DFAI,5,Y,0.475,1,The Boxer,4,4,older,66,Female,self,,,,1
-sub-019,DFAI,6,Y,513.475,1081,Thanks for the Memories,4,4,older,66,Female,self,,,,19
-sub-019,DFAI,7,N,627.475,1321,Adagio for Strings,4,4,older,66,Female,other,,,,23
-sub-019,DFAI,8,N,399.475,841,"Symphony No. 2, Finale",3,1,older,66,Female,other,,,,15
-sub-019,DFAI,9,N,285.475,601,Cavatina Op. 130,4,1,older,66,Female,other,,,,11
-sub-019,DFAI,10,Y,57.475,121,John Wayne Gacy Jr.,4,1,older,66,Female,other,,,,3
-sub-019,DFAI,11,Y,142.975,301,Hurt,4,2,older,66,Female,other,,,,6
-sub-019,DFAI,12,Y,655.975,1381,Sound of Silence,4,4,older,66,Female,other,,,,24
-sub-019,DFAI,13,Y,28.975,61,Reckoner,4,1,older,66,Female,other,,,,2
-sub-019,DFAI,14,N,199.975,421,Nocturne in C Sharp Minor,4,1,older,66,Female,other,,,,8
-sub-019,DFAI,15,Y,171.475,361,Nessun Dorma,4,1,older,66,Female,other,,,,7
-sub-019,DFAI,16,N,313.975,661,"Symphony No. 6, movement 1",4,1,older,66,Female,other,,,,12
-,DFAI,17,,598.975,1261,,2,1,,,,,,,,22
-,DFAI,18,,570.475,1201,,2,1,,,,,,,,21
-,DFAI,19,,427.975,901,,3,1,,,,,,,,16
-,DFAI,20,,85.975,181,,3,1,,,,,,,,4
-,DFAI,21,,256.975,541,,3,1,,,,,,,,10
-,DFAI,22,,484.975,1021,,3,1,,,,,,,,18
-,DFAI,23,,114.475,241,,3,1,,,,,,,,5
-,DFAI,24,,370.975,781,,1,1,,,,,,,,14
-sub-028,SCAE,1,Y,85.975,181,Detroit Rock City,4,4,older,54,Male,self,,,,4
-sub-028,SCAE,2,Y,570.475,1201,Doo Doo Doo Doo Doo (Heartbreaker),4,4,older,54,Male,self,,,,21
-sub-028,SCAE,3,Y,57.475,121,Fight the Good Fight,4,4,older,54,Male,self,,,,3
-sub-028,SCAE,4,Y,513.475,1081,Panic in Detroit,4,4,older,54,Male,self,,,,19
-sub-028,SCAE,5,Y,598.975,1261,Limelight,4,4,older,54,Male,self,,,,22
-sub-028,SCAE,6,Y,370.975,781,Freewheel Burning,4,4,older,54,Male,self,,,,14
-sub-028,SCAE,7,N,427.975,901,Adagio for Strings,3,2,older,54,Male,other,,,,16
-sub-028,SCAE,8,N,313.975,661,"Symphony No. 2, Finale",3,3,older,54,Male,other,,,,12
-sub-028,SCAE,9,N,484.975,1021,Cavatina Op. 130,2,1,older,54,Male,other,,,,18
-sub-028,SCAE,10,Y,256.975,541,John Wayne Gacy Jr.,2,3,older,54,Male,other,,,,10
-sub-028,SCAE,11,Y,171.475,361,Hurt,1,1,older,54,Male,other,,,,7
-sub-028,SCAE,12,Y,399.475,841,Sound of Silence,4,4,older,54,Male,other,,,,15
-sub-028,SCAE,13,Y,541.975,1141,Reckoner,3,3,older,54,Male,other,,,,20
-sub-028,SCAE,14,N,199.975,421,Nocturne in C Sharp Minor,3,2,older,54,Male,other,,,,8
-sub-028,SCAE,15,Y,655.975,1381,Nessun Dorma,1,2,older,54,Male,other,,,,24
-sub-028,SCAE,16,N,342.475,721,"Symphony No. 6, movement 1",3,3,older,54,Male,other,,,,13
-sub-028,SCAE,17,,456.475,961,,1,1,,,,,,,,17
-sub-028,SCAE,18,,285.475,601,,1,1,,,,,,,,11
-sub-028,SCAE,19,,114.475,241,,3,1,,,,,,,,5
-sub-028,SCAE,20,,28.975,61,,1,1,,,,,,,,2
-sub-028,SCAE,21,,142.975,301,,1,1,,,,,,,,6
-sub-028,SCAE,22,,228.475,481,,1,1,,,,,,,,9
-sub-028,SCAE,23,,627.475,1321,,1,1,,,,,,,,23
-sub-028,SCAE,24,,0.475,1,,1,1,,,,,,,,1
-sub-029,EHER,1,Y,85.975,181,Turn it on Again,4,4,older,62,Male,self,,,,4
-sub-029,EHER,2,Y,598.975,1261,Roundabout,4,4,older,62,Male,self,,,,22
-sub-029,EHER,3,Y,427.975,901,Ashes to Ashes,4,4,older,62,Male,self,,,,16
-sub-029,EHER,4,Y,313.975,661,Seen the Lights Go Out on Broadway,4,4,older,62,Male,self,,,,12
-sub-029,EHER,5,Y,28.975,61,Comfortably Numb,2,2,older,62,Male,self,,,,2
-sub-029,EHER,6,Y,342.475,721,It Doesn't Matter Why,4,4,older,62,Male,self,,,,13
-sub-029,EHER,7,N,114.475,241,Adagio for Strings,2,1,older,62,Male,other,,,,5
-sub-029,EHER,8,N,627.475,1321,"Symphony No. 2, Finale",2,2,older,62,Male,other,,,,23
-sub-029,EHER,9,N,228.475,481,Cavatina Op. 130,2,1,older,62,Male,other,,,,9
-sub-029,EHER,10,Y,199.975,421,John Wayne Gacy Jr.,2,1,older,62,Male,other,,,,8
-sub-029,EHER,11,Y,285.475,601,Hurt,2,2,older,62,Male,other,,,,11
-sub-029,EHER,12,Y,370.975,781,Sound of Silence,3,4,older,62,Male,other,,,,14
-sub-029,EHER,13,Y,57.475,121,Reckoner,2,2,older,62,Male,other,,,,3
-sub-029,EHER,14,N,513.475,1081,Nocturne in C Sharp Minor,2,1,older,62,Male,other,,,,19
-sub-029,EHER,15,Y,484.975,1021,Nessun Dorma,3,4,older,62,Male,other,,,,18
-sub-029,EHER,16,N,541.975,1141,"Symphony No. 6, movement 1",3,4,older,62,Male,other,,,,20
-sub-029,EHER,17,,256.975,541,,1,1,,,,,,,,10
-sub-029,EHER,18,,171.475,361,,2,1,,,,,,,,7
-sub-029,EHER,19,,655.975,1381,,2,1,,,,,,,,24
-sub-029,EHER,20,,142.975,301,,1,1,,,,,,,,6
-sub-029,EHER,21,,570.475,1201,,2,1,,,,,,,,21
-sub-029,EHER,22,,456.475,961,,2,1,,,,,,,,17
-sub-029,EHER,23,,0.475,1,,1,1,,,,,,,,1
-sub-029,EHER,24,,399.475,841,,1,1,,,,,,,,15
-sub-030,LJAC,1,Y,57.475,121,Since You've Been Gone,4,4,older,68,Female,self,,,,3
-sub-030,LJAC,2,Y,370.975,781,Finesse,4,4,older,68,Female,self,,,,14
-sub-030,LJAC,3,Y,513.475,1081,I Never Can Say Goodbye,4,4,older,68,Female,self,,,,19
-sub-030,LJAC,4,Y,484.975,1021,Heat Wave,4,4,older,68,Female,self,,,,18
-sub-030,LJAC,5,Y,570.475,1201,You Send Me,4,4,older,68,Female,self,,,,21
-sub-030,LJAC,6,Y,171.475,361,Walk on By,4,4,older,68,Female,self,,,,7
-sub-030,LJAC,7,N,456.475,961,Adagio for Strings,3,2,older,68,Female,other,,,,17
-sub-030,LJAC,8,N,541.975,1141,"Symphony No. 2, Finale",3,2,older,68,Female,other,,,,20
-sub-030,LJAC,9,N,598.975,1261,Cavatina Op. 130,4,2,older,68,Female,other,,,,22
-sub-030,LJAC,10,Y,256.975,541,John Wayne Gacy Jr.,3,2,older,68,Female,other,,,,10
-sub-030,LJAC,11,Y,28.975,61,Hurt,2,1,older,68,Female,other,,,,2
-sub-030,LJAC,12,Y,114.475,241,Sound of Silence,3,4,older,68,Female,other,,,,5
-sub-030,LJAC,13,Y,199.975,421,Reckoner,3,1,older,68,Female,other,,,,8
-sub-030,LJAC,14,N,228.475,481,Nocturne in C Sharp Minor,3,2,older,68,Female,other,,,,9
-sub-030,LJAC,15,Y,285.475,601,Nessun Dorma,1,2,older,68,Female,other,,,,11
-sub-030,LJAC,16,N,85.975,181,"Symphony No. 6, movement 1",3,3,older,68,Female,other,,,,4
-sub-030,LJAC,17,,313.975,661,,1,1,,,,,,,,12
-sub-030,LJAC,18,,627.475,1321,,2,1,,,,,,,,23
-sub-030,LJAC,19,,0.475,1,,3,1,,,,,,,,1
-sub-030,LJAC,20,,655.975,1381,,1,1,,,,,,,,24
-sub-030,LJAC,21,,342.475,721,,3,2,,,,,,,,13
-sub-030,LJAC,22,,142.975,301,,2,2,,,,,,,,6
-sub-030,LJAC,23,,427.975,901,,2,1,,,,,,,,16
-sub-030,LJAC,24,,399.475,841,,1,1,,,,,,,,15
-sub-032,ASHA,1,Y,85.975,181,1917 (The French Prostitute),4,4,older,70,Female,self,,,,4
-sub-032,ASHA,2,Y,114.475,241,Can't Find My Way Home,4,4,older,70,Female,self,,,,5
-sub-032,ASHA,3,Y,342.475,721,At Last,4,4,older,70,Female,self,,,,13
-sub-032,ASHA,4,Y,199.975,421,Something So Right,4,4,older,70,Female,self,,,,8
-sub-032,ASHA,5,Y,627.475,1321,Sir Duke,4,4,older,70,Female,self,,,,23
-sub-032,ASHA,6,Y,370.975,781,What Was it You Wanted,3,2,older,70,Female,self,,,,14
-sub-032,ASHA,7,N,541.975,1141,Adagio for Strings,2,1,older,70,Female,other,,,,20
-sub-032,ASHA,8,N,456.475,961,"Symphony No. 2, Finale",2,1,older,70,Female,other,,,,17
-sub-032,ASHA,9,N,513.475,1081,Cavatina Op. 130,2,1,older,70,Female,other,,,,19
-sub-032,ASHA,10,Y,313.975,661,John Wayne Gacy Jr.,3,1,older,70,Female,other,,,,12
-sub-032,ASHA,11,Y,228.475,481,Hurt,3,2,older,70,Female,other,,,,9
-sub-032,ASHA,12,Y,171.475,361,Sound of Silence,4,4,older,70,Female,other,,,,7
-sub-032,ASHA,13,Y,655.975,1381,Reckoner,3,3,older,70,Female,other,,,,24
-sub-032,ASHA,14,N,57.475,121,Nocturne in C Sharp Minor,3,1,older,70,Female,other,,,,3
-sub-032,ASHA,15,Y,484.975,1021,Nessun Dorma,3,2,older,70,Female,other,,,,18
-sub-032,ASHA,16,N,399.475,841,"Symphony No. 6, movement 1",2,2,older,70,Female,other,,,,15
-sub-032,ASHA,17,,256.975,541,,2,1,,,,,,,,10
-sub-032,ASHA,18,,28.975,61,,2,1,,,,,,,,2
-sub-032,ASHA,19,,598.975,1261,,1,1,,,,,,,,22
-sub-032,ASHA,20,,570.475,1201,,3,1,,,,,,,,21
-sub-032,ASHA,21,,427.975,901,,2,1,,,,,,,,16
-sub-032,ASHA,22,,0.475,1,,2,1,,,,,,,,1
-sub-032,ASHA,23,,142.975,301,,3,1,,,,,,,,6
-sub-032,ASHA,24,,285.475,601,,3,1,,,,,,,,11
-sub-040,BFOR,1,Y,285.475,601,Dancing Queen,4,4,older,76,Female,self,,,,11
-sub-040,BFOR,2,Y,513.475,1081,Take a Chance on Me,4,4,older,76,Female,self,,,,19
-sub-040,BFOR,3,Y,313.975,661,Single Ladies,4,4,older,76,Female,self,,,,12
-sub-040,BFOR,4,Y,456.475,961,Footloose,4,4,older,76,Female,self,,,,17
-sub-040,BFOR,5,Y,598.975,1261,Beautiful Noise,4,4,older,76,Female,self,,,,22
-sub-040,BFOR,6,Y,228.475,481,Y.M.C.A.,4,4,older,76,Female,self,,,,9
-sub-040,BFOR,7,N,427.975,901,Adagio for Strings,3,1,older,76,Female,other,,,,16
-sub-040,BFOR,8,N,342.475,721,"Symphony No. 2, Finale",3,1,older,76,Female,other,,,,13
-sub-040,BFOR,9,N,171.475,361,Cavatina Op. 130,3,1,older,76,Female,other,,,,7
-sub-040,BFOR,10,Y,399.475,841,John Wayne Gacy Jr.,2,1,older,76,Female,other,,,,15
-sub-040,BFOR,11,Y,57.475,121,Hurt,1,1,older,76,Female,other,,,,3
-sub-040,BFOR,12,Y,0.475,1,Sound of Silence,4,4,older,76,Female,other,,,,1
-sub-040,BFOR,13,Y,370.975,781,Reckoner,3,1,older,76,Female,other,,,,14
-sub-040,BFOR,14,N,484.975,1021,Nocturne in C Sharp Minor,3,1,older,76,Female,other,,,,18
-sub-040,BFOR,15,Y,655.975,1381,Nessun Dorma,1,1,older,76,Female,other,,,,24
-sub-040,BFOR,16,N,541.975,1141,"Symphony No. 6, movement 1",3,3,older,76,Female,other,,,,20
-sub-040,BFOR,17,,256.975,541,,2,1,,,,,,,,10
-sub-040,BFOR,18,,142.975,301,,1,1,,,,,,,,6
-sub-040,BFOR,19,,85.975,181,,1,1,,,,,,,,4
-sub-040,BFOR,20,,28.975,61,,1,1,,,,,,,,2
-sub-040,BFOR,21,,114.475,241,,1,1,,,,,,,,5
-sub-040,BFOR,22,,570.475,1201,,2,1,,,,,,,,21
-sub-040,BFOR,23,,627.475,1321,,1,1,,,,,,,,23
-sub-040,BFOR,24,,199.975,421,,1,1,,,,,,,,8
-sub-001,FKEE,1,Y,285.475,601,He Called Me Baby,4,4,older,56,Male,other,,,,11
-sub-001,FKEE,2,Y,85.975,181,Moon River,4,4,older,56,Male,other,,,,4
-sub-001,FKEE,3,N,342.475,721,Unchained Melody,4,4,older,56,Male,other,,,,13
-sub-001,FKEE,4,Y,313.975,661,Immigrant Song,3,4,older,56,Male,other,,,,12
-sub-001,FKEE,5,Y,399.475,841,Hey Jude,3,4,older,56,Male,other,,,,15
-sub-001,FKEE,6,Y,456.475,961,That's How I Got to Memphis,4,4,older,56,Male,other,,,,17
-sub-001,FKEE,7,N,627.475,1321,Adagio for Strings,1,1,older,56,Male,other,,,,23
-sub-001,FKEE,8,N,171.475,361,"Symphony No. 2, Finale",2,3,older,56,Male,other,,,,7
-sub-001,FKEE,9,N,598.975,1261,Cavatina Op. 130,3,2,older,56,Male,other,,,,22
-sub-001,FKEE,10,Y,484.975,1021,John Wayne Gacy Jr.,3,2,older,56,Male,other,,,,18
-sub-001,FKEE,11,Y,370.975,781,Hurt,3,4,older,56,Male,other,,,,14
-sub-001,FKEE,12,Y,228.475,481,Sound of Silence,4,4,older,56,Male,other,,,,9
-sub-001,FKEE,13,Y,114.475,241,Reckoner,3,2,older,56,Male,other,,,,5
-sub-001,FKEE,14,N,427.975,901,Nocturne in C Sharp Minor,2,1,older,56,Male,other,,,,16
-sub-001,FKEE,15,Y,57.475,121,Nessun Dorma,2,2,older,56,Male,other,,,,3
-sub-001,FKEE,16,N,142.975,301,"Symphony No. 6, movement 1",2,2,older,56,Male,other,,,,6
-sub-001,FKEE,17,,541.975,1141,BP,1,1,older,56,Male,other,,,,20
-sub-001,FKEE,18,,513.475,1081,BP,2,1,older,56,Male,other,,,,19
-sub-001,FKEE,19,,28.975,61,BP,2,1,older,56,Male,other,,,,2
-sub-001,FKEE,20,,570.475,1201,BP,2,1,older,56,Male,other,,,,21
-sub-001,FKEE,21,,655.975,1381,Unfamiliar West,2,2,older,56,Male,other,,,,24
-sub-001,FKEE,22,,0.475,1,Unfamiliar West,2,2,older,56,Male,other,,,,1
-sub-001,FKEE,23,,199.975,421,Unfamiliar West,1,1,older,56,Male,other,,,,8
-sub-001,FKEE,24,,256.975,541,Unfamiliar West,2,2,older,56,Male,other,,,,10
-sub-003,JSCH,1,Y,627.475,1321,Sultans of Swing,,,older,67,Male,other,,,,23
-sub-003,JSCH,2,Y,399.475,841,My Old School,,,older,67,Male,other,,,,15
-sub-003,JSCH,3,Y,28.975,61,Comfortably Numb,,,older,67,Male,other,,,,2
-sub-003,JSCH,4,Y,85.975,181,Black Magic Woman,,,older,67,Male,other,,,,4
-sub-003,JSCH,5,N,655.975,1381,Jessica,,,older,67,Male,other,,,,24
-sub-003,JSCH,6,Y,228.475,481,Hotel California,,,older,67,Male,other,,,,9
-sub-003,JSCH,7,N,427.975,901,Adagio for Strings,,,older,67,Male,other,,,,16
-sub-003,JSCH,8,N,142.975,301,"Symphony No. 2, Finale",,,older,67,Male,other,,,,6
-sub-003,JSCH,9,N,199.975,421,Cavatina Op. 130,,,older,67,Male,other,,,,8
-sub-003,JSCH,10,Y,285.475,601,John Wayne Gacy Jr.,,,older,67,Male,other,,,,11
-sub-003,JSCH,11,Y,171.475,361,Hurt,,,older,67,Male,other,,,,7
-sub-003,JSCH,12,Y,513.475,1081,Sound of Silence,,,older,67,Male,other,,,,19
-sub-003,JSCH,13,Y,484.975,1021,Reckoner,,,older,67,Male,other,,,,18
-sub-003,JSCH,14,N,114.475,241,Nocturne in C Sharp Minor,,,older,67,Male,other,,,,5
-sub-003,JSCH,15,Y,313.975,661,Nessun Dorma,,,older,67,Male,other,,,,12
-sub-003,JSCH,16,N,598.975,1261,"Symphony No. 6, movement 1",,,older,67,Male,other,,,,22
-sub-003,JSCH,17,,570.475,1201,BP,,,,,,,,,,21
-sub-003,JSCH,18,,456.475,961,BP,,,,,,,,,,17
-sub-003,JSCH,19,,0.475,1,BP,,,,,,,,,,1
-sub-003,JSCH,20,,57.475,121,BP,,,,,,,,,,3
-sub-003,JSCH,21,,541.975,1141,Unfamiliar West,,,,,,,,,,20
-sub-003,JSCH,22,,370.975,781,Unfamiliar West,,,,,,,,,,14
-sub-003,JSCH,23,,342.475,721,Unfamiliar West,,,,,,,,,,13
-sub-003,JSCH,24,,256.975,541,Unfamiliar West,,,,,,,,,,10
-sub-006,GHER,1,Y,0.475,1,Life on Mars,3,3,older,66,Male,self,,,,1
-sub-006,GHER,2,Y,627.475,1321,Eleanor Rigby,3,3,older,66,Male,self,,,,23
-sub-006,GHER,3,Y,142.975,301,Panic in Detroit,2,2,older,66,Male,self,,,,6
-sub-006,GHER,4,Y,513.475,1081,Stay,1,1,older,66,Male,self,,,,19
-sub-006,GHER,5,Y,342.475,721,Long Distance Run Around,3,3,older,66,Male,self,,,,13
-sub-006,GHER,6,Y,256.975,541,Michelle,1,2,older,66,Male,self,,,,10
-sub-006,GHER,7,N,199.975,421,Adagio for Strings,4,4,older,66,Male,other,,,,8
-sub-006,GHER,8,N,285.475,601,"Symphony No. 2, Finale",4,2,older,66,Male,other,,,,11
-sub-006,GHER,9,N,228.475,481,Cavatina Op. 130,4,2,older,66,Male,other,,,,9
-sub-006,GHER,10,Y,85.975,181,John Wayne Gacy Jr.,4,2,older,66,Male,other,,,,4
-sub-006,GHER,11,Y,570.475,1201,Hurt,1,1,older,66,Male,other,,,,21
-sub-006,GHER,12,Y,370.975,781,Sound of Silence,4,3,older,66,Male,other,,,,14
-sub-006,GHER,13,Y,484.975,1021,Reckoner,4,1,older,66,Male,other,,,,18
-sub-006,GHER,14,N,399.475,841,Nocturne in C Sharp Minor,3,3,older,66,Male,other,,,,15
-sub-006,GHER,15,Y,114.475,241,Nessun Dorma,1,2,older,66,Male,other,,,,5
-sub-006,GHER,16,N,598.975,1261,"Symphony No. 6, movement 1",4,1,older,66,Male,other,,,,22
-sub-006,GHER,17,,456.475,961,,4,2,,,,,,,,17
-sub-006,GHER,18,,427.975,901,,1,2,,,,,,,,16
-sub-006,GHER,19,,655.975,1381,,1,2,,,,,,,,24
-sub-006,GHER,20,,313.975,661,,1,2,,,,,,,,12
-sub-006,GHER,21,,57.475,121,,4,2,,,,,,,,3
-sub-006,GHER,22,,541.975,1141,,1,2,,,,,,,,20
-sub-006,GHER,23,,28.975,61,,2,2,,,,,,,,2
-sub-006,GHER,24,,171.475,361,,2,2,,,,,,,,7
-sub-011,CWEI,1,Y,541.975,1141,As Time Goes By,4,4,older,78,Male,self,,,,20
-sub-011,CWEI,2,Y,456.475,961,Evergreen,4,4,older,78,Male,self,,,,17
-sub-011,CWEI,3,Y,114.475,241,In the Ghetto,4,4,older,78,Male,self,,,,5
-sub-011,CWEI,4,Y,57.475,121,Lonesome Tonight,4,4,older,78,Male,self,,,,3
-sub-011,CWEI,5,Y,598.975,1261,Loving You,4,3,older,78,Male,self,,,,22
-sub-011,CWEI,6,Y,427.975,901,Tomorrow,4,4,older,78,Male,self,,,,16
-sub-011,CWEI,7,N,85.975,181,Adagio for Strings,2,1,older,78,Male,other,,,,4
-sub-011,CWEI,8,N,342.475,721,Familiar Western,3,3,older,78,Male,other,,,,13
-sub-011,CWEI,9,N,256.975,541,Familiar Western,3,2,older,78,Male,other,,,,10
-sub-011,CWEI,10,Y,171.475,361,Familiar Western,3,2,older,78,Male,other,,,,7
-sub-011,CWEI,11,Y,199.975,421,Hurt,3,2,older,78,Male,other,,,,8
-sub-011,CWEI,12,Y,399.475,841,The Sound of Silence,4,4,older,78,Male,other,,,,15
-sub-011,CWEI,13,Y,513.475,1081,Reckoner,3,3,older,78,Male,other,,,,19
-sub-011,CWEI,14,N,570.475,1201,Nocturne in C Sharp minor,4,3,older,78,Male,other,,,,21
-sub-011,CWEI,15,Y,313.975,661,Nessun Dorma,4,3,older,78,Male,other,,,,12
-sub-011,CWEI,16,N,28.975,61,Tchaikovsky 6,3,2,older,78,Male,other,,,,2
-sub-011,CWEI,17,,142.975,301,,1,1,,,,,,,,6
-sub-011,CWEI,18,,0.475,1,,1,1,,,,,,,,1
-sub-011,CWEI,19,,484.975,1021,,3,3,,,,,,,,18
-sub-011,CWEI,20,,627.475,1321,,2,1,,,,,,,,23
-sub-011,CWEI,21,,370.975,781,,2,2,,,,,,,,14
-sub-011,CWEI,22,,285.475,601,,2,1,,,,,,,,11
-sub-011,CWEI,23,,228.475,481,,1,1,,,,,,,,9
-sub-011,CWEI,24,,655.975,1381,,1,1,,,,,,,,24
-sub-012,MBLO,1,Y,484.975,1021,Enormous Tots,4,4,older,66,Male,self,,,,18
-sub-012,MBLO,2,Y,228.475,481,Small Circle of Friends,4,4,older,66,Male,self,,,,9
-sub-012,MBLO,3,Y,655.975,1381,The Crucifixion,4,4,older,66,Male,self,,,,24
-sub-012,MBLO,4,N,370.975,781,Rite of Spring,4,4,older,66,Male,self,,,,14
-sub-012,MBLO,5,Y,85.975,181,Tomorrow Never Knows,4,4,older,66,Male,self,,,,4
-sub-012,MBLO,6,N,0.475,1,WakaJawaka,4,4,older,66,Male,self,,,,1
-sub-012,MBLO,7,N,142.975,301,Adagio for Strings,3,2,older,66,Male,other,,,,6
-sub-012,MBLO,8,N,598.975,1261,"Symphony No. 2, Finale",2,2,older,66,Male,other,,,,22
-sub-012,MBLO,9,N,57.475,121,Cavatina Op. 130,3,2,older,66,Male,other,,,,3
-sub-012,MBLO,10,Y,456.475,961,John Wayne Gacy Jr.,3,2,older,66,Male,other,,,,17
-sub-012,MBLO,11,Y,513.475,1081,Hurt,3,4,older,66,Male,other,,,,19
-sub-012,MBLO,12,Y,114.475,241,Sound of Silence,4,4,older,66,Male,other,,,,5
-sub-012,MBLO,13,Y,399.475,841,Reckoner,2,2,older,66,Male,other,,,,15
-sub-012,MBLO,14,N,199.975,421,Nocturne in C Sharp Minor,3,2,older,66,Male,other,,,,8
-sub-012,MBLO,15,Y,342.475,721,Nessun Dorma,1,2,older,66,Male,other,,,,13
-sub-012,MBLO,16,N,285.475,601,"Symphony No. 6, movement 1",3,3,older,66,Male,other,,,,11
-sub-012,MBLO,17,,541.975,1141,,3,1,,,,,,,,20
-sub-012,MBLO,18,,427.975,901,,2,1,,,,,,,,16
-sub-012,MBLO,19,,313.975,661,,2,1,,,,,,,,12
-sub-012,MBLO,20,,28.975,61,,3,1,,,,,,,,2
-sub-012,MBLO,21,,627.475,1321,,3,1,,,,,,,,23
-sub-012,MBLO,22,,256.975,541,,3,1,,,,,,,,10
-sub-012,MBLO,23,,171.475,361,,3,3,,,,,,,,7
-sub-012,MBLO,24,,570.475,1201,,2,2,,,,,,,,21
-sub-015,EROS,1,Y,513.475,1081,I Can't Get No Satisfaction,4,4,older,58,Male,self,,,,19
-sub-015,EROS,2,Y,655.975,1381,Smells Like Teen Spirit,4,4,older,58,Male,self,,,,24
-sub-015,EROS,3,Y,313.975,661,Once in a Lifetime,4,4,older,58,Male,self,,,,12
-sub-015,EROS,4,Y,570.475,1201,Stairway to Heaven,4,4,older,58,Male,self,,,,21
-sub-015,EROS,5,Y,598.975,1261,Should I Stay or Should I Go,4,4,older,58,Male,self,,,,22
-sub-015,EROS,6,Y,171.475,361,White Rabbit,4,4,older,58,Male,self,,,,7
-sub-015,EROS,7,N,256.975,541,Adagio for Strings,2,1,older,58,Male,other,,,,10
-sub-015,EROS,8,N,342.475,721,"Symphony No. 2, Finale",2,1,older,58,Male,other,,,,13
-sub-015,EROS,9,N,456.475,961,Cavatina Op. 130,2,2,older,58,Male,other,,,,17
-sub-015,EROS,10,Y,370.975,781,John Wayne Gacy Jr.,2,2,older,58,Male,other,,,,14
-sub-015,EROS,11,Y,28.975,61,Hurt,3,4,older,58,Male,other,,,,2
-sub-015,EROS,12,Y,541.975,1141,Sound of Silence,4,4,older,58,Male,other,,,,20
-sub-015,EROS,13,Y,427.975,901,Reckoner,2,2,older,58,Male,other,,,,16
-sub-015,EROS,14,N,85.975,181,Nocturne in C Sharp Minor,2,1,older,58,Male,other,,,,4
-sub-015,EROS,15,Y,627.475,1321,Nessun Dorma,2,1,older,58,Male,other,,,,23
-sub-015,EROS,16,N,57.475,121,"Symphony No. 6, movement 1",2,1,older,58,Male,other,,,,3
-sub-015,EROS,17,,228.475,481,,2,1,,,,,,,,9
-sub-015,EROS,18,,399.475,841,,3,1,,,,,,,,15
-sub-015,EROS,19,,0.475,1,,2,1,,,,,,,,1
-sub-015,EROS,20,,484.975,1021,,3,1,,,,,,,,18
-sub-015,EROS,21,,114.475,241,,3,1,,,,,,,,5
-sub-015,EROS,22,,285.475,601,,3,1,,,,,,,,11
-sub-015,EROS,23,,199.975,421,,3,1,,,,,,,,8
-sub-015,EROS,24,,142.975,301,,2,1,,,,,,,,6
-sub-036,GSHA,1,Y,285.475,601,Respect,4,4,older,66,Female,self,,,,11
-sub-036,GSHA,2,N,114.475,241,One O'clock Jump,4,1,older,66,Female,self,,,,5
-sub-036,GSHA,3,Y,570.475,1201,Celebration,4,4,older,66,Female,self,,,,21
-sub-036,GSHA,4,Y,199.975,421,Don't Stop Til You Get Enough,4,4,older,66,Female,self,,,,8
-sub-036,GSHA,5,Y,513.475,1081,Ain't Nobody,3,4,older,66,Female,self,,,,19
-sub-036,GSHA,6,Y,541.975,1141,You Are the Sunshine of My Life,4,4,older,66,Female,self,,,,20
-sub-036,GSHA,7,N,313.975,661,Adagio for Strings,2,1,older,66,Female,other,,,,12
-sub-036,GSHA,8,N,399.475,841,"Symphony No. 2, Finale",1,1,older,66,Female,other,,,,15
-sub-036,GSHA,9,N,342.475,721,Cavatina Op. 130,3,2,older,66,Female,other,,,,13
-sub-036,GSHA,10,Y,427.975,901,John Wayne Gacy Jr.,2,1,older,66,Female,other,,,,16
-sub-036,GSHA,11,Y,228.475,481,Hurt,2,2,older,66,Female,other,,,,9
-sub-036,GSHA,12,Y,598.975,1261,Sound of Silence,3,4,older,66,Female,other,,,,22
-sub-036,GSHA,13,Y,256.975,541,Reckoner,2,1,older,66,Female,other,,,,10
-sub-036,GSHA,14,N,0.475,1,Nocturne in C Sharp Minor,4,1,older,66,Female,other,,,,1
-sub-036,GSHA,15,Y,57.475,121,Nessun Dorma,2,1,older,66,Female,other,,,,3
-sub-036,GSHA,16,N,85.975,181,"Symphony No. 6, movement 1",2,1,older,66,Female,other,,,,4
-sub-036,GSHA,17,,627.475,1321,,1,1,,,,,,,,23
-sub-036,GSHA,18,,484.975,1021,,1,1,,,,,,,,18
-sub-036,GSHA,19,,655.975,1381,,2,1,,,,,,,,24
-sub-036,GSHA,20,,142.975,301,,2,1,,,,,,,,6
-sub-036,GSHA,21,,456.475,961,,2,1,,,,,,,,17
-sub-036,GSHA,22,,28.975,61,,3,1,,,,,,,,2
-sub-036,GSHA,23,,171.475,361,,2,1,,,,,,,,7
-sub-036,GSHA,24,,370.975,781,,1,1,,,,,,,,14
-sub-008,LDIR,1,Y,598.975,1261,Wait for It,4,4,older,63,Female,self,,,,22
-sub-008,LDIR,2,Y,655.975,1381,Afterlife,4,4,older,63,Female,self,,,,24
-sub-008,LDIR,3,Y,199.975,421,This Tornado Loves You,4,4,older,63,Female,self,,,,8
-sub-008,LDIR,4,Y,313.975,661,I Will Wait,4,4,older,63,Female,self,,,,12
-sub-008,LDIR,5,Y,0.475,1,Eet,4,4,older,63,Female,self,,,,1
-sub-008,LDIR,6,Y,484.975,1021,I'll Work for Your Love,4,4,older,63,Female,self,,,,18
-sub-008,LDIR,7,N,370.975,781,Adagio for Strings,3,1,older,63,Female,other,,,,14
-sub-008,LDIR,8,N,570.475,1201,"Symphony No. 2, Finale",2,1,older,63,Female,other,,,,21
-sub-008,LDIR,9,N,399.475,841,Cavatina Op. 130,4,1,older,63,Female,other,,,,15
-sub-008,LDIR,10,Y,85.975,181,John Wayne Gacy Jr.,3,2,older,63,Female,other,,,,4
-sub-008,LDIR,11,Y,28.975,61,Hurt,2,1,older,63,Female,other,,,,2
-sub-008,LDIR,12,Y,541.975,1141,Sound of Silence,4,4,older,63,Female,other,,,,20
-sub-008,LDIR,13,Y,256.975,541,Reckoner,3,1,older,63,Female,other,,,,10
-sub-008,LDIR,14,N,627.475,1321,Nocturne in C Sharp Minor,3,1,older,63,Female,other,,,,23
-sub-008,LDIR,15,Y,285.475,601,Nessun Dorma,2,3,older,63,Female,other,,,,11
-sub-008,LDIR,16,N,427.975,901,"Symphony No. 6, movement 1",3,1,older,63,Female,other,,,,16
-sub-008,LDIR,17,,342.475,721,,1,1,,,,,,,,13
-sub-008,LDIR,18,,513.475,1081,,1,1,,,,,,,,19
-sub-008,LDIR,19,,171.475,361,,2,1,,,,,,,,7
-sub-008,LDIR,20,,228.475,481,,1,1,,,,,,,,9
-sub-008,LDIR,21,,142.975,301,,2,1,,,,,,,,6
-sub-008,LDIR,22,,456.475,961,,1,1,,,,,,,,17
-sub-008,LDIR,23,,114.475,241,,1,1,,,,,,,,5
-sub-008,LDIR,24,,57.475,121,,1,1,,,,,,,,3
-sub-016,TCIE,1,Y,513.475,1081,I Will,3,4,older,60,Male,self,,,,19
-sub-016,TCIE,2,Y,313.975,661,Beauty & the Beatitudes,4,4,older,60,Male,self,,,,12
-sub-016,TCIE,3,Y,427.975,901,The Saturday Boy,4,4,older,60,Male,self,,,,16
-sub-016,TCIE,4,N,114.475,241,Danse Macabre,3,4,older,60,Male,self,,,,5
-sub-016,TCIE,5,Y,199.975,421,Grindstone,4,4,older,60,Male,self,,,,8
-sub-016,TCIE,6,Y,598.975,1261,Vicious,3,4,older,60,Male,self,,,,22
-sub-016,TCIE,7,N,85.975,181,Adagio for Strings,2,3,older,60,Male,other,,,,4
-sub-016,TCIE,8,N,570.475,1201,"Symphony No. 2, Finale",3,3,older,60,Male,other,,,,21
-sub-016,TCIE,9,N,627.475,1321,Cavatina Op. 130,3,3,older,60,Male,other,,,,23
-sub-016,TCIE,10,Y,57.475,121,John Wayne Gacy Jr.,2,3,older,60,Male,other,,,,3
-sub-016,TCIE,11,Y,228.475,481,Hurt,3,4,older,60,Male,other,,,,9
-sub-016,TCIE,12,Y,256.975,541,Sound of Silence,2,4,older,60,Male,other,,,,10
-sub-016,TCIE,13,Y,342.475,721,Reckoner,2,3,older,60,Male,other,,,,13
-sub-016,TCIE,14,N,484.975,1021,Nocturne in C Sharp Minor,3,3,older,60,Male,other,,,,18
-sub-016,TCIE,15,Y,171.475,361,Nessun Dorma,2,3,older,60,Male,other,,,,7
-sub-016,TCIE,16,N,370.975,781,"Symphony No. 6, movement 1",2,3,older,60,Male,other,,,,14
-sub-016,TCIE,17,,142.975,301,,2,1,,,,,,,,6
-sub-016,TCIE,18,,655.975,1381,,2,3,,,,,,,,24
-sub-016,TCIE,19,,456.475,961,,2,1,,,,,,,,17
-sub-016,TCIE,20,,399.475,841,,3,2,,,,,,,,15
-sub-016,TCIE,21,,0.475,1,,2,3,,,,,,,,1
-sub-016,TCIE,22,,541.975,1141,,2,1,,,,,,,,20
-sub-016,TCIE,23,,28.975,61,,2,1,,,,,,,,2
-sub-016,TCIE,24,,285.475,601,,3,1,,,,,,,,11
-sub-018,GCAS,1,Y,0.475,1,Alabaster Box,4,4,older,71,Male,self,,,,1
-sub-018,GCAS,2,Y,285.475,601,Amazing Grace,4,4,older,71,Male,self,,,,11
-sub-018,GCAS,3,Y,85.975,181,Ordinary Just Won't Do,4,4,older,71,Male,self,,,,4
-sub-018,GCAS,4,Y,228.475,481,No Weapon,4,4,older,71,Male,self,,,,9
-sub-018,GCAS,5,Y,370.975,781,Stomp,4,4,older,71,Male,self,,,,14
-sub-018,GCAS,6,Y,57.475,121,"Satan, We're Gonna Tear Your Kingdom Down",4,4,older,71,Male,self,,,,3
-sub-018,GCAS,7,N,313.975,661,Adagio for Strings,3,2,older,71,Male,other,,,,12
-sub-018,GCAS,8,N,541.975,1141,"Symphony No. 2, Finale",3,2,older,71,Male,other,,,,20
-sub-018,GCAS,9,N,655.975,1381,Cavatina Op. 130,3,3,older,71,Male,other,,,,24
-sub-018,GCAS,10,Y,28.975,61,John Wayne Gacy Jr.,4,4,older,71,Male,other,,,,2
-sub-018,GCAS,11,Y,570.475,1201,Hurt,2,2,older,71,Male,other,,,,21
-sub-018,GCAS,12,Y,199.975,421,Sound of Silence,4,4,older,71,Male,other,,,,8
-sub-018,GCAS,13,Y,456.475,961,Reckoner,3,3,older,71,Male,other,,,,17
-sub-018,GCAS,14,N,142.975,301,Nocturne in C Sharp Minor,4,3,older,71,Male,other,,,,6
-sub-018,GCAS,15,Y,598.975,1261,Nessun Dorma,4,4,older,71,Male,other,,,,22
-sub-018,GCAS,16,N,342.475,721,"Symphony No. 6, movement 1",4,4,older,71,Male,other,,,,13
-sub-018,GCAS,17,,171.475,361,,1,1,,,,,,,,7
-sub-018,GCAS,18,,399.475,841,,1,1,,,,,,,,15
-sub-018,GCAS,19,,484.975,1021,,3,3,,,,,,,,18
-sub-018,GCAS,20,,427.975,901,,1,1,,,,,,,,16
-sub-018,GCAS,21,,114.475,241,,1,1,,,,,,,,5
-sub-018,GCAS,22,,513.475,1081,,1,2,,,,,,,,19
-sub-018,GCAS,23,,256.975,541,,1,1,,,,,,,,10
-sub-018,GCAS,24,,627.475,1321,,1,1,,,,,,,,23
-sub-022,DCAT,1,Y,28.975,61,Jerusalem,4,4,older,89,Female,self,,,,2
-sub-022,DCAT,2,Y,456.475,961,"Ah! mes amis, quel jour de fête!",4,4,older,89,Female,self,,,,17
-sub-022,DCAT,3,Y,570.475,1201,Norma - Casta Diva,4,4,older,89,Female,self,,,,21
-sub-022,DCAT,4,N,114.475,241,String Serenade No 13,4,4,older,89,Female,self,,,,5
-sub-022,DCAT,5,Y,142.975,301,No Regrets Non je ne regrette rien,4,4,older,89,Female,self,,,,6
-sub-022,DCAT,6,N,313.975,661,No Regrets Non je ne regrette rien,4,4,older,89,Female,self,,,,12
-sub-022,DCAT,7,N,541.975,1141,Adagio for Strings,3,2,older,89,Female,other,,,,20
-sub-022,DCAT,8,N,399.475,841,"Symphony No. 2, Finale",4,3,older,89,Female,other,,,,15
-sub-022,DCAT,9,N,627.475,1321,Cavatina Op. 130,3,1,older,89,Female,other,,,,23
-sub-022,DCAT,10,Y,171.475,361,John Wayne Gacy Jr.,3,2,older,89,Female,other,,,,7
-sub-022,DCAT,11,Y,370.975,781,Hurt,4,2,older,89,Female,other,,,,14
-sub-022,DCAT,12,y,513.475,1081,Sound of Silence,4,4,older,89,Female,other,,,,19
-sub-022,DCAT,13,Y,342.475,721,Reckoner,3,1,older,89,Female,other,,,,13
-sub-022,DCAT,14,N,655.975,1381,Nocturne in C Sharp Minor,4,4,older,89,Female,other,,,,24
-sub-022,DCAT,15,Y,427.975,901,Nessun Dorma,4,4,older,89,Female,other,,,,16
-sub-022,DCAT,16,N,484.975,1021,"Symphony No. 6, movement 1",4,3,older,89,Female,other,,,,18
-sub-022,DCAT,17,,228.475,481,,2,2,,,,,,,,9
-sub-022,DCAT,18,,256.975,541,,3,1,,,,,,,,10
-sub-022,DCAT,19,,199.975,421,,3,3,,,,,,,,8
-sub-022,DCAT,20,,85.975,181,,3,2,,,,,,,,4
-sub-022,DCAT,21,,598.975,1261,,3,2,,,,,,,,22
-sub-022,DCAT,22,,0.475,1,,2,2,,,,,,,,1
-sub-022,DCAT,23,,57.475,121,,3,2,,,,,,,,3
-sub-022,DCAT,24,,285.475,601,,2,1,,,,,,,,11
-sub-042,AZHA,1,N,655.975,1381,Song for Sienna,4,4,younger,18,Female,self,,,,24
-sub-042,AZHA,2,Y,0.475,1,Set Fire to Rain,4,4,younger,18,Female,self,,,,1
-sub-042,AZHA,3,N,627.475,1321,Howl's Moving Castle,4,4,younger,18,Female,self,,,,23
-sub-042,AZHA,4,Y,484.975,1021,Picture to Burn,4,4,younger,18,Female,self,,,,18
-sub-042,AZHA,5,N,570.475,1201,MODUS,4,4,younger,18,Female,self,,,,21
-sub-042,AZHA,6,Y,285.475,601,Mr. Brightside,4,4,younger,18,Female,self,,,,11
-sub-042,AZHA,7,N,228.475,481,Adagio for Strings,2,2,younger,18,Female,other,,,,9
-sub-042,AZHA,8,N,598.975,1261,"Symphony No. 2, Finale",1,1,younger,18,Female,other,,,,22
-sub-042,AZHA,9,N,114.475,241,Cavatina Op. 130,3,2,younger,18,Female,other,,,,5
-sub-042,AZHA,10,Y,171.475,361,John Wayne Gacy Jr.,3,3,younger,18,Female,other,,,,7
-sub-042,AZHA,11,Y,399.475,841,Hurt,2,1,younger,18,Female,other,,,,15
-sub-042,AZHA,12,y,456.475,961,Sound of Silence,3,4,younger,18,Female,other,,,,17
-sub-042,AZHA,13,Y,28.975,61,Reckoner,3,3,younger,18,Female,other,,,,2
-sub-042,AZHA,14,N,85.975,181,Nocturne in C Sharp Minor,4,4,younger,18,Female,other,,,,4
-sub-042,AZHA,15,Y,427.975,901,Nessun Dorma,2,3,younger,18,Female,other,,,,16
-sub-042,AZHA,16,N,370.975,781,"Symphony No. 6, movement 1",3,3,younger,18,Female,other,,,,14
-sub-042,AZHA,17,,313.975,661,,2,1,,,,,,,,12
-sub-042,AZHA,18,,142.975,301,,2,3,,,,,,,,6
-sub-042,AZHA,19,,57.475,121,,2,2,,,,,,,,3
-sub-042,AZHA,20,,513.475,1081,,1,1,,,,,,,,19
-sub-042,AZHA,21,,256.975,541,,1,2,,,,,,,,10
-sub-042,AZHA,22,,199.975,421,,2,2,,,,,,,,8
-sub-042,AZHA,23,,342.475,721,,2,2,,,,,,,,13
-sub-042,AZHA,24,,541.975,1141,,1,1,,,,,,,,20
-sub-043,SLEE,1,Y,228.475,481,Give You Blue,4,4,younger,18,Female,self,,,,9
-sub-043,SLEE,2,Y,484.975,1021,New York State of Mind,4,4,younger,18,Female,self,,,,18
-sub-043,SLEE,3,Y,28.975,61,Goodbye Yellow Brick Road,4,4,younger,18,Female,self,,,,2
-sub-043,SLEE,4,Y,598.975,1261,The Weekend,4,4,younger,18,Female,self,,,,22
-sub-043,SLEE,5,Y,513.475,1081,Travelin' Soldier,4,4,younger,18,Female,self,,,,19
-sub-043,SLEE,6,Y,313.975,661,Love Affair,4,4,younger,18,Female,self,,,,12
-sub-043,SLEE,7,N,114.475,241,Adagio for Strings,2,1,younger,18,Female,other,,,,5
-sub-043,SLEE,8,N,85.975,181,"Symphony No. 2, Finale",3,1,younger,18,Female,other,,,,4
-sub-043,SLEE,9,N,342.475,721,Cavatina Op. 130,3,1,younger,18,Female,other,,,,13
-sub-043,SLEE,10,Y,285.475,601,John Wayne Gacy Jr.,3,1,younger,18,Female,other,,,,11
-sub-043,SLEE,11,Y,171.475,361,Hurt,1,1,younger,18,Female,other,,,,7
-sub-043,SLEE,12,Y,199.975,421,Sound of Silence,3,1,younger,18,Female,other,,,,8
-sub-043,SLEE,13,Y,570.475,1201,Reckoner,3,1,younger,18,Female,other,,,,21
-sub-043,SLEE,14,N,142.975,301,Nocturne in C Sharp Minor,4,1,younger,18,Female,other,,,,6
-sub-043,SLEE,15,Y,627.475,1321,Nessun Dorma,3,1,younger,18,Female,other,,,,23
-sub-043,SLEE,16,N,0.475,1,"Symphony No. 6, movement 1",3,1,younger,18,Female,other,,,,1
-sub-043,SLEE,17,,256.975,541,,1,1,,,,,,,,10
-sub-043,SLEE,18,,456.475,961,,1,1,,,,,,,,17
-sub-043,SLEE,19,,655.975,1381,,2,1,,,,,,,,24
-sub-043,SLEE,20,,57.475,121,,1,1,,,,,,,,3
-sub-043,SLEE,21,,541.975,1141,,1,1,,,,,,,,20
-sub-043,SLEE,22,,399.475,841,,1,1,,,,,,,,15
-sub-043,SLEE,23,,427.975,901,,1,1,,,,,,,,16
-sub-043,SLEE,24,,370.975,781,,1,1,,,,,,,,14
-sub-010,JPRE,1,N,570.475,1201,Concerto in D Minor for 2 Violins,4,3,older,75,Female,self,,,,21
-sub-010,JPRE,2,Y,256.975,541,Opera - Unknown,4,3,older,75,Female,self,,,,10
-sub-010,JPRE,3,N,199.975,421,Dvorak New World Symphony,3,4,older,75,Female,self,,,,8
-sub-010,JPRE,4,N,228.475,481,Enigma Variations,3,3,older,75,Female,self,,,,9
-sub-010,JPRE,5,N,627.475,1321,Clarinet Quintet in A Major,4,4,older,75,Female,self,,,,23
-sub-010,JPRE,6,Y,370.975,781,Twilight Time,4,4,older,75,Female,self,,,,14
-sub-010,JPRE,7,N,513.475,1081,Adagio for Strings,3,2,older,75,Female,other,,,,19
-sub-010,JPRE,8,N,342.475,721,"Symphony No. 2, Finale",3,3,older,75,Female,other,,,,13
-sub-010,JPRE,9,N,427.975,901,Cavatina Op. 130,4,3,older,75,Female,other,,,,16
-sub-010,JPRE,10,Y,285.475,601,John Wayne Gacy Jr.,3,3,older,75,Female,other,,,,11
-sub-010,JPRE,11,Y,598.975,1261,Hurt,1,2,older,75,Female,other,,,,22
-sub-010,JPRE,12,Y,541.975,1141,Sound of Silence,4,4,older,75,Female,other,,,,20
-sub-010,JPRE,13,Y,655.975,1381,Reckoner,3,2,older,75,Female,other,,,,24
-sub-010,JPRE,14,N,484.975,1021,Nocturne in C Sharp Minor,3,3,older,75,Female,other,,,,18
-sub-010,JPRE,15,Y,313.975,661,Nessun Dorma,4,4,older,75,Female,other,,,,12
-sub-010,JPRE,16,N,399.475,841,"Symphony No. 6, movement 1",4,4,older,75,Female,other,,,,15
-sub-010,JPRE,17,,171.475,361,,1,1,,,,,,,,7
-sub-010,JPRE,18,,456.475,961,,2,1,,,,,,,,17
-sub-010,JPRE,19,,57.475,121,,2,1,,,,,,,,3
-sub-010,JPRE,20,,0.475,1,,1,1,,,,,,,,1
-sub-010,JPRE,21,,142.975,301,,2,1,,,,,,,,6
-sub-010,JPRE,22,,85.975,181,,2,1,,,,,,,,4
-sub-010,JPRE,23,,114.475,241,,1,1,,,,,,,,5
-sub-010,JPRE,24,,28.975,61,,1,1,,,,,,,,2
-sub-021,JKAY,1,Y,342.475,721,You Raise Me Up,4,4,older,69,Male,self,,,,13
-sub-021,JKAY,2,Y,456.475,961,Hallelujah,4,4,older,69,Male,self,,,,17
-sub-021,JKAY,3,Y,199.975,421,Nessun Dorma,3,2,older,69,Male,self,,,,8
-sub-021,JKAY,4,N,28.975,61,Mahler Symphony No. 2 Mov. 5,4,4,older,69,Male,self,,,,2
-sub-021,JKAY,5,N,228.475,481,Tchaikovsky Violin Concerto in D Major,4,3,older,69,Male,self,,,,9
-sub-021,JKAY,6,Y,427.975,901,Where The Streets Have No Name,4,3,older,69,Male,self,,,,16
-sub-021,JKAY,7,N,256.975,541,Adagio for Strings,4,3,older,69,Male,other,,,,10
-sub-021,JKAY,8,N,598.975,1261,"Symphony No. 2, Finale",4,4,older,69,Male,other,,,,22
-sub-021,JKAY,9,N,57.475,121,Cavatina Op. 130,3,2,older,69,Male,other,,,,3
-sub-021,JKAY,10,Y,570.475,1201,John Wayne Gacy Jr.,3,3,older,69,Male,other,,,,21
-sub-021,JKAY,11,Y,370.975,781,Hurt,3,1,older,69,Male,other,,,,14
-sub-021,JKAY,12,Y,285.475,601,Sound of Silence,4,4,older,69,Male,other,,,,11
-sub-021,JKAY,13,Y,313.975,661,Reckoner,3,3,older,69,Male,other,,,,12
-sub-021,JKAY,14,N,484.975,1021,Nocturne in C Sharp Minor,4,3,older,69,Male,other,,,,18
-sub-021,JKAY,15,Y,655.975,1381,Nessun Dorma,4,4,older,69,Male,other,,,,24
-sub-021,JKAY,16,N,541.975,1141,"Symphony No. 6, movement 1",4,3,older,69,Male,other,,,,20
-sub-021,JKAY,17,,513.475,1081,,1,1,,,,,,,,19
-sub-021,JKAY,18,,85.975,181,,1,1,,,,,,,,4
-sub-021,JKAY,19,,114.475,241,,2,2,,,,,,,,5
-sub-021,JKAY,20,,142.975,301,,1,1,,,,,,,,6
-sub-021,JKAY,21,,627.475,1321,,3,2,,,,,,,,23
-sub-021,JKAY,22,,399.475,841,,0,0,,,,,,,,15
-sub-021,JKAY,23,,171.475,361,,3,3,,,,,,,,7
-sub-021,JKAY,24,,0.475,1,,1,1,,,,,,,,1
-sub-023,LOLE,1,Y,313.975,661,I Dreamed a Dream,3,3,older,73,Female,self,,Y,,12
-sub-023,LOLE,2,Y,570.475,1201,Somewhere over the Rainbow,4,4,older,73,Female,self,,Y,,21
-sub-023,LOLE,3,Y,342.475,721,Blowin in the Wind,4,4,older,73,Female,self,,Y,,13
-sub-023,LOLE,4,Y,114.475,241,The Sounds of Silence,4,4,older,73,Female,self,,Y,,5
-sub-023,LOLE,5,Y,228.475,481,Suzanne,4,4,older,73,Female,self,,Y,,9
-sub-023,LOLE,6,Y,399.475,841,The First Time Ever I Saw Your Face,4,4,older,73,Female,self,,Y,,15
-sub-023,LOLE,7,N,427.975,901,Adagio for Strings,2,1,older,73,Female,other,,Y,,16
-sub-023,LOLE,8,N,598.975,1261,"Symphony No. 2, Finale",2,3,older,73,Female,other,,Y,,22
-sub-023,LOLE,9,N,627.475,1321,Cavatina Op. 130,3,3,older,73,Female,other,,Y,,23
-sub-023,LOLE,10,Y,199.975,421,John Wayne Gacy Jr.,2,0,older,73,Female,other,,Y,,8
-sub-023,LOLE,11,Y,370.975,781,Hurt,3,2,older,73,Female,other,,Y,,14
-sub-023,LOLE,12,Y,28.975,61,Sound of Silence,4,4,older,73,Female,other,,Y,,2
-sub-023,LOLE,13,Y,57.475,121,Reckoner,2,1,older,73,Female,other,,Y,,3
-sub-023,LOLE,14,N,456.475,961,Nocturne in C Sharp Minor,3,3,older,73,Female,other,,Y,,17
-sub-023,LOLE,15,Y,0.475,1,Nessun Dorma,1,1,older,73,Female,other,,Y,,1
-sub-023,LOLE,16,N,484.975,1021,"Symphony No. 6, movement 1",2,2,older,73,Female,other,,Y,,18
-sub-023,LOLE,17,,285.475,601,,1,1,,,,other,,Y,,11
-sub-023,LOLE,18,,513.475,1081,,1,1,,,,other,,Y,,19
-sub-023,LOLE,19,,171.475,361,,2,1,,,,other,,Y,,7
-sub-023,LOLE,20,,256.975,541,,1,1,,,,other,,Y,,10
-sub-023,LOLE,21,,142.975,301,,2,1,,,,other,,Y,,6
-sub-023,LOLE,22,,541.975,1141,,2,1,,,,other,,Y,,20
-sub-023,LOLE,23,,85.975,181,,1,1,,,,other,,Y,,4
-sub-023,LOLE,24,,655.975,1381,,1,1,,,,other,,Y,,24
-sub-037,AEHR,1,N,427.975,901,Take Five,4,4,older,60,Male,self,,Y,,16
-sub-037,AEHR,2,Y,627.475,1321,Money,4,4,older,60,Male,self,,Y,,23
-sub-037,AEHR,3,Y,171.475,361,Moondance,4,4,older,60,Male,self,,Y,,7
-sub-037,AEHR,4,Y,57.475,121,What'd I Say,4,4,older,60,Male,self,,Y,,3
-sub-037,AEHR,5,Y,541.975,1141,I Wish,0,0,older,60,Male,self,,Y,,20
-sub-037,AEHR,6,Y,228.475,481,You Can Call Me Al,3,4,older,60,Male,self,,Y,,9
-sub-037,AEHR,7,N,399.475,841,Adagio for Strings,2,1,older,60,Male,other,,Y,,15
-sub-037,AEHR,8,N,313.975,661,"Symphony No. 2, Finale",1,1,older,60,Male,other,,Y,,12
-sub-037,AEHR,9,N,142.975,301,Cavatina Op. 130,2,1,older,60,Male,other,,Y,,6
-sub-037,AEHR,10,Y,484.975,1021,John Wayne Gacy Jr.,2,1,older,60,Male,other,,Y,,18
-sub-037,AEHR,11,Y,342.475,721,Hurt,2,3,older,60,Male,other,,Y,,13
-sub-037,AEHR,12,Y,28.975,61,Sound of Silence,3,4,older,60,Male,other,,Y,,2
-sub-037,AEHR,13,Y,114.475,241,Reckoner,3,2,older,60,Male,other,,Y,,5
-sub-037,AEHR,14,N,513.475,1081,Nocturne in C Sharp Minor,3,3,older,60,Male,other,,Y,,19
-sub-037,AEHR,15,Y,0.475,1,Nessun Dorma,3,4,older,60,Male,other,,Y,,1
-sub-037,AEHR,16,N,456.475,961,"Symphony No. 6, movement 1",2,2,older,60,Male,other,,Y,,17
-sub-037,AEHR,17,,655.975,1381,,1,1,,,,,,Y,,24
-sub-037,AEHR,18,,370.975,781,,3,2,,,,,,Y,,14
-sub-037,AEHR,19,,285.475,601,,1,1,,,,,,Y,,11
-sub-037,AEHR,20,,598.975,1261,,2,2,,,,,,Y,,22
-sub-037,AEHR,21,,570.475,1201,,3,3,,,,,,Y,,21
-sub-037,AEHR,22,,256.975,541,,1,1,,,,,,Y,,10
-sub-037,AEHR,23,,85.975,181,,2,2,,,,,,Y,,4
-sub-037,AEHR,24,,199.975,421,,3,2,,,,,,Y,,8
-sub-039,ELAR,1,Y,655.975,1381,Rocket Man,4,4,older,61,Male,self,,,,24
-sub-039,ELAR,2,Y,256.975,541,Box of Rain,4,4,older,61,Male,self,,,,10
-sub-039,ELAR,3,Y,484.975,1021,Steam Powered Aereo Plane,4,4,older,61,Male,self,,,,18
-sub-039,ELAR,4,Y,142.975,301,Bodhisattva,4,4,older,61,Male,self,,,,6
-sub-039,ELAR,5,Y,456.475,961,Isn't She Lovely,4,4,older,61,Male,self,,,,17
-sub-039,ELAR,6,N,114.475,241,Watermelon Man,4,4,older,61,Male,self,,,,5
-sub-039,ELAR,7,N,399.475,841,Adagio for Strings,2,2,older,61,Male,other,,,,15
-sub-039,ELAR,8,N,570.475,1201,"Symphony No. 2, Finale",2,3,older,61,Male,other,,,,21
-sub-039,ELAR,9,N,199.975,421,Cavatina Op. 130,3,2,older,61,Male,other,,,,8
-sub-039,ELAR,10,Y,85.975,181,John Wayne Gacy Jr.,3,2,older,61,Male,other,,,,4
-sub-039,ELAR,11,Y,0.475,1,Hurt,2,1,older,61,Male,other,,,,1
-sub-039,ELAR,12,Y,57.475,121,Sound of Silence,4,4,older,61,Male,other,,,,3
-sub-039,ELAR,13,Y,228.475,481,Reckoner,3,2,older,61,Male,other,,,,9
-sub-039,ELAR,14,N,541.975,1141,Nocturne in C Sharp Minor,3,3,older,61,Male,other,,,,20
-sub-039,ELAR,15,Y,28.975,61,Nessun Dorma,2,1,older,61,Male,other,,,,2
-sub-039,ELAR,16,N,370.975,781,"Symphony No. 6, movement 1",3,3,older,61,Male,other,,,,14
-sub-039,ELAR,17,,285.475,601,,1,1,,,,,,,,11
-sub-039,ELAR,18,,598.975,1261,,2,2,,,,,,,,22
-sub-039,ELAR,19,,171.475,361,,1,1,,,,,,,,7
-sub-039,ELAR,20,,513.475,1081,,1,1,,,,,,,,19
-sub-039,ELAR,21,,342.475,721,,1,1,,,,,,,,13
-sub-039,ELAR,22,,313.975,661,,1,1,,,,,,,,12
-sub-039,ELAR,23,,627.475,1321,,1,1,,,,,,,,23
-sub-039,ELAR,24,,427.975,901,,2,1,,,,,,,,16
-sub-043,LGAR,1,Y,142.975,301,Yonaguni,4,4,younger,19,Female,self,,,,6
-sub-043,LGAR,2,Y,28.975,61,Moriremos,4,4,younger,19,Female,self,,,,2
-sub-043,LGAR,3,Y,342.475,721,Industry Baby,4,4,younger,19,Female,self,,,,13
-sub-043,LGAR,4,Y,256.975,541,Hawái Remix,4,4,younger,19,Female,self,,,,10
-sub-043,LGAR,5,Y,427.975,901,Classic,4,4,younger,19,Female,self,,,,16
-sub-043,LGAR,6,Y,0.475,1,La Mejor Version De Mi,4,4,younger,19,Female,self,,,,1
-sub-043,LGAR,7,N,513.475,1081,Adagio for Strings,3,3,younger,19,Female,other,,,,19
-sub-043,LGAR,8,N,399.475,841,"Symphony No. 2, Finale",1,3,younger,19,Female,other,,,,15
-sub-043,LGAR,9,N,228.475,481,Cavatina Op. 130,2,3,younger,19,Female,other,,,,9
-sub-043,LGAR,10,Y,57.475,121,John Wayne Gacy Jr.,0,1,younger,19,Female,other,,,,3
-sub-043,LGAR,11,Y,199.975,421,Hurt,2,3,younger,19,Female,other,,,,8
-sub-043,LGAR,12,Y,655.975,1381,Sound of Silence,3,4,younger,19,Female,other,,,,24
-sub-043,LGAR,13,Y,171.475,361,Reckoner,1,3,younger,19,Female,other,,,,7
-sub-043,LGAR,14,N,570.475,1201,Nocturne in C Sharp Minor,3,3,younger,19,Female,other,,,,21
-sub-043,LGAR,15,Y,114.475,241,Nessun Dorma,2,3,younger,19,Female,other,,,,5
-sub-043,LGAR,16,N,541.975,1141,"Symphony No. 6, movement 1",3,3,younger,19,Female,other,,,,20
-sub-043,LGAR,17,,370.975,781,,1,3,,,,,,,,14
-sub-043,LGAR,18,,85.975,181,,2,2,,,,,,,,4
-sub-043,LGAR,19,,598.975,1261,,2,3,,,,,,,,22
-sub-043,LGAR,20,,285.475,601,,1,1,,,,,,,,11
-sub-043,LGAR,21,,484.975,1021,,1,3,,,,,,,,18
-sub-043,LGAR,22,,313.975,661,,3,3,,,,,,,,12
-sub-043,LGAR,23,,456.475,961,,1,1,,,,,,,,17
-sub-043,LGAR,24,,627.475,1321,,1,3,,,,,,,,23
-sub-045,CZAL,1,Y,285.475,601,I'm Not In Love,4,4,younger,18,Female,self,,,,11
-sub-045,CZAL,2,Y,513.475,1081,After Dark,4,4,younger,18,Female,self,,,,19
-sub-045,CZAL,3,Y,256.975,541,Baby Blue,3,4,younger,18,Female,self,,,,10
-sub-045,CZAL,4,Y,0.475,1,Space Song,4,4,younger,18,Female,self,,,,1
-sub-045,CZAL,5,N,570.475,1201,"Shostakovich Jazz Suite, Waltz No. 2",4,4,younger,18,Female,self,,,,21
-sub-045,CZAL,6,N,456.475,961,Rachmaninov Prelude in C Sharp Minor,4,4,younger,18,Female,self,,,,17
-sub-045,CZAL,7,N,598.975,1261,Adagio for Strings,3,3,younger,18,Female,other,,,,22
-sub-045,CZAL,8,N,171.475,361,"Symphony No. 2, Finale",3,2,younger,18,Female,other,,,,7
-sub-045,CZAL,9,N,627.475,1321,Cavatina Op. 130,3,2,younger,18,Female,other,,,,23
-sub-045,CZAL,10,Y,484.975,1021,John Wayne Gacy Jr.,2,2,younger,18,Female,other,,,,18
-sub-045,CZAL,11,Y,313.975,661,Hurt,4,4,younger,18,Female,other,,,,12
-sub-045,CZAL,12,Y,57.475,121,Sound of Silence,3,4,younger,18,Female,other,,,,3
-sub-045,CZAL,13,Y,199.975,421,Reckoner,2,1,younger,18,Female,other,,,,8
-sub-045,CZAL,14,N,228.475,481,Nocturne in C Sharp Minor,4,4,younger,18,Female,other,,,,9
-sub-045,CZAL,15,Y,655.975,1381,Nessun Dorma,3,4,younger,18,Female,other,,,,24
-sub-045,CZAL,16,N,427.975,901,"Symphony No. 6, movement 1",3,3,younger,18,Female,other,,,,16
-sub-045,CZAL,17,,28.975,61,,2,1,,,,,,,,2
-sub-045,CZAL,18,,85.975,181,,2,1,,,,,,,,4
-sub-045,CZAL,19,,114.475,241,,2,2,,,,,,,,5
-sub-045,CZAL,20,,541.975,1141,,2,1,,,,,,,,20
-sub-045,CZAL,21,,142.975,301,,2,2,,,,,,,,6
-sub-045,CZAL,22,,399.475,841,,2,2,,,,,,,,15
-sub-045,CZAL,23,,342.475,721,,2,1,,,,,,,,13
-sub-045,CZAL,24,,370.975,781,,2,1,,,,,,,,14
-sub-046,APOP,1,Y,171.475,361,Electric,4,4,younger,18,Female,self,,,,7
-sub-046,APOP,2,Y,28.975,61,Girlfriend,4,4,younger,18,Female,self,,,,2
-sub-046,APOP,3,Y,285.475,601,Die For You,4,4,younger,18,Female,self,,,,11
-sub-046,APOP,4,Y,598.975,1261,Need To Know,4,4,younger,18,Female,self,,,,22
-sub-046,APOP,5,Y,0.475,1,Jealousy,4,4,younger,18,Female,self,,,,1
-sub-046,APOP,6,Y,399.475,841,Good Days,4,4,younger,18,Female,self,,,,15
-sub-046,APOP,7,N,370.975,781,Adagio for Strings,3,3,younger,18,Female,other,,,,14
-sub-046,APOP,8,N,342.475,721,"Symphony No. 2, Finale",3,2,younger,18,Female,other,,,,13
-sub-046,APOP,9,N,541.975,1141,Cavatina Op. 130,3,2,younger,18,Female,other,,,,20
-sub-046,APOP,10,Y,570.475,1201,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,21
-sub-046,APOP,11,Y,313.975,661,Hurt,2,1,younger,18,Female,other,,,,12
-sub-046,APOP,12,Y,427.975,901,Sound of Silence,2,3,younger,18,Female,other,,,,16
-sub-046,APOP,13,Y,256.975,541,Reckoner,3,1,younger,18,Female,other,,,,10
-sub-046,APOP,14,N,655.975,1381,Nocturne in C Sharp Minor,2,3,younger,18,Female,other,,,,24
-sub-046,APOP,15,Y,142.975,301,Nessun Dorma,2,3,younger,18,Female,other,,,,6
-sub-046,APOP,16,N,57.475,121,"Symphony No. 6, movement 1",2,3,younger,18,Female,other,,,,3
-sub-046,APOP,17,,627.475,1321,,1,1,,,,,,,,23
-sub-046,APOP,18,,456.475,961,,1,1,,,,,,,,17
-sub-046,APOP,19,,85.975,181,,2,2,,,,,,,,4
-sub-046,APOP,20,,228.475,481,,1,1,,,,,,,,9
-sub-046,APOP,21,,513.475,1081,,2,3,,,,,,,,19
-sub-046,APOP,22,,484.975,1021,,2,2,,,,,,,,18
-sub-046,APOP,23,,114.475,241,,1,1,,,,,,,,5
-sub-046,APOP,24,,199.975,421,,2,2,,,,,,,,8
-sub-047,TSTA,1,Y,598.975,1261,Easy On Me,4,4,older,62,Male,self,,Y,,22
-sub-047,TSTA,2,Y,627.475,1321,Landslide,4,4,older,62,Male,self,,Y,,23
-sub-047,TSTA,3,Y,199.975,421,Hallelujah 2,4,4,older,62,Male,self,,Y,,8
-sub-047,TSTA,4,Y,0.475,1,One,4,4,older,62,Male,self,,Y,,1
-sub-047,TSTA,5,Y,513.475,1081,Lacrimosa ,3,2,older,62,Male,self,,Y,,19
-sub-047,TSTA,6,Y,57.475,121,Stay With Me,4,4,older,62,Male,self,,Y,,3
-sub-047,TSTA,7,N,370.975,781,Adagio for Strings,2,2,older,62,Male,other,,Y,,14
-sub-047,TSTA,8,N,285.475,601,"Symphony No. 2, Finale",3,2,older,62,Male,other,,Y,,11
-sub-047,TSTA,9,N,228.475,481,Cavatina Op. 130,3,2,older,62,Male,other,,Y,,9
-sub-047,TSTA,10,Y,171.475,361,John Wayne Gacy Jr.,3,2,older,62,Male,other,,Y,,7
-sub-047,TSTA,11,Y,142.975,301,Hurt,3,2,older,62,Male,other,,Y,,6
-sub-047,TSTA,12,Y,399.475,841,Sound of Silence,4,4,older,62,Male,other,,Y,,15
-sub-047,TSTA,13,Y,313.975,661,Reckoner,2,1,older,62,Male,other,,Y,,12
-sub-047,TSTA,14,N,484.975,1021,Nocturne in C Sharp Minor,2,2,older,62,Male,other,,Y,,18
-sub-047,TSTA,15,Y,28.975,61,Nessun Dorma,4,4,older,62,Male,other,,Y,,2
-sub-047,TSTA,16,N,541.975,1141,"Symphony No. 6, movement 1",3,2,older,62,Male,other,,Y,,20
-sub-047,TSTA,17,,655.975,1381,,1,1,,,,,,,,24
-sub-047,TSTA,18,,342.475,721,,1,1,,,,,,,,13
-sub-047,TSTA,19,,114.475,241,,2,2,,,,,,,,5
-sub-047,TSTA,20,,427.975,901,,1,1,,,,,,,,16
-sub-047,TSTA,21,,256.975,541,,1,1,,,,,,,,10
-sub-047,TSTA,22,,456.475,961,,1,1,,,,,,,,17
-sub-047,TSTA,23,,570.475,1201,,1,1,,,,,,,,21
-sub-047,TSTA,24,,85.975,181,,1,1,,,,,,,,4
-sub-048,LWIE,1,Y,228.475,481,Fine By Me,3,4,younger,18,Female,self,,,,9
-sub-048,LWIE,2,Y,513.475,1081,Don't Tell 'Em,4,4,younger,18,Female,self,,,,19
-sub-048,LWIE,3,Y,256.975,541,Better,4,4,younger,18,Female,self,,,,10
-sub-048,LWIE,4,Y,342.475,721,Knock Knock,4,4,younger,18,Female,self,,,,13
-sub-048,LWIE,5,Y,655.975,1381,Have Yourself a Merry Little Christmas,4,4,younger,18,Female,self,,,,24
-sub-048,LWIE,6,Y,598.975,1261,Magic In The Hamptons,4,4,younger,18,Female,self,,,,22
-sub-048,LWIE,7,N,570.475,1201,Adagio for Strings,3,1,younger,18,Female,other,,,,21
-sub-048,LWIE,8,N,399.475,841,"Symphony No. 2, Finale",2,2,younger,18,Female,other,,,,15
-sub-048,LWIE,9,N,370.975,781,Cavatina Op. 130,3,2,younger,18,Female,other,,,,14
-sub-048,LWIE,10,Y,627.475,1321,John Wayne Gacy Jr.,2,1,younger,18,Female,other,,,,23
-sub-048,LWIE,11,Y,541.975,1141,Hurt,3,4,younger,18,Female,other,,,,20
-sub-048,LWIE,12,Y,484.975,1021,Sound of Silence,3,1,younger,18,Female,other,,,,18
-sub-048,LWIE,13,Y,427.975,901,Reckoner,3,1,younger,18,Female,other,,,,16
-sub-048,LWIE,14,N,28.975,61,Nocturne in C Sharp Minor,3,2,younger,18,Female,other,,,,2
-sub-048,LWIE,15,Y,285.475,601,Nessun Dorma,2,2,younger,18,Female,other,,,,11
-sub-048,LWIE,16,N,313.975,661,"Symphony No. 6, movement 1",3,2,younger,18,Female,other,,,,12
-sub-048,LWIE,17,,199.975,421,,2,1,,,,,,,,8
-sub-048,LWIE,18,,0.475,1,,2,1,,,,,,,,1
-sub-048,LWIE,19,,142.975,301,,2,1,,,,,,,,6
-sub-048,LWIE,20,,171.475,361,,1,1,,,,,,,,7
-sub-048,LWIE,21,,85.975,181,,2,1,,,,,,,,4
-sub-048,LWIE,22,,114.475,241,,2,2,,,,,,,,5
-sub-048,LWIE,23,,456.475,961,,2,1,,,,,,,,17
-sub-048,LWIE,24,,57.475,121,,1,1,,,,,,,,3
-sub-049,GWAI,1,Y,85.975,181,Angeline,4,4,younger,18,Male,self,,,,4
-sub-049,GWAI,2,Y,570.475,1201,Doses and Mimosas,4,4,younger,18,Male,self,,,,21
-sub-049,GWAI,3,N,0.475,1,Cornfield Chase,4,4,younger,18,Male,self,,,,1
-sub-049,GWAI,4,Y,57.475,121,Off The Grid,4,4,younger,18,Male,self,,,,3
-sub-049,GWAI,5,Y,199.975,421,Perfect Strangers,4,4,younger,18,Male,self,,,,8
-sub-049,GWAI,6,Y,28.975,61,Clarity ,4,4,younger,18,Male,self,,,,2
-sub-049,GWAI,7,N,484.975,1021,Adagio for Strings,2,2,younger,18,Male,other,,,,18
-sub-049,GWAI,8,N,541.975,1141,"Symphony No. 2, Finale",3,2,younger,18,Male,other,,,,20
-sub-049,GWAI,9,N,171.475,361,Cavatina Op. 130,3,2,younger,18,Male,other,,,,7
-sub-049,GWAI,10,Y,114.475,241,John Wayne Gacy Jr.,2,2,younger,18,Male,other,,,,5
-sub-049,GWAI,11,Y,427.975,901,Hurt,2,3,younger,18,Male,other,,,,16
-sub-049,GWAI,12,Y,456.475,961,Sound of Silence,3,4,younger,18,Male,other,,,,17
-sub-049,GWAI,13,Y,285.475,601,Reckoner,3,3,younger,18,Male,other,,,,11
-sub-049,GWAI,14,N,342.475,721,Nocturne in C Sharp Minor,3,3,younger,18,Male,other,,,,13
-sub-049,GWAI,15,Y,598.975,1261,Nessun Dorma,3,2,younger,18,Male,other,,,,22
-sub-049,GWAI,16,N,627.475,1321,"Symphony No. 6, movement 1",4,3,younger,18,Male,other,,,,23
-sub-049,GWAI,17,,256.975,541,,1,1,,,,,,,,10
-sub-049,GWAI,18,,228.475,481,,1,1,,,,,,,,9
-sub-049,GWAI,19,,142.975,301,,2,1,,,,,,,,6
-sub-049,GWAI,20,,513.475,1081,,1,2,,,,,,,,19
-sub-049,GWAI,21,,313.975,661,,2,3,,,,,,,,12
-sub-049,GWAI,22,,399.475,841,,1,1,,,,,,,,15
-sub-049,GWAI,23,,655.975,1381,,2,1,,,,,,,,24
-sub-049,GWAI,24,,370.975,781,,1,1,,,,,,,,14
-sub-050,SCAM,1,Y,427.975,901,Command V,4,4,younger,18,Female,self,,,,16
-sub-050,SCAM,2,Y,598.975,1261,Home,4,4,younger,18,Female,self,,,,22
-sub-050,SCAM,3,Y,285.475,601,Fool,4,4,younger,18,Female,self,,,,11
-sub-050,SCAM,4,Y,655.975,1381,Hold My Liquor,4,4,younger,18,Female,self,,,,24
-sub-050,SCAM,5,Y,342.475,721,Nobody,4,4,younger,18,Female,self,,,,13
-sub-050,SCAM,6,Y,256.975,541,Hold Me,4,4,younger,18,Female,self,,,,10
-sub-050,SCAM,7,N,513.475,1081,Adagio for Strings,3,2,younger,18,Female,other,,,,19
-sub-050,SCAM,8,N,171.475,361,"Symphony No. 2, Finale",2,2,younger,18,Female,other,,,,7
-sub-050,SCAM,9,N,57.475,121,Cavatina Op. 130,3,2,younger,18,Female,other,,,,3
-sub-050,SCAM,10,Y,313.975,661,John Wayne Gacy Jr.,4,4,younger,18,Female,other,,,,12
-sub-050,SCAM,11,Y,399.475,841,Hurt,3,4,younger,18,Female,other,,,,15
-sub-050,SCAM,12,Y,199.975,421,Sound of Silence,3,3,younger,18,Female,other,,,,8
-sub-050,SCAM,13,Y,484.975,1021,Reckoner,3,2,younger,18,Female,other,,,,18
-sub-050,SCAM,14,N,370.975,781,Nocturne in C Sharp Minor,4,4,younger,18,Female,other,,,,14
-sub-050,SCAM,15,Y,114.475,241,Nessun Dorma,2,2,younger,18,Female,other,,,,5
-sub-050,SCAM,16,N,142.975,301,"Symphony No. 6, movement 1",3,3,younger,18,Female,other,,,,6
-sub-050,SCAM,17,,627.475,1321,,2,1,,,,,,,,23
-sub-050,SCAM,18,,228.475,481,,2,2,,,,,,,,9
-sub-050,SCAM,19,,541.975,1141,,3,2,,,,,,,,20
-sub-050,SCAM,20,,28.975,61,,2,2,,,,,,,,2
-sub-050,SCAM,21,,456.475,961,,2,2,,,,,,,,17
-sub-050,SCAM,22,,570.475,1201,,1,3,,,,,,,,21
-sub-050,SCAM,23,,0.475,1,,3,2,,,,,,,,1
-sub-050,SCAM,24,,85.975,181,,1,1,,,,,,,,4
-sub-051,KCHU,1,Y,513.475,1081,After School,4,4,younger,18,Female,self,,,,19
-sub-051,KCHU,2,Y,484.975,1021,Chicken Tendies,4,4,younger,18,Female,self,,,,18
-sub-051,KCHU,3,Y,285.475,601,Good Thing,4,4,younger,18,Female,self,,,,11
-sub-051,KCHU,4,Y,57.475,121,Just That Girl,4,4,younger,18,Female,self,,,,3
-sub-051,KCHU,5,Y,228.475,481,Here Comes Forever,4,4,younger,18,Female,self,,,,9
-sub-051,KCHU,6,Y,456.475,961,Someone To You,4,4,younger,18,Female,self,,,,17
-sub-051,KCHU,7,N,142.975,301,Adagio for Strings,2,2,younger,18,Female,other,,,,6
-sub-051,KCHU,8,N,199.975,421,"Symphony No. 2, Finale",2,2,younger,18,Female,other,,,,8
-sub-051,KCHU,9,N,28.975,61,Cavatina Op. 130,3,2,younger,18,Female,other,,,,2
-sub-051,KCHU,10,Y,114.475,241,John Wayne Gacy Jr.,2,2,younger,18,Female,other,,,,5
-sub-051,KCHU,11,Y,342.475,721,Hurt,2,2,younger,18,Female,other,,,,13
-sub-051,KCHU,12,Y,399.475,841,Sound of Silence,2,4,younger,18,Female,other,,,,15
-sub-051,KCHU,13,Y,256.975,541,Reckoner,2,1,younger,18,Female,other,,,,10
-sub-051,KCHU,14,N,598.975,1261,Nocturne in C Sharp Minor,3,3,younger,18,Female,other,,,,22
-sub-051,KCHU,15,Y,427.975,901,Nessun Dorma,3,4,younger,18,Female,other,,,,16
-sub-051,KCHU,16,N,85.975,181,"Symphony No. 6, movement 1",3,3,younger,18,Female,other,,,,4
-sub-051,KCHU,17,,171.475,361,,1,1,,,,,,,,7
-sub-051,KCHU,18,,0.475,1,,1,1,,,,,,,,1
-sub-051,KCHU,19,,541.975,1141,,2,1,,,,,,,,20
-sub-051,KCHU,20,,655.975,1381,,2,2,,,,,,,,24
-sub-051,KCHU,21,,570.475,1201,,1,3,,,,,,,,21
-sub-051,KCHU,22,,313.975,661,,2,1,,,,,,,,12
-sub-051,KCHU,23,,370.975,781,,2,2,,,,,,,,14
-sub-051,KCHU,24,,627.475,1321,,2,2,,,,,,,,23
-sub-052,KPLU,1,Y,570.475,1201,Drive,4,4,younger,19,Female,self,,,,21
-sub-052,KPLU,2,Y,256.975,541,Piece of Me,4,4,younger,19,Female,self,,,,10
-sub-052,KPLU,3,Y,199.975,421,Sunday Morning,4,4,younger,19,Female,self,,,,8
-sub-052,KPLU,4,Y,513.475,1081,Soldier,4,4,younger,19,Female,self,,,,19
-sub-052,KPLU,5,Y,655.975,1381,Wish You Well,4,4,younger,19,Female,self,,,,24
-sub-052,KPLU,6,Y,484.975,1021,Cruel,4,4,younger,19,Female,self,,,,18
-sub-052,KPLU,7,N,627.475,1321,Adagio for Strings,1,1,younger,19,Female,other,,,,23
-sub-052,KPLU,8,N,399.475,841,"Symphony No. 2, Finale",2,3,younger,19,Female,other,,,,15
-sub-052,KPLU,9,N,370.975,781,Cavatina Op. 130,1,1,younger,19,Female,other,,,,14
-sub-052,KPLU,10,Y,142.975,301,John Wayne Gacy Jr.,2,1,younger,19,Female,other,,,,6
-sub-052,KPLU,11,Y,598.975,1261,Hurt,1,1,younger,19,Female,other,,,,22
-sub-052,KPLU,12,Y,171.475,361,Sound of Silence,2,1,younger,19,Female,other,,,,7
-sub-052,KPLU,13,Y,342.475,721,Reckoner,3,2,younger,19,Female,other,,,,13
-sub-052,KPLU,14,N,228.475,481,Nocturne in C Sharp Minor,1,1,younger,19,Female,other,,,,9
-sub-052,KPLU,15,Y,427.975,901,Nessun Dorma,1,2,younger,19,Female,other,,,,16
-sub-052,KPLU,16,N,541.975,1141,"Symphony No. 6, movement 1",1,1,younger,19,Female,other,,,,20
-sub-052,KPLU,17,,0.475,1,,1,1,,,,,,,,1
-sub-052,KPLU,18,,57.475,121,,1,1,,,,,,,,3
-sub-052,KPLU,19,,456.475,961,,1,1,,,,,,,,17
-sub-052,KPLU,20,,285.475,601,,1,1,,,,,,,,11
-sub-052,KPLU,21,,28.975,61,,2,2,,,,,,,,2
-sub-052,KPLU,22,,85.975,181,,1,1,,,,,,,,4
-sub-052,KPLU,23,,114.475,241,,1,1,,,,,,,,5
-sub-052,KPLU,24,,313.975,661,,1,1,,,,,,,,12
-sub-053,KWAL,1,Y,0.475,1,Chinese Satellite,4,4,younger,18,Female,self,,,,1
-sub-053,KWAL,2,Y,513.475,1081,Gold Rush,4,4,younger,18,Female,self,,,,19
-sub-053,KWAL,3,Y,427.975,901,Fire,4,4,younger,18,Female,self,,,,16
-sub-053,KWAL,4,Y,484.975,1021,Scott Street,4,4,younger,18,Female,self,,,,18
-sub-053,KWAL,5,Y,28.975,61,Silk Chiffon,4,4,younger,18,Female,self,,,,2
-sub-053,KWAL,6,Y,142.975,301,All the Time in the World,4,4,younger,18,Female,self,,,,6
-sub-053,KWAL,7,N,313.975,661,Adagio for Strings,3,2,younger,18,Female,other,,,,12
-sub-053,KWAL,8,N,114.475,241,"Symphony No. 2, Finale",4,3,younger,18,Female,other,,,,5
-sub-053,KWAL,9,N,285.475,601,Cavatina Op. 130,3,3,younger,18,Female,other,,,,11
-sub-053,KWAL,10,Y,399.475,841,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,15
-sub-053,KWAL,11,Y,598.975,1261,Hurt,1,1,younger,18,Female,other,,,,22
-sub-053,KWAL,12,Y,256.975,541,Sound of Silence,1,4,younger,18,Female,other,,,,10
-sub-053,KWAL,13,Y,541.975,1141,Reckoner,3,2,younger,18,Female,other,,,,20
-sub-053,KWAL,14,N,228.475,481,Nocturne in C Sharp Minor,3,3,younger,18,Female,other,,,,9
-sub-053,KWAL,15,Y,570.475,1201,Nessun Dorma,4,4,younger,18,Female,other,,,,21
-sub-053,KWAL,16,N,85.975,181,"Symphony No. 6, movement 1",4,3,younger,18,Female,other,,,,4
-sub-053,KWAL,17,,342.475,721,,1,1,,,,,,,,13
-sub-053,KWAL,18,,57.475,121,,2,1,,,,,,,,3
-sub-053,KWAL,19,,171.475,361,,2,1,,,,,,,,7
-sub-053,KWAL,20,,370.975,781,,2,2,,,,,,,,14
-sub-053,KWAL,21,,456.475,961,,2,2,,,,,,,,17
-sub-053,KWAL,22,,199.975,421,,3,3,,,,,,,,8
-sub-053,KWAL,23,,627.475,1321,,3,2,,,,,,,,23
-sub-053,KWAL,24,,655.975,1381,,1,1,,,,,,,,24
-sub-054,ZCAR,1,Y,0.475,1,Gimme Gimme Gimme,3,2,younger,18,Female,self,,,,1
-sub-054,ZCAR,2,Y,627.475,1321,777,3,4,younger,18,Female,self,,,,23
-sub-054,ZCAR,3,Y,655.975,1381,Chief Keef,4,4,younger,18,Female,self,,,,24
-sub-054,ZCAR,4,Y,484.975,1021,Industry Baby,4,4,younger,18,Female,self,,,,18
-sub-054,ZCAR,5,Y,313.975,661,Hey Stephen,4,4,younger,18,Female,self,,,,12
-sub-054,ZCAR,6,Y,370.975,781,Gaslighter,4,4,younger,18,Female,self,,,,14
-sub-054,ZCAR,7,N,142.975,301,Adagio for Strings,2,1,younger,18,Female,other,,,,6
-sub-054,ZCAR,8,N,85.975,181,"Symphony No. 2, Finale",3,1,younger,18,Female,other,,,,4
-sub-054,ZCAR,9,N,456.475,961,Cavatina Op. 130,2,1,younger,18,Female,other,,,,17
-sub-054,ZCAR,10,Y,342.475,721,John Wayne Gacy Jr.,2,1,younger,18,Female,other,,,,13
-sub-054,ZCAR,11,Y,28.975,61,Hurt,1,1,younger,18,Female,other,,,,2
-sub-054,ZCAR,12,Y,598.975,1261,Sound of Silence,2,1,younger,18,Female,other,,,,22
-sub-054,ZCAR,13,Y,513.475,1081,Reckoner,2,2,younger,18,Female,other,,,,19
-sub-054,ZCAR,14,N,256.975,541,Nocturne in C Sharp Minor,3,2,younger,18,Female,other,,,,10
-sub-054,ZCAR,15,Y,199.975,421,Nessun Dorma,3,3,younger,18,Female,other,,,,8
-sub-054,ZCAR,16,N,541.975,1141,"Symphony No. 6, movement 1",3,3,younger,18,Female,other,,,,20
-sub-054,ZCAR,17,,171.475,361,,1,1,,,,,,,,7
-sub-054,ZCAR,18,,570.475,1201,,1,1,,,,,,,,21
-sub-054,ZCAR,19,,57.475,121,,2,1,,,,,,,,3
-sub-054,ZCAR,20,,285.475,601,,1,1,,,,,,,,11
-sub-054,ZCAR,21,,399.475,841,,2,1,,,,,,,,15
-sub-054,ZCAR,22,,114.475,241,,3,1,,,,,,,,5
-sub-054,ZCAR,23,,228.475,481,,2,1,,,,,,,,9
-sub-054,ZCAR,24,,427.975,901,,2,1,,,,,,,,16
-sub-055,JLAW,1,Y,484.975,1021,34+35,4,4,younger,18,Female,self,,,,18
-sub-055,JLAW,2,Y,370.975,781,Drankin N Smokin,4,4,younger,18,Female,self,,,,14
-sub-055,JLAW,3,Y,627.475,1321,Kiss Me More,4,0,younger,18,Female,self,,,,23
-sub-055,JLAW,4,Y,399.475,841,Type Shit,4,4,younger,18,Female,self,,,,15
-sub-055,JLAW,5,Y,57.475,121,Itty Bitty Piggy,4,4,younger,18,Female,self,,,,3
-sub-055,JLAW,6,Y,655.975,1381,WUSYANAME,4,4,younger,18,Female,self,,,,24
-sub-055,JLAW,7,N,256.975,541,Adagio for Strings,2,1,younger,18,Female,other,,,,10
-sub-055,JLAW,8,N,171.475,361,"Symphony No. 2, Finale",3,1,younger,18,Female,other,,,,7
-sub-055,JLAW,9,N,513.475,1081,Cavatina Op. 130,2,1,younger,18,Female,other,,,,19
-sub-055,JLAW,10,Y,85.975,181,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,4
-sub-055,JLAW,11,Y,598.975,1261,Hurt,2,0,younger,18,Female,other,,,,22
-sub-055,JLAW,12,Y,427.975,901,Sound of Silence,3,3,younger,18,Female,other,,,,16
-sub-055,JLAW,13,Y,456.475,961,Reckoner,2,2,younger,18,Female,other,,,,17
-sub-055,JLAW,14,N,114.475,241,Nocturne in C Sharp Minor,2,1,younger,18,Female,other,,,,5
-sub-055,JLAW,15,Y,228.475,481,Nessun Dorma,2,1,younger,18,Female,other,,,,9
-sub-055,JLAW,16,N,342.475,721,"Symphony No. 6, movement 1",2,1,younger,18,Female,other,,,,13
-sub-055,JLAW,17,,541.975,1141,,2,1,,,,,,,,20
-sub-055,JLAW,18,,0.475,1,,2,1,,,,,,,,1
-sub-055,JLAW,19,,28.975,61,,2,1,,,,,,,,2
-sub-055,JLAW,20,,313.975,661,,3,1,,,,,,,,12
-sub-055,JLAW,21,,285.475,601,,2,1,,,,,,,,11
-sub-055,JLAW,22,,570.475,1201,,0,1,,,,,,,,21
-sub-055,JLAW,23,,199.975,421,,0,1,,,,,,,,8
-sub-055,JLAW,24,,142.975,301,,2,1,,,,,,,,6
-sub-056,ASUR,1,Y,199.975,421,All Too Well,4,4,younger,20,Female,self,,,,8
-sub-056,ASUR,2,Y,570.475,1201,Ghost,4,4,younger,20,Female,self,,,,21
-sub-056,ASUR,3,Y,541.975,1141,Please Come Home for Christmas,4,4,younger,20,Female,self,,,,20
-sub-056,ASUR,4,Y,513.475,1081,Tears in Heaven,4,4,younger,20,Female,self,,,,19
-sub-056,ASUR,5,Y,228.475,481,Spicy,4,4,younger,20,Female,self,,,,9
-sub-056,ASUR,6,Y,598.975,1261,I Have Nothing,4,4,younger,20,Female,self,,,,22
-sub-056,ASUR,7,N,85.975,181,Adagio for Strings,2,1,younger,20,Female,other,,,,4
-sub-056,ASUR,8,N,142.975,301,"Symphony No. 2, Finale",2,3,younger,20,Female,other,,,,6
-sub-056,ASUR,9,N,399.475,841,Cavatina Op. 130,3,2,younger,20,Female,other,,,,15
-sub-056,ASUR,10,Y,484.975,1021,John Wayne Gacy Jr.,2,1,younger,20,Female,other,,,,18
-sub-056,ASUR,11,Y,627.475,1321,Hurt,2,1,younger,20,Female,other,,,,23
-sub-056,ASUR,12,Y,370.975,781,Sound of Silence,3,2,younger,20,Female,other,,,,14
-sub-056,ASUR,13,Y,114.475,241,Reckoner,2,1,younger,20,Female,other,,,,5
-sub-056,ASUR,14,N,0.475,1,Nocturne in C Sharp Minor,4,3,younger,20,Female,other,,,,1
-sub-056,ASUR,15,Y,342.475,721,Nessun Dorma,3,3,younger,20,Female,other,,,,13
-sub-056,ASUR,16,N,427.975,901,"Symphony No. 6, movement 1",4,2,younger,20,Female,other,,,,16
-sub-056,ASUR,17,,28.975,61,,3,2,,,,,,,,2
-sub-056,ASUR,18,,285.475,601,,1,1,,,,,,,,11
-sub-056,ASUR,19,,171.475,361,,2,1,,,,,,,,7
-sub-056,ASUR,20,,256.975,541,,1,1,,,,,,,,10
-sub-056,ASUR,21,,456.475,961,,2,1,,,,,,,,17
-sub-056,ASUR,22,,313.975,661,,2,2,,,,,,,,12
-sub-056,ASUR,23,,57.475,121,,2,2,,,,,,,,3
-sub-056,ASUR,24,,655.975,1381,,1,1,,,,,,,,24
-sub-057,IZIK,1,Y,199.975,421,Chamber of Reflection,4,4,younger,23,Male,self,,,,8
-sub-057,IZIK,2,Y,57.475,121,Overthinker,4,4,younger,23,Male,self,,,,3
-sub-057,IZIK,3,N,655.975,1381,Emerald Rush,4,4,younger,23,Male,self,,,,24
-sub-057,IZIK,4,Y,114.475,241,Mystical Beginning,4,4,younger,23,Male,self,,,,5
-sub-057,IZIK,5,Y,313.975,661,Here With You,4,4,younger,23,Male,self,,,,12
-sub-057,IZIK,6,Y,228.475,481,By My Side,4,4,younger,23,Male,self,,,,9
-sub-057,IZIK,7,N,171.475,361,Adagio for Strings,3,2,younger,23,Male,other,,,,7
-sub-057,IZIK,8,N,399.475,841,"Symphony No. 2, Finale",2,2,younger,23,Male,other,,,,15
-sub-057,IZIK,9,N,370.975,781,Cavatina Op. 130,2,1,younger,23,Male,other,,,,14
-sub-057,IZIK,10,Y,142.975,301,John Wayne Gacy Jr.,2,2,younger,23,Male,other,,,,6
-sub-057,IZIK,11,Y,541.975,1141,Hurt,4,4,younger,23,Male,other,,,,20
-sub-057,IZIK,12,Y,85.975,181,Sound of Silence,4,4,younger,23,Male,other,,,,4
-sub-057,IZIK,13,Y,342.475,721,Reckoner,2,1,younger,23,Male,other,,,,13
-sub-057,IZIK,14,N,256.975,541,Nocturne in C Sharp Minor,3,1,younger,23,Male,other,,,,10
-sub-057,IZIK,15,Y,570.475,1201,Nessun Dorma,2,1,younger,23,Male,other,,,,21
-sub-057,IZIK,16,N,513.475,1081,"Symphony No. 6, movement 1",4,2,younger,23,Male,other,,,,19
-sub-057,IZIK,17,,598.975,1261,,2,3,,,,,,,,22
-sub-057,IZIK,18,,0.475,1,,3,3,,,,,,,,1
-sub-057,IZIK,19,,28.975,61,,2,3,,,,,,,,2
-sub-057,IZIK,20,,627.475,1321,,2,1,,,,,,,,23
-sub-057,IZIK,21,,427.975,901,,3,3,,,,,,,,16
-sub-057,IZIK,22,,285.475,601,,3,3,,,,,,,,11
-sub-057,IZIK,23,,484.975,1021,,2,3,,,,,,,,18
-sub-057,IZIK,24,,456.475,961,,2,3,,,,,,,,17
-sub-058,SAPE,1,Y,142.975,301,Complexion,4,4,younger,18,Female,self,,,,6
-sub-058,SAPE,2,Y,256.975,541,Tragic,4,4,younger,18,Female,self,,,,10
-sub-058,SAPE,3,Y,456.475,961,Girls,4,4,younger,18,Female,self,,,,17
-sub-058,SAPE,4,Y,399.475,841,Ain't Equal,4,4,younger,18,Female,self,,,,15
-sub-058,SAPE,5,Y,570.475,1201,Hey You!,4,4,younger,18,Female,self,,,,21
-sub-058,SAPE,6,Y,484.975,1021,iPhone,4,4,younger,18,Female,self,,,,18
-sub-058,SAPE,7,N,513.475,1081,Adagio for Strings,2,3,younger,18,Female,other,,,,19
-sub-058,SAPE,8,N,285.475,601,"Symphony No. 2, Finale",2,2,younger,18,Female,other,,,,11
-sub-058,SAPE,9,N,627.475,1321,Cavatina Op. 130,2,1,younger,18,Female,other,,,,23
-sub-058,SAPE,10,Y,85.975,181,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,4
-sub-058,SAPE,11,Y,313.975,661,Hurt,2,1,younger,18,Female,other,,,,12
-sub-058,SAPE,12,Y,655.975,1381,Sound of Silence,2,4,younger,18,Female,other,,,,24
-sub-058,SAPE,13,Y,342.475,721,Reckoner,2,2,younger,18,Female,other,,,,13
-sub-058,SAPE,14,N,199.975,421,Nocturne in C Sharp Minor,2,3,younger,18,Female,other,,,,8
-sub-058,SAPE,15,Y,0.475,1,Nessun Dorma,2,4,younger,18,Female,other,,,,1
-sub-058,SAPE,16,N,171.475,361,"Symphony No. 6, movement 1",2,3,younger,18,Female,other,,,,7
-sub-058,SAPE,17,,427.975,901,,2,4,,,,,,,,16
-sub-058,SAPE,18,,598.975,1261,,2,3,,,,,,,,22
-sub-058,SAPE,19,,57.475,121,,2,3,,,,,,,,3
-sub-058,SAPE,20,,541.975,1141,,2,2,,,,,,,,20
-sub-058,SAPE,21,,28.975,61,,2,4,,,,,,,,2
-sub-058,SAPE,22,,370.975,781,,2,4,,,,,,,,14
-sub-058,SAPE,23,,114.475,241,,2,2,,,,,,,,5
-sub-058,SAPE,24,,228.475,481,,2,4,,,,,,,,9
-sub-059,TBOY,1,Y,85.975,181,Woods,4,4,younger,18,Male,self,,,,4
-sub-059,TBOY,2,Y,570.475,1201,Ticket To The Moon,4,4,younger,18,Male,self,,,,21
-sub-059,TBOY,3,Y,627.475,1321,In Too Deep,4,4,younger,18,Male,self,,,,23
-sub-059,TBOY,4,Y,57.475,121,Future Sounds,4,4,younger,18,Male,self,,,,3
-sub-059,TBOY,5,Y,513.475,1081,All Caps,4,4,younger,18,Male,self,,,,19
-sub-059,TBOY,6,Y,114.475,241,On Sight,4,4,younger,18,Male,self,,,,5
-sub-059,TBOY,7,N,285.475,601,Adagio for Strings,3,1,younger,18,Male,other,,,,11
-sub-059,TBOY,8,N,256.975,541,"Symphony No. 2, Finale",3,3,younger,18,Male,other,,,,10
-sub-059,TBOY,9,N,142.975,301,Cavatina Op. 130,3,1,younger,18,Male,other,,,,6
-sub-059,TBOY,10,Y,456.475,961,John Wayne Gacy Jr.,3,1,younger,18,Male,other,,,,17
-sub-059,TBOY,11,Y,655.975,1381,Hurt,4,4,younger,18,Male,other,,,,24
-sub-059,TBOY,12,Y,28.975,61,Sound of Silence,2,4,younger,18,Male,other,,,,2
-sub-059,TBOY,13,Y,370.975,781,Reckoner,4,1,younger,18,Male,other,,,,14
-sub-059,TBOY,14,N,598.975,1261,Nocturne in C Sharp Minor,4,2,younger,18,Male,other,,,,22
-sub-059,TBOY,15,Y,171.475,361,Nessun Dorma,3,3,younger,18,Male,other,,,,7
-sub-059,TBOY,16,N,313.975,661,"Symphony No. 6, movement 1",4,4,younger,18,Male,other,,,,12
-sub-059,TBOY,17,,541.975,1141,,1,2,,,,,,,,20
-sub-059,TBOY,18,,484.975,1021,,1,0,,,,,,,,18
-sub-059,TBOY,19,,0.475,1,,2,2,,,,,,,,1
-sub-059,TBOY,20,,342.475,721,,1,1,,,,,,,,13
-sub-059,TBOY,21,,399.475,841,,1,2,,,,,,,,15
-sub-059,TBOY,22,,228.475,481,,1,2,,,,,,,,9
-sub-059,TBOY,23,,199.975,421,,1,3,,,,,,,,8
-sub-059,TBOY,24,,427.975,901,,1,3,,,,,,,,16
-sub-060,MCHI,1,Y,285.475,601,Burn,4,4,younger,18,Female,self,,,,11
-sub-060,MCHI,2,Y,570.475,1201,War With Heaven,4,4,younger,18,Female,self,,,,21
-sub-060,MCHI,3,Y,484.975,1021,Magic Shop,4,4,younger,18,Female,self,,,,18
-sub-060,MCHI,4,Y,627.475,1321,Just Friends,4,4,younger,18,Female,self,,,,23
-sub-060,MCHI,5,N,313.975,661,One Summer's Day,4,4,younger,18,Female,self,,,,12
-sub-060,MCHI,6,Y,256.975,541,Beautiful,4,4,younger,18,Female,self,,,,10
-sub-060,MCHI,7,N,427.975,901,Adagio for Strings,4,1,younger,18,Female,other,,,,16
-sub-060,MCHI,8,N,655.975,1381,"Symphony No. 2, Finale",3,3,younger,18,Female,other,,,,24
-sub-060,MCHI,9,N,342.475,721,Cavatina Op. 130,4,3,younger,18,Female,other,,,,13
-sub-060,MCHI,10,Y,171.475,361,John Wayne Gacy Jr.,3,1,younger,18,Female,other,,,,7
-sub-060,MCHI,11,Y,85.975,181,Hurt,1,3,younger,18,Female,other,,,,4
-sub-060,MCHI,12,Y,541.975,1141,Sound of Silence,2,1,younger,18,Female,other,,,,20
-sub-060,MCHI,13,Y,28.975,61,Reckoner,3,3,younger,18,Female,other,,,,2
-sub-060,MCHI,14,N,456.475,961,Nocturne in C Sharp Minor,4,3,younger,18,Female,other,,,,17
-sub-060,MCHI,15,Y,513.475,1081,Nessun Dorma,3,1,younger,18,Female,other,,,,19
-sub-060,MCHI,16,N,598.975,1261,"Symphony No. 6, movement 1",4,4,younger,18,Female,other,,,,22
-sub-060,MCHI,17,,199.975,421,,2,4,,,,,,,,8
-sub-060,MCHI,18,,57.475,121,,2,4,,,,,,,,3
-sub-060,MCHI,19,,228.475,481,,3,4,,,,,,,,9
-sub-060,MCHI,20,,142.975,301,,2,3,,,,,,,,6
-sub-060,MCHI,21,,114.475,241,,3,4,,,,,,,,5
-sub-060,MCHI,22,,399.475,841,,4,3,,,,,,,,15
-sub-060,MCHI,23,,370.975,781,,3,3,,,,,,,,14
-sub-060,MCHI,24,,0.475,1,,3,3,,,,,,,,1
-sub-061,JCLA,1,Y,342.475,721,3005,4,4,younger,19,Female,self,,,,13
-sub-061,JCLA,2,Y,513.475,1081,Happier Than Ever,4,4,younger,19,Female,self,,,,19
-sub-061,JCLA,3,Y,456.475,961,Juicy,4,4,younger,19,Female,self,,,,17
-sub-061,JCLA,4,Y,570.475,1201,Killing Me Softly With His Song,4,4,younger,19,Female,self,,,,21
-sub-061,JCLA,5,Y,171.475,361,Kiss Me More,4,4,younger,19,Female,self,,,,7
-sub-061,JCLA,6,Y,256.975,541,Need to Know,4,4,younger,19,Female,self,,,,10
-sub-061,JCLA,7,N,114.475,241,Adagio for Strings,4,1,younger,19,Female,other,,,,5
-sub-061,JCLA,8,N,627.475,1321,"Symphony No. 2, Finale",1,1,younger,19,Female,other,,,,23
-sub-061,JCLA,9,N,85.975,181,Cavatina Op. 130,4,1,younger,19,Female,other,,,,4
-sub-061,JCLA,10,Y,313.975,661,John Wayne Gacy Jr.,2,1,younger,19,Female,other,,,,12
-sub-061,JCLA,11,Y,598.975,1261,Hurt,1,1,younger,19,Female,other,,,,22
-sub-061,JCLA,12,Y,399.475,841,Sound of Silence,2,3,younger,19,Female,other,,,,15
-sub-061,JCLA,13,Y,370.975,781,Reckoner,1,1,younger,19,Female,other,,,,14
-sub-061,JCLA,14,N,541.975,1141,Nocturne in C Sharp Minor,1,1,younger,19,Female,other,,,,20
-sub-061,JCLA,15,Y,285.475,601,Nessun Dorma,3,3,younger,19,Female,other,,,,11
-sub-061,JCLA,16,N,484.975,1021,"Symphony No. 6, movement 1",2,1,younger,19,Female,other,,,,18
-sub-061,JCLA,17,,142.975,301,,2,2,,,,,,,,6
-sub-061,JCLA,18,,28.975,61,,2,3,,,,,,,,2
-sub-061,JCLA,19,,0.475,1,,3,3,,,,,,,,1
-sub-061,JCLA,20,,199.975,421,,2,2,,,,,,,,8
-sub-061,JCLA,21,,427.975,901,,2,3,,,,,,,,16
-sub-061,JCLA,22,,228.475,481,,2,2,,,,,,,,9
-sub-061,JCLA,23,,655.975,1381,,1,1,,,,,,,,24
-sub-061,JCLA,24,,57.475,121,,2,2,,,,,,,,3
-sub-062,SSOH,1,Y,427.975,901,Dark Knight Dummo,4,4,younger,19,NB,self,,,,16
-sub-062,SSOH,2,Y,28.975,61,Die For You,4,4,younger,19,NB,self,,,,2
-sub-062,SSOH,3,Y,399.475,841,You Right,4,4,younger,19,NB,self,,,,15
-sub-062,SSOH,4,Y,570.475,1201,Obsession,4,4,younger,19,NB,self,,,,21
-sub-062,SSOH,5,Y,313.975,661,Badhaai Ho,4,4,younger,19,NB,self,,,,12
-sub-062,SSOH,6,Y,57.475,121,Only,4,4,younger,19,NB,self,,,,3
-sub-062,SSOH,7,N,541.975,1141,Adagio for Strings,2,2,younger,19,NB,other,,,,20
-sub-062,SSOH,8,N,256.975,541,"Symphony No. 2, Finale",2,3,younger,19,NB,other,,,,10
-sub-062,SSOH,9,N,627.475,1321,Cavatina Op. 130,3,2,younger,19,NB,other,,,,23
-sub-062,SSOH,10,Y,655.975,1381,John Wayne Gacy Jr.,2,2,younger,19,NB,other,,,,24
-sub-062,SSOH,11,Y,171.475,361,Hurt,1,2,younger,19,NB,other,,,,7
-sub-062,SSOH,12,Y,228.475,481,Sound of Silence,3,4,younger,19,NB,other,,,,9
-sub-062,SSOH,13,Y,513.475,1081,Reckoner,3,3,younger,19,NB,other,,,,19
-sub-062,SSOH,14,N,285.475,601,Nocturne in C Sharp Minor,3,3,younger,19,NB,other,,,,11
-sub-062,SSOH,15,Y,114.475,241,Nessun Dorma,2,3,younger,19,NB,other,,,,5
-sub-062,SSOH,16,N,370.975,781,"Symphony No. 6, movement 1",4,3,younger,19,NB,other,,,,14
-sub-062,SSOH,17,,199.975,421,,2,3,,,,,,,,8
-sub-062,SSOH,18,,85.975,181,,2,2,,,,,,,,4
-sub-062,SSOH,19,,342.475,721,,2,2,,,,,,,,13
-sub-062,SSOH,20,,456.475,961,,2,3,,,,,,,,17
-sub-062,SSOH,21,,0.475,1,,3,3,,,,,,,,1
-sub-062,SSOH,22,,142.975,301,,2,3,,,,,,,,6
-sub-062,SSOH,23,,598.975,1261,,1,3,,,,,,,,22
-sub-062,SSOH,24,,484.975,1021,,1,2,,,,,,,,18
-sub-063,AWIL,1,Y,114.475,241,Chill Bill,4,4,younger,19,Female,self,,,,5
-sub-063,AWIL,2,Y,598.975,1261,Die For You,4,4,younger,19,Female,self,,,,22
-sub-063,AWIL,3,Y,256.975,541,Ghost Town,4,4,younger,19,Female,self,,,,10
-sub-063,AWIL,4,Y,513.475,1081,Violent Crimes,4,4,younger,19,Female,self,,,,19
-sub-063,AWIL,5,Y,655.975,1381,The Spins,4,4,younger,19,Female,self,,,,24
-sub-063,AWIL,6,Y,313.975,661,Wet Dreamz,4,4,younger,19,Female,self,,,,12
-sub-063,AWIL,7,N,570.475,1201,Adagio for Strings,2,3,younger,19,Female,other,,,,21
-sub-063,AWIL,8,N,399.475,841,"Symphony No. 2, Finale",2,1,younger,19,Female,other,,,,15
-sub-063,AWIL,9,N,142.975,301,Cavatina Op. 130,3,2,younger,19,Female,other,,,,6
-sub-063,AWIL,10,Y,28.975,61,John Wayne Gacy Jr.,2,1,younger,19,Female,other,,,,2
-sub-063,AWIL,11,Y,484.975,1021,Hurt,1,1,younger,19,Female,other,,,,18
-sub-063,AWIL,12,Y,370.975,781,Sound of Silence,2,4,younger,19,Female,other,,,,14
-sub-063,AWIL,13,Y,171.475,361,Reckoner,2,1,younger,19,Female,other,,,,7
-sub-063,AWIL,14,N,342.475,721,Nocturne in C Sharp Minor,3,2,younger,19,Female,other,,,,13
-sub-063,AWIL,15,Y,57.475,121,Nessun Dorma,2,2,younger,19,Female,other,,,,3
-sub-063,AWIL,16,N,285.475,601,"Symphony No. 6, movement 1",3,3,younger,19,Female,other,,,,11
-sub-063,AWIL,17,,0.475,1,,2,3,,,,,,,,1
-sub-063,AWIL,18,,541.975,1141,,2,3,,,,,,,,20
-sub-063,AWIL,19,,85.975,181,,3,4,,,,,,,,4
-sub-063,AWIL,20,,228.475,481,,2,4,,,,,,,,9
-sub-063,AWIL,21,,199.975,421,,3,4,,,,,,,,8
-sub-063,AWIL,22,,627.475,1321,,3,3,,,,,,,,23
-sub-063,AWIL,23,,427.975,901,,2,4,,,,,,,,16
-sub-063,AWIL,24,,456.475,961,,2,4,,,,,,,,17
-sub-064,STHO,1,Y,57.475,121,Lucid Dreams,4,4,younger,21,Female,self,,,,3
-sub-064,STHO,2,Y,570.475,1201,Industry Baby,4,4,younger,21,Female,self,,,,21
-sub-064,STHO,3,Y,342.475,721,Night Changes,4,4,younger,21,Female,self,,,,13
-sub-064,STHO,4,Y,256.975,541,Champagne Problems,4,4,younger,21,Female,self,,,,10
-sub-064,STHO,5,Y,655.975,1381,Wildest Dreams,4,4,younger,21,Female,self,,,,24
-sub-064,STHO,6,Y,456.475,961,Stay,4,4,younger,21,Female,self,,,,17
-sub-064,STHO,7,N,28.975,61,Adagio for Strings,2,1,younger,21,Female,other,,,,2
-sub-064,STHO,8,N,370.975,781,"Symphony No. 2, Finale",3,3,younger,21,Female,other,,,,14
-sub-064,STHO,9,N,513.475,1081,Cavatina Op. 130,3,1,younger,21,Female,other,,,,19
-sub-064,STHO,10,Y,484.975,1021,John Wayne Gacy Jr.,2,1,younger,21,Female,other,,,,18
-sub-064,STHO,11,Y,228.475,481,Hurt,3,1,younger,21,Female,other,,,,9
-sub-064,STHO,12,Y,285.475,601,Sound of Silence,3,4,younger,21,Female,other,,,,11
-sub-064,STHO,13,Y,171.475,361,Reckoner,2,1,younger,21,Female,other,,,,7
-sub-064,STHO,14,N,627.475,1321,Nocturne in C Sharp Minor,2,1,younger,21,Female,other,,,,23
-sub-064,STHO,15,Y,313.975,661,Nessun Dorma,3,2,younger,21,Female,other,,,,12
-sub-064,STHO,16,N,427.975,901,"Symphony No. 6, movement 1",3,3,younger,21,Female,other,,,,16
-sub-064,STHO,17,,85.975,181,,2,2,,,,,,,,4
-sub-064,STHO,18,,142.975,301,,2,1,,,,,,,,6
-sub-064,STHO,19,,199.975,421,,1,4,,,,,,,,8
-sub-064,STHO,20,,0.475,1,,2,4,,,,,,,,1
-sub-064,STHO,21,,399.475,841,,1,4,,,,,,,,15
-sub-064,STHO,22,,114.475,241,,3,3,,,,,,,,5
-sub-064,STHO,23,,598.975,1261,,1,3,,,,,,,,22
-sub-064,STHO,24,,541.975,1141,,2,4,,,,,,,,20
-sub-065,MBIC,1,Y,627.475,1321,Magic Shop,4,4,younger,18,Female,self,,,,23
-sub-065,MBIC,2,Y,28.975,61,God Shuffled His Feet,4,4,younger,18,Female,self,,,,2
-sub-065,MBIC,3,Y,570.475,1201,Falling,4,4,younger,18,Female,self,,,,21
-sub-065,MBIC,4,Y,399.475,841,Tornade,4,4,younger,18,Female,self,,,,15
-sub-065,MBIC,5,N,171.475,361,Nuvole Bianche,4,4,younger,18,Female,self,,,,7
-sub-065,MBIC,6,Y,57.475,121,Dans Ma Rue,4,4,younger,18,Female,self,,,,3
-sub-065,MBIC,7,N,342.475,721,Adagio for Strings,2,3,younger,18,Female,other,,,,13
-sub-065,MBIC,8,N,285.475,601,"Symphony No. 2, Finale",3,4,younger,18,Female,other,,,,11
-sub-065,MBIC,9,N,513.475,1081,Cavatina Op. 130,4,3,younger,18,Female,other,,,,19
-sub-065,MBIC,10,Y,313.975,661,John Wayne Gacy Jr.,3,3,younger,18,Female,other,,,,12
-sub-065,MBIC,11,Y,256.975,541,Hurt,2,3,younger,18,Female,other,,,,10
-sub-065,MBIC,12,Y,114.475,241,Sound of Silence,4,4,younger,18,Female,other,,,,5
-sub-065,MBIC,13,Y,199.975,421,Reckoner,3,3,younger,18,Female,other,,,,8
-sub-065,MBIC,14,N,370.975,781,Nocturne in C Sharp Minor,3,3,younger,18,Female,other,,,,14
-sub-065,MBIC,15,Y,0.475,1,Nessun Dorma,4,4,younger,18,Female,other,,,,1
-sub-065,MBIC,16,N,598.975,1261,"Symphony No. 6, movement 1",4,4,younger,18,Female,other,,,,22
-sub-065,MBIC,17,,456.475,961,,2,3,,,,,,,,17
-sub-065,MBIC,18,,142.975,301,,3,3,,,,,,,,6
-sub-065,MBIC,19,,484.975,1021,,2,3,,,,,,,,18
-sub-065,MBIC,20,,655.975,1381,,2,3,,,,,,,,24
-sub-065,MBIC,21,,228.475,481,,3,3,,,,,,,,9
-sub-065,MBIC,22,,427.975,901,,3,3,,,,,,,,16
-sub-065,MBIC,23,,85.975,181,,2,3,,,,,,,,4
-sub-065,MBIC,24,,541.975,1141,,2,3,,,,,,,,20
-sub-066,CKOB,1,Y,513.475,1081,More,4,4,younger,18,Female,self,,,,19
-sub-066,CKOB,2,Y,655.975,1381,Biblical,4,4,younger,18,Female,self,,,,24
-sub-066,CKOB,3,N,627.475,1321,Einaudi Golder Butterflies,4,4,younger,18,Female,self,,,,23
-sub-066,CKOB,4,Y,342.475,721,Juice,4,4,younger,18,Female,self,,,,13
-sub-066,CKOB,5,Y,313.975,661,Cover Me Up,4,4,younger,18,Female,self,,,,12
-sub-066,CKOB,6,Y,57.475,121,Turning Page,4,4,younger,18,Female,self,,,,3
-sub-066,CKOB,7,N,484.975,1021,Adagio for Strings,3,1,younger,18,Female,other,,,,18
-sub-066,CKOB,8,N,0.475,1,"Symphony No. 2, Finale",4,3,younger,18,Female,other,,,,1
-sub-066,CKOB,9,N,256.975,541,Cavatina Op. 130,3,1,younger,18,Female,other,,,,10
-sub-066,CKOB,10,Y,598.975,1261,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,22
-sub-066,CKOB,11,Y,456.475,961,Hurt,3,2,younger,18,Female,other,,,,17
-sub-066,CKOB,12,Y,541.975,1141,Sound of Silence,3,4,younger,18,Female,other,,,,20
-sub-066,CKOB,13,Y,228.475,481,Reckoner,4,1,younger,18,Female,other,,,,9
-sub-066,CKOB,14,N,28.975,61,Nocturne in C Sharp Minor,4,4,younger,18,Female,other,,,,2
-sub-066,CKOB,15,Y,85.975,181,Nessun Dorma,3,1,younger,18,Female,other,,,,4
-sub-066,CKOB,16,N,427.975,901,"Symphony No. 6, movement 1",4,1,younger,18,Female,other,,,,16
-sub-066,CKOB,17,,570.475,1201,,2,4,,,,,,,,21
-sub-066,CKOB,18,,370.975,781,,2,4,,,,,,,,14
-sub-066,CKOB,19,,399.475,841,,2,4,,,,,,,,15
-sub-066,CKOB,20,,199.975,421,,2,4,,,,,,,,8
-sub-066,CKOB,21,,114.475,241,,3,4,,,,,,,,5
-sub-066,CKOB,22,,171.475,361,,3,4,,,,,,,,7
-sub-066,CKOB,23,,285.475,601,,2,4,,,,,,,,11
-sub-066,CKOB,24,,142.975,301,,3,4,,,,,,,,6
-sub-067,CNOR,1,Y,228.475,481,Gorgeous,4,4,younger,18,Male,self,,,,9
-sub-067,CNOR,2,Y,199.975,421,Express Yourself,4,4,younger,18,Male,self,,,,8
-sub-067,CNOR,3,Y,513.475,1081,Running on Empty,4,4,younger,18,Male,self,,,,19
-sub-067,CNOR,4,Y,427.975,901,Sing About Me I'm Dying Of Thirst,4,4,younger,18,Male,self,,,,16
-sub-067,CNOR,5,Y,598.975,1261,Juicy 2,4,4,younger,18,Male,self,,,,22
-sub-067,CNOR,6,Y,484.975,1021,The Real Slim Shady,4,4,younger,18,Male,self,,,,18
-sub-067,CNOR,7,N,0.475,1,Adagio for Strings,4,2,younger,18,Male,other,,,,1
-sub-067,CNOR,8,N,541.975,1141,"Symphony No. 2, Finale",4,2,younger,18,Male,other,,,,20
-sub-067,CNOR,9,N,171.475,361,Cavatina Op. 130,4,3,younger,18,Male,other,,,,7
-sub-067,CNOR,10,Y,399.475,841,John Wayne Gacy Jr.,0,1,younger,18,Male,other,,,,15
-sub-067,CNOR,11,Y,256.975,541,Hurt,3,2,younger,18,Male,other,,,,10
-sub-067,CNOR,12,Y,655.975,1381,Sound of Silence,4,4,younger,18,Male,other,,,,24
-sub-067,CNOR,13,Y,370.975,781,Reckoner,4,3,younger,18,Male,other,,,,14
-sub-067,CNOR,14,N,285.475,601,Nocturne in C Sharp Minor,3,2,younger,18,Male,other,,,,11
-sub-067,CNOR,15,Y,114.475,241,Nessun Dorma,4,4,younger,18,Male,other,,,,5
-sub-067,CNOR,16,N,627.475,1321,"Symphony No. 6, movement 1",4,3,younger,18,Male,other,,,,23
-sub-067,CNOR,17,,85.975,181,,4,3,,,,,,,,4
-sub-067,CNOR,18,,57.475,121,,4,4,,,,,,,,3
-sub-067,CNOR,19,,28.975,61,,4,3,,,,,,,,2
-sub-067,CNOR,20,,313.975,661,,3,4,,,,,,,,12
-sub-067,CNOR,21,,142.975,301,,4,4,,,,,,,,6
-sub-067,CNOR,22,,456.475,961,,4,4,,,,,,,,17
-sub-067,CNOR,23,,570.475,1201,,3,1,,,,,,,,21
-sub-067,CNOR,24,,342.475,721,,0,3,,,,,,,,13
-sub-068,ALIU,1,N,456.475,961,Chopin Mazurka,4,4,younger,18,Female,self,,,,17
-sub-068,ALIU,2,N,171.475,361,Hungarian Dance No. 1,4,4,younger,18,Female,self,,,,7
-sub-068,ALIU,3,N,85.975,181,Bach Prelude and Fugue,4,4,younger,18,Female,self,,,,4
-sub-068,ALIU,4,Y,513.475,1081,Amore Ti Vieta,4,4,younger,18,Female,self,,,,19
-sub-068,ALIU,5,N,57.475,121,Piana Sonata No. 30,4,4,younger,18,Female,self,,,,3
-sub-068,ALIU,6,Y,484.975,1021,When You Believe,4,4,younger,18,Female,self,,,,18
-sub-068,ALIU,7,N,370.975,781,Adagio for Strings,4,3,younger,18,Female,other,,,,14
-sub-068,ALIU,8,N,199.975,421,"Symphony No. 2, Finale",4,3,younger,18,Female,other,,,,8
-sub-068,ALIU,9,N,256.975,541,Cavatina Op. 130,4,3,younger,18,Female,other,,,,10
-sub-068,ALIU,10,Y,541.975,1141,John Wayne Gacy Jr.,3,3,younger,18,Female,other,,,,20
-sub-068,ALIU,11,Y,114.475,241,Hurt,3,3,younger,18,Female,other,,,,5
-sub-068,ALIU,12,Y,627.475,1321,Sound of Silence,3,4,younger,18,Female,other,,,,23
-sub-068,ALIU,13,Y,0.475,1,Reckoner,3,3,younger,18,Female,other,,,,1
-sub-068,ALIU,14,N,399.475,841,Nocturne in C Sharp Minor,4,4,younger,18,Female,other,,,,15
-sub-068,ALIU,15,Y,427.975,901,Nessun Dorma,4,4,younger,18,Female,other,,,,16
-sub-068,ALIU,16,N,570.475,1201,"Symphony No. 6, movement 1",4,3,younger,18,Female,other,,,,21
-sub-068,ALIU,17,,285.475,601,,2,2,,,,,,,,11
-sub-068,ALIU,18,,598.975,1261,,2,3,,,,,,,,22
-sub-068,ALIU,19,,655.975,1381,,2,4,,,,,,,,24
-sub-068,ALIU,20,,342.475,721,,2,4,,,,,,,,13
-sub-068,ALIU,21,,228.475,481,,2,4,,,,,,,,9
-sub-068,ALIU,22,,142.975,301,,1,4,,,,,,,,6
-sub-068,ALIU,23,,313.975,661,,1,4,,,,,,,,12
-sub-068,ALIU,24,,28.975,61,,0,1,,,,,,,,2
-sub-069,OKHE,1,Y,456.475,961,Pepas,4,4,younger,23,Male,self,,,,17
-sub-069,OKHE,2,Y,114.475,241,Empire State of Mind,4,4,younger,23,Male,self,,,,5
-sub-069,OKHE,3,Y,513.475,1081,Good Life,4,4,younger,23,Male,self,,,,19
-sub-069,OKHE,4,Y,427.975,901,Maluma Farruko,4,4,younger,23,Male,self,,,,16
-sub-069,OKHE,5,Y,627.475,1321,Natti Nat,4,4,younger,23,Male,self,,,,23
-sub-069,OKHE,6,Y,85.975,181,Jalebi Baby,4,4,younger,23,Male,self,,,,4
-sub-069,OKHE,7,N,598.975,1261,Adagio for Strings,2,1,younger,23,Male,other,,,,22
-sub-069,OKHE,8,N,370.975,781,"Symphony No. 2, Finale",3,1,younger,23,Male,other,,,,14
-sub-069,OKHE,9,N,484.975,1021,Cavatina Op. 130,2,2,younger,23,Male,other,,,,18
-sub-069,OKHE,10,Y,57.475,121,John Wayne Gacy Jr.,2,1,younger,23,Male,other,,,,3
-sub-069,OKHE,11,Y,142.975,301,Hurt,3,1,younger,23,Male,other,,,,6
-sub-069,OKHE,12,Y,285.475,601,Sound of Silence,2,2,younger,23,Male,other,,,,11
-sub-069,OKHE,13,Y,399.475,841,Reckoner,3,2,younger,23,Male,other,,,,15
-sub-069,OKHE,14,N,541.975,1141,Nocturne in C Sharp Minor,3,2,younger,23,Male,other,,,,20
-sub-069,OKHE,15,Y,570.475,1201,Nessun Dorma,3,1,younger,23,Male,other,,,,21
-sub-069,OKHE,16,N,228.475,481,"Symphony No. 6, movement 1",0,4,younger,23,Male,other,,,,9
-sub-069,OKHE,17,,171.475,361,,3,4,,,,,,,,7
-sub-069,OKHE,18,,342.475,721,,3,3,,,,,,,,13
-sub-069,OKHE,19,,256.975,541,,3,2,,,,,,,,10
-sub-069,OKHE,20,,28.975,61,,3,2,,,,,,,,2
-sub-069,OKHE,21,,655.975,1381,,3,3,,,,,,,,24
-sub-069,OKHE,22,,0.475,1,,4,4,,,,,,,,1
-sub-069,OKHE,23,,313.975,661,,3,3,,,,,,,,12
-sub-069,OKHE,24,,199.975,421,,3,3,,,,,,,,8
-sub-070,OEGB,1,Y,57.475,121,360,4,4,younger,18,Female,self,,,,3
-sub-070,OEGB,2,Y,171.475,361,Bibanke,4,4,younger,18,Female,self,,,,7
-sub-070,OEGB,3,Y,427.975,901,Rise,3,4,younger,18,Female,self,,,,16
-sub-070,OEGB,4,Y,256.975,541,What A Wonderful World,4,4,younger,18,Female,self,,,,10
-sub-070,OEGB,5,Y,285.475,601,Oyigiyigi,4,4,younger,18,Female,self,,,,11
-sub-070,OEGB,6,Y,142.975,301,Stand Up,4,4,younger,18,Female,self,,,,6
-sub-070,OEGB,7,N,484.975,1021,Adagio for Strings,3,1,younger,18,Female,other,,,,18
-sub-070,OEGB,8,N,541.975,1141,"Symphony No. 2, Finale",4,1,younger,18,Female,other,,,,20
-sub-070,OEGB,9,N,370.975,781,Cavatina Op. 130,3,1,younger,18,Female,other,,,,14
-sub-070,OEGB,10,Y,342.475,721,John Wayne Gacy Jr.,3,1,younger,18,Female,other,,,,13
-sub-070,OEGB,11,Y,570.475,1201,Hurt,2,1,younger,18,Female,other,,,,21
-sub-070,OEGB,12,Y,0.475,1,Sound of Silence,4,4,younger,18,Female,other,,,,1
-sub-070,OEGB,13,Y,228.475,481,Reckoner,4,1,younger,18,Female,other,,,,9
-sub-070,OEGB,14,N,513.475,1081,Nocturne in C Sharp Minor,4,1,younger,18,Female,other,,,,19
-sub-070,OEGB,15,Y,399.475,841,Nessun Dorma,4,1,younger,18,Female,other,,,,15
-sub-070,OEGB,16,N,199.975,421,"Symphony No. 6, movement 1",4,2,younger,18,Female,other,,,,8
-sub-070,OEGB,17,,313.975,661,,2,3,,,,,,,,12
-sub-070,OEGB,18,,627.475,1321,,2,3,,,,,,,,23
-sub-070,OEGB,19,,114.475,241,,2,3,,,,,,,,5
-sub-070,OEGB,20,,655.975,1381,,2,3,,,,,,,,24
-sub-070,OEGB,21,,598.975,1261,,2,4,,,,,,,,22
-sub-070,OEGB,22,,456.475,961,,2,3,,,,,,,,17
-sub-070,OEGB,23,,85.975,181,,3,3,,,,,,,,4
-sub-070,OEGB,24,,28.975,61,,3,4,,,,,,,,2
-sub-071,EMCG,1,Y,342.475,721,Jungleland,4,4,younger,18,Female,self,,,,13
-sub-071,EMCG,2,Y,370.975,781,Pink Pony Club,4,4,younger,18,Female,self,,,,14
-sub-071,EMCG,3,Y,313.975,661,Dreams,4,4,younger,18,Female,self,,,,12
-sub-071,EMCG,4,Y,199.975,421,Cheek to Cheek,4,4,younger,18,Female,self,,,,8
-sub-071,EMCG,5,Y,399.475,841,Blood On Me,4,4,younger,18,Female,self,,,,15
-sub-071,EMCG,6,N,655.975,1381,Shhh Peaceful,4,4,younger,18,Female,self,,,,24
-sub-071,EMCG,7,N,228.475,481,Adagio for Strings,3,2,younger,18,Female,other,,,,9
-sub-071,EMCG,8,N,541.975,1141,"Symphony No. 2, Finale",4,4,younger,18,Female,other,,,,20
-sub-071,EMCG,9,N,142.975,301,Cavatina Op. 130,3,3,younger,18,Female,other,,,,6
-sub-071,EMCG,10,Y,256.975,541,John Wayne Gacy Jr.,3,2,younger,18,Female,other,,,,10
-sub-071,EMCG,11,Y,456.475,961,Hurt,3,3,younger,18,Female,other,,,,17
-sub-071,EMCG,12,Y,513.475,1081,Sound of Silence,4,4,younger,18,Female,other,,,,19
-sub-071,EMCG,13,Y,171.475,361,Reckoner,4,2,younger,18,Female,other,,,,7
-sub-071,EMCG,14,N,570.475,1201,Nocturne in C Sharp Minor,4,3,younger,18,Female,other,,,,21
-sub-071,EMCG,15,Y,85.975,181,Nessun Dorma,3,3,younger,18,Female,other,,,,4
-sub-071,EMCG,16,N,484.975,1021,"Symphony No. 6, movement 1",4,3,younger,18,Female,other,,,,18
-sub-071,EMCG,17,,627.475,1321,,3,4,,,,,,,,23
-sub-071,EMCG,18,,285.475,601,,2,3,,,,,,,,11
-sub-071,EMCG,19,,598.975,1261,,2,4,,,,,,,,22
-sub-071,EMCG,20,,0.475,1,,2,3,,,,,,,,1
-sub-071,EMCG,21,,427.975,901,,3,4,,,,,,,,16
-sub-071,EMCG,22,,114.475,241,,3,4,,,,,,,,5
-sub-071,EMCG,23,,28.975,61,,3,4,,,,,,,,2
-sub-071,EMCG,24,,57.475,121,,3,4,,,,,,,,3
-sub-072,YDIA,1,Y,427.975,901,A Song For Mama,4,4,younger,19,Female,self,,,,16
-sub-072,YDIA,2,Y,199.975,421,Drowning,4,4,younger,19,Female,self,,,,8
-sub-072,YDIA,3,Y,28.975,61,Dos Locos Enamorados,4,4,younger,19,Female,self,,,,2
-sub-072,YDIA,4,Y,256.975,541,Seora de las 4 de,4,4,younger,19,Female,self,,,,10
-sub-072,YDIA,5,Y,142.975,301,Vino el Amor ,4,4,younger,19,Female,self,,,,6
-sub-072,YDIA,6,Y,171.475,361,Dale Pal Piso,4,4,younger,19,Female,self,,,,7
-sub-072,YDIA,7,N,370.975,781,Adagio for Strings,1,1,younger,19,Female,other,,,,14
-sub-072,YDIA,8,N,598.975,1261,"Symphony No. 2, Finale",1,4,younger,19,Female,other,,,,22
-sub-072,YDIA,9,N,228.475,481,Cavatina Op. 130,2,1,younger,19,Female,other,,,,9
-sub-072,YDIA,10,Y,627.475,1321,John Wayne Gacy Jr.,2,2,younger,19,Female,other,,,,23
-sub-072,YDIA,11,Y,0.475,1,Hurt,2,1,younger,19,Female,other,,,,1
-sub-072,YDIA,12,Y,570.475,1201,Sound of Silence,1,4,younger,19,Female,other,,,,21
-sub-072,YDIA,13,Y,456.475,961,Reckoner,2,2,younger,19,Female,other,,,,17
-sub-072,YDIA,14,N,114.475,241,Nocturne in C Sharp Minor,2,1,younger,19,Female,other,,,,5
-sub-072,YDIA,15,Y,57.475,121,Nessun Dorma,3,2,younger,19,Female,other,,,,3
-sub-072,YDIA,16,N,655.975,1381,"Symphony No. 6, movement 1",1,3,younger,19,Female,other,,,,24
-sub-072,YDIA,17,,541.975,1141,,1,3,,,,,,,,20
-sub-072,YDIA,18,,85.975,181,,2,4,,,,,,,,4
-sub-072,YDIA,19,,313.975,661,,2,3,,,,,,,,12
-sub-072,YDIA,20,,342.475,721,,1,3,,,,,,,,13
-sub-072,YDIA,21,,513.475,1081,,1,3,,,,,,,,19
-sub-072,YDIA,22,,484.975,1021,,1,4,,,,,,,,18
-sub-072,YDIA,23,,285.475,601,,1,2,,,,,,,,11
-sub-072,YDIA,24,,399.475,841,,2,4,,,,,,,,15
-sub-072,NLEN,1,Y,484.975,1021,Imagination,4,4,older,79,Female,self,,Y,,18
-sub-073,NLEN,2,Y,57.475,121,La rondine,4,4,older,79,Female,self,,Y,,3
-sub-073,NLEN,3,Y,541.975,1141,Now You Know,4,4,older,79,Female,self,,Y,,20
-sub-073,NLEN,4,Y,199.975,421,We'll Be Together Again,4,4,older,79,Female,self,,Y,,8
-sub-073,NLEN,5,Y,171.475,361,What Are You Doing The Rest of Your Life,4,4,older,79,Female,self,,Y,,7
-sub-073,NLEN,6,Y,427.975,901,You Stepped Out of A Dream,4,4,older,79,Female,self,,Y,,16
-sub-073,NLEN,7,N,285.475,601,Adagio for Strings,3,3,older,79,Female,other,,Y,,11
-sub-073,NLEN,8,N,513.475,1081,"Symphony No. 2, Finale",3,3,older,79,Female,other,,Y,,19
-sub-073,NLEN,9,N,142.975,301,Cavatina Op. 130,3,3,older,79,Female,other,,Y,,6
-sub-073,NLEN,10,Y,0.475,1,John Wayne Gacy Jr.,0,1,older,79,Female,other,,Y,,1
-sub-073,NLEN,11,Y,85.975,181,Hurt,4,3,older,79,Female,other,,Y,,4
-sub-073,NLEN,12,Y,228.475,481,Sound of Silence,4,4,older,79,Female,other,,Y,,9
-sub-073,NLEN,13,Y,570.475,1201,Reckoner,3,2,older,79,Female,other,,Y,,21
-sub-073,NLEN,14,N,456.475,961,Nocturne in C Sharp Minor,4,3,older,79,Female,other,,Y,,17
-sub-073,NLEN,15,Y,114.475,241,Nessun Dorma,4,4,older,79,Female,other,,Y,,5
-sub-073,NLEN,16,N,370.975,781,"Symphony No. 6, movement 1",3,3,older,79,Female,other,,Y,,14
-sub-073,NLEN,17,,598.975,1261,,3,2,,,,,,,,22
-sub-073,NLEN,18,,28.975,61,,2,1,,,,,,,,2
-sub-073,NLEN,19,,342.475,721,,3,1,,,,,,,,13
-sub-073,NLEN,20,,256.975,541,,3,2,,,,,,,,10
-sub-073,NLEN,21,,655.975,1381,,3,2,,,,,,,,24
-sub-073,NLEN,22,,627.475,1321,,3,1,,,,,,,,23
-sub-073,NLEN,23,,313.975,661,,3,2,,,,,,,,12
-sub-073,NLEN,24,,399.475,841,,3,2,,,,,,,,15
-sub-074,MCHO,1,N,570.475,1201,First Arabesque,4,4,younger,19,Male,self,,,,21
-sub-074,MCHO,2,N,370.975,781,Flow,4,4,younger,19,Male,self,,,,14
-sub-074,MCHO,3,N,28.975,61,Sibelius Violin Concerto,4,4,younger,19,Male,self,,,,2
-sub-074,MCHO,4,N,313.975,661,Tchaikovsky Symphony 4,4,4,younger,19,Male,self,,,,12
-sub-074,MCHO,5,Y,57.475,121,In Circles,4,4,younger,19,Male,self,,,,3
-sub-074,MCHO,6,N,285.475,601,Shostakovich Violin,4,4,younger,19,Male,self,,,,11
-sub-074,MCHO,7,N,142.975,301,Adagio for Strings,3,3,younger,19,Male,other,,,,6
-sub-074,MCHO,8,N,541.975,1141,"Symphony No. 2, Finale",4,3,younger,19,Male,other,,,,20
-sub-074,MCHO,9,N,456.475,961,Cavatina Op. 130,4,3,younger,19,Male,other,,,,17
-sub-074,MCHO,10,Y,228.475,481,John Wayne Gacy Jr.,4,2,younger,19,Male,other,,,,9
-sub-074,MCHO,11,Y,427.975,901,Hurt,2,1,younger,19,Male,other,,,,16
-sub-074,MCHO,12,Y,199.975,421,Sound of Silence,4,4,younger,19,Male,other,,,,8
-sub-074,MCHO,13,Y,85.975,181,Reckoner,4,3,younger,19,Male,other,,,,4
-sub-074,MCHO,14,N,256.975,541,Nocturne in C Sharp Minor,4,4,younger,19,Male,other,,,,10
-sub-074,MCHO,15,Y,0.475,1,Nessun Dorma,4,2,younger,19,Male,other,,,,1
-sub-074,MCHO,16,N,114.475,241,"Symphony No. 6, movement 1",4,4,younger,19,Male,other,,,,5
-sub-074,MCHO,17,,627.475,1321,,2,4,,,,,,,,23
-sub-074,MCHO,18,,171.475,361,,2,4,,,,,,,,7
-sub-074,MCHO,19,,655.975,1381,,2,4,,,,,,,,24
-sub-074,MCHO,20,,484.975,1021,,2,4,,,,,,,,18
-sub-074,MCHO,21,,342.475,721,,2,4,,,,,,,,13
-sub-074,MCHO,22,,399.475,841,,2,4,,,,,,,,15
-sub-074,MCHO,23,,513.475,1081,,2,4,,,,,,,,19
-sub-074,MCHO,24,,598.975,1261,,2,4,,,,,,,,22
-sub-075,ETIN,1,Y,285.475,601,Undrunk,4,4,younger,23,Female,self,,,,11
-sub-075,ETIN,2,Y,541.975,1141,im so tired,4,4,younger,23,Female,self,,,,20
-sub-075,ETIN,3,Y,456.475,961,Someone You Loved,4,4,younger,23,Female,self,,,,17
-sub-075,ETIN,4,Y,655.975,1381,Stacy,4,4,younger,23,Female,self,,,,24
-sub-075,ETIN,5,Y,171.475,361,Loving is Easy,4,4,younger,23,Female,self,,,,7
-sub-075,ETIN,6,Y,28.975,61,Never Seen the Rain,4,4,younger,23,Female,self,,,,2
-sub-075,ETIN,7,N,57.475,121,Adagio for Strings,2,2,younger,23,Female,other,,,,3
-sub-075,ETIN,8,N,570.475,1201,"Symphony No. 2, Finale",2,3,younger,23,Female,other,,,,21
-sub-075,ETIN,9,N,199.975,421,Cavatina Op. 130,2,3,younger,23,Female,other,,,,8
-sub-075,ETIN,10,Y,598.975,1261,John Wayne Gacy Jr.,2,3,younger,23,Female,other,,,,22
-sub-075,ETIN,11,Y,513.475,1081,Hurt,1,2,younger,23,Female,other,,,,19
-sub-075,ETIN,12,Y,427.975,901,Sound of Silence,1,3,younger,23,Female,other,,,,16
-sub-075,ETIN,13,Y,142.975,301,Reckoner,3,3,younger,23,Female,other,,,,6
-sub-075,ETIN,14,N,484.975,1021,Nocturne in C Sharp Minor,2,2,younger,23,Female,other,,,,18
-sub-075,ETIN,15,Y,342.475,721,Nessun Dorma,1,2,younger,23,Female,other,,,,13
-sub-075,ETIN,16,N,370.975,781,"Symphony No. 6, movement 1",2,2,younger,23,Female,other,,,,14
-sub-075,ETIN,17,,85.975,181,,1,4,,,,,,,,4
-sub-075,ETIN,18,,256.975,541,,1,4,,,,,,,,10
-sub-075,ETIN,19,,228.475,481,,1,4,,,,,,,,9
-sub-075,ETIN,20,,0.475,1,,2,4,,,,,,,,1
-sub-075,ETIN,21,,313.975,661,,1,4,,,,,,,,12
-sub-075,ETIN,22,,399.475,841,,1,4,,,,,,,,15
-sub-075,ETIN,23,,114.475,241,,1,4,,,,,,,,5
-sub-075,ETIN,24,,627.475,1321,,1,4,,,,,,,,23
-sub-076,SSHA,1,Y,85.975,181,Brazil,4,4,younger,23,Female,self,,,,4
-sub-076,SSHA,2,Y,28.975,61,Go Your Own Way,4,4,younger,23,Female,self,,,,2
-sub-076,SSHA,3,Y,456.475,961,Movement,4,4,younger,23,Female,self,,,,17
-sub-076,SSHA,4,Y,513.475,1081,Snow Hey Oh,4,4,younger,23,Female,self,,,,19
-sub-076,SSHA,5,Y,541.975,1141,The Less I Know the Better,4,4,younger,23,Female,self,,,,20
-sub-076,SSHA,6,Y,285.475,601,Georgia,4,4,younger,23,Female,self,,,,11
-sub-076,SSHA,7,N,0.475,1,Adagio for Strings,3,4,younger,23,Female,other,,,,1
-sub-076,SSHA,8,N,370.975,781,"Symphony No. 2, Finale",3,3,younger,23,Female,other,,,,14
-sub-076,SSHA,9,N,199.975,421,Cavatina Op. 130,3,3,younger,23,Female,other,,,,8
-sub-076,SSHA,10,Y,342.475,721,John Wayne Gacy Jr.,3,2,younger,23,Female,other,,,,13
-sub-076,SSHA,11,Y,114.475,241,Hurt,2,3,younger,23,Female,other,,,,5
-sub-076,SSHA,12,Y,427.975,901,Sound of Silence,4,4,younger,23,Female,other,,,,16
-sub-076,SSHA,13,Y,228.475,481,Reckoner,3,2,younger,23,Female,other,,,,9
-sub-076,SSHA,14,N,399.475,841,Nocturne in C Sharp Minor,3,3,younger,23,Female,other,,,,15
-sub-076,SSHA,15,Y,570.475,1201,Nessun Dorma,3,4,younger,23,Female,other,,,,21
-sub-076,SSHA,16,N,484.975,1021,"Symphony No. 6, movement 1",3,2,younger,23,Female,other,,,,18
-sub-076,SSHA,17,,598.975,1261,,1,4,,,,,,,,22
-sub-076,SSHA,18,,655.975,1381,,1,4,,,,,,,,24
-sub-076,SSHA,19,,57.475,121,,1,4,,,,,,,,3
-sub-076,SSHA,20,,171.475,361,,1,4,,,,,,,,7
-sub-076,SSHA,21,,313.975,661,,1,4,,,,,,,,12
-sub-076,SSHA,22,,142.975,301,,2,4,,,,,,,,6
-sub-076,SSHA,23,,256.975,541,,1,4,,,,,,,,10
-sub-076,SSHA,24,,627.475,1321,,1,4,,,,,,,,23
+fMRI_ID,participant_ID,stim_ID,vocal,onset_seconds,onset_time,self_other,stim_name,liking,familiarity,older_younger,age,sex,happy_sad,MCI,Multiple Voices?,stim_order
+sub-005,LGEN,1,Y,285.475,601,self,Young at Heart,4,4,older,64,Female,,,,11
+sub-005,LGEN,2,N,57.475,121,self,Gnossienne,4,4,older,64,Female,,~ 24 old adults,,3
+sub-005,LGEN,3,N,513.475,1081,self,Clare de Lune,4,4,older,64,Female,,~ 24 young adults,,19
+sub-005,LGEN,4,N,598.975,1261,self,Fur Elise,4,4,older,64,Female,,,,22
+sub-005,LGEN,5,Y,28.975,61,self,The Highway Man,4,4,older,64,Female,,delete 17-24 (BP clips),,2
+sub-005,LGEN,6,N,427.975,901,self,The Hours,4,4,older,64,Female,,,,16
+sub-005,LGEN,7,N,541.975,1141,other,Adagio for Strings,4,3,older,64,Female,,work/mindlab/nubic/mci_study/raw_bids for all subjects - readme will have subids ,,20
+sub-005,LGEN,8,Y,399.475,841,other,"Symphony No. 2, Finale",3,3,older,64,Female,,,,15
+sub-005,LGEN,9,N,456.475,961,other,Cavatina Op. 130,4,3,older,64,Female,,,,17
+sub-005,LGEN,10,Y,256.975,541,other,John Wayne Gacy Jr.,3,2,older,64,Female,,,,10
+sub-005,LGEN,11,Y,342.475,721,other,Hurt,3,2,older,64,Female,,,,13
+sub-005,LGEN,12,Y,655.975,1381,other,Sound of Silence,4,4,older,64,Female,,,,24
+sub-005,LGEN,13,Y,370.975,781,other,Reckoner,3,2,older,64,Female,,,,14
+sub-005,LGEN,14,N,484.975,1021,other,Nocturne in C Sharp Minor,4,4,older,64,Female,,,,18
+sub-005,LGEN,15,Y,228.475,481,other,Nessun Dorma,3,2,older,64,Female,,,,9
+sub-005,LGEN,16,N,199.975,421,other,"Symphony No. 6, movement 1",4,3,older,64,Female,,,,8
+sub-005,LGEN,17,,114.475,241,,BP,3,1,,,,,,,5
+sub-005,LGEN,18,,171.475,361,,BP,3,1,,,,,,,7
+sub-005,LGEN,19,,627.475,1321,,BP,4,3,,,,,,,23
+sub-005,LGEN,20,,570.475,1201,,BP,3,2,,,,,,,21
+sub-005,LGEN,21,,313.975,661,,Unfamiliar West,3,3,,,,,,,12
+sub-005,LGEN,22,,0.475,1,,Unfamiliar West,4,2,,,,,,,1
+sub-005,LGEN,23,,142.975,301,,Unfamiliar West,3,2,,,,,,,6
+sub-005,LGEN,24,,85.975,181,,Unfamiliar West,2,1,,,,,,,4
+sub-019,DFAI,1,Y,342.475,721,self,Nevermind,4,4,older,66,Female,,,,13
+sub-019,DFAI,2,Y,541.975,1141,self,Copperline,4,4,older,66,Female,,,,20
+sub-019,DFAI,3,Y,456.475,961,self,Ode to Billie Joe,4,4,older,66,Female,,,,17
+sub-019,DFAI,4,Y,228.475,481,self,Running Up That Hill,4,4,older,66,Female,,,,9
+sub-019,DFAI,5,Y,0.475,1,self,The Boxer,4,4,older,66,Female,,,,1
+sub-019,DFAI,6,Y,513.475,1081,self,Thanks for the Memories,4,4,older,66,Female,,,,19
+sub-019,DFAI,7,N,627.475,1321,other,Adagio for Strings,4,4,older,66,Female,,,,23
+sub-019,DFAI,8,Y,399.475,841,other,"Symphony No. 2, Finale",3,1,older,66,Female,,,,15
+sub-019,DFAI,9,N,285.475,601,other,Cavatina Op. 130,4,1,older,66,Female,,,,11
+sub-019,DFAI,10,Y,57.475,121,other,John Wayne Gacy Jr.,4,1,older,66,Female,,,,3
+sub-019,DFAI,11,Y,142.975,301,other,Hurt,4,2,older,66,Female,,,,6
+sub-019,DFAI,12,Y,655.975,1381,other,Sound of Silence,4,4,older,66,Female,,,,24
+sub-019,DFAI,13,Y,28.975,61,other,Reckoner,4,1,older,66,Female,,,,2
+sub-019,DFAI,14,N,199.975,421,other,Nocturne in C Sharp Minor,4,1,older,66,Female,,,,8
+sub-019,DFAI,15,Y,171.475,361,other,Nessun Dorma,4,1,older,66,Female,,,,7
+sub-019,DFAI,16,N,313.975,661,other,"Symphony No. 6, movement 1",4,1,older,66,Female,,,,12
+,DFAI,17,,598.975,1261,,,2,1,,,,,,,22
+,DFAI,18,,570.475,1201,,,2,1,,,,,,,21
+,DFAI,19,,427.975,901,,,3,1,,,,,,,16
+,DFAI,20,,85.975,181,,,3,1,,,,,,,4
+,DFAI,21,,256.975,541,,,3,1,,,,,,,10
+,DFAI,22,,484.975,1021,,,3,1,,,,,,,18
+,DFAI,23,,114.475,241,,,3,1,,,,,,,5
+,DFAI,24,,370.975,781,,,1,1,,,,,,,14
+sub-028,SCAE,1,Y,85.975,181,self,Detroit Rock City,4,4,older,54,Male,,,,4
+sub-028,SCAE,2,Y,570.475,1201,self,Doo Doo Doo Doo Doo (Heartbreaker),4,4,older,54,Male,,,,21
+sub-028,SCAE,3,Y,57.475,121,self,Fight the Good Fight,4,4,older,54,Male,,,,3
+sub-028,SCAE,4,Y,513.475,1081,self,Panic in Detroit,4,4,older,54,Male,,,,19
+sub-028,SCAE,5,Y,598.975,1261,self,Limelight,4,4,older,54,Male,,,,22
+sub-028,SCAE,6,Y,370.975,781,self,Freewheel Burning,4,4,older,54,Male,,,,14
+sub-028,SCAE,7,N,427.975,901,other,Adagio for Strings,3,2,older,54,Male,,,,16
+sub-028,SCAE,8,Y,313.975,661,other,"Symphony No. 2, Finale",3,3,older,54,Male,,,,12
+sub-028,SCAE,9,N,484.975,1021,other,Cavatina Op. 130,2,1,older,54,Male,,,,18
+sub-028,SCAE,10,Y,256.975,541,other,John Wayne Gacy Jr.,2,3,older,54,Male,,,,10
+sub-028,SCAE,11,Y,171.475,361,other,Hurt,1,1,older,54,Male,,,,7
+sub-028,SCAE,12,Y,399.475,841,other,Sound of Silence,4,4,older,54,Male,,,,15
+sub-028,SCAE,13,Y,541.975,1141,other,Reckoner,3,3,older,54,Male,,,,20
+sub-028,SCAE,14,N,199.975,421,other,Nocturne in C Sharp Minor,3,2,older,54,Male,,,,8
+sub-028,SCAE,15,Y,655.975,1381,other,Nessun Dorma,1,2,older,54,Male,,,,24
+sub-028,SCAE,16,N,342.475,721,other,"Symphony No. 6, movement 1",3,3,older,54,Male,,,,13
+sub-028,SCAE,17,,456.475,961,,,1,1,,,,,,,17
+sub-028,SCAE,18,,285.475,601,,,1,1,,,,,,,11
+sub-028,SCAE,19,,114.475,241,,,3,1,,,,,,,5
+sub-028,SCAE,20,,28.975,61,,,1,1,,,,,,,2
+sub-028,SCAE,21,,142.975,301,,,1,1,,,,,,,6
+sub-028,SCAE,22,,228.475,481,,,1,1,,,,,,,9
+sub-028,SCAE,23,,627.475,1321,,,1,1,,,,,,,23
+sub-028,SCAE,24,,0.475,1,,,1,1,,,,,,,1
+sub-029,EHER,1,Y,85.975,181,self,Turn it on Again,4,4,older,62,Male,,,,4
+sub-029,EHER,2,Y,598.975,1261,self,Roundabout,4,4,older,62,Male,,,,22
+sub-029,EHER,3,Y,427.975,901,self,Ashes to Ashes,4,4,older,62,Male,,,,16
+sub-029,EHER,4,Y,313.975,661,self,Seen the Lights Go Out on Broadway,4,4,older,62,Male,,,,12
+sub-029,EHER,5,Y,28.975,61,self,Comfortably Numb,2,2,older,62,Male,,,,2
+sub-029,EHER,6,Y,342.475,721,self,It Doesn't Matter Why,4,4,older,62,Male,,,,13
+sub-029,EHER,7,N,114.475,241,other,Adagio for Strings,2,1,older,62,Male,,,,5
+sub-029,EHER,8,Y,627.475,1321,other,"Symphony No. 2, Finale",2,2,older,62,Male,,,,23
+sub-029,EHER,9,N,228.475,481,other,Cavatina Op. 130,2,1,older,62,Male,,,,9
+sub-029,EHER,10,Y,199.975,421,other,John Wayne Gacy Jr.,2,1,older,62,Male,,,,8
+sub-029,EHER,11,Y,285.475,601,other,Hurt,2,2,older,62,Male,,,,11
+sub-029,EHER,12,Y,370.975,781,other,Sound of Silence,3,4,older,62,Male,,,,14
+sub-029,EHER,13,Y,57.475,121,other,Reckoner,2,2,older,62,Male,,,,3
+sub-029,EHER,14,N,513.475,1081,other,Nocturne in C Sharp Minor,2,1,older,62,Male,,,,19
+sub-029,EHER,15,Y,484.975,1021,other,Nessun Dorma,3,4,older,62,Male,,,,18
+sub-029,EHER,16,N,541.975,1141,other,"Symphony No. 6, movement 1",3,4,older,62,Male,,,,20
+sub-029,EHER,17,,256.975,541,,,1,1,,,,,,,10
+sub-029,EHER,18,,171.475,361,,,2,1,,,,,,,7
+sub-029,EHER,19,,655.975,1381,,,2,1,,,,,,,24
+sub-029,EHER,20,,142.975,301,,,1,1,,,,,,,6
+sub-029,EHER,21,,570.475,1201,,,2,1,,,,,,,21
+sub-029,EHER,22,,456.475,961,,,2,1,,,,,,,17
+sub-029,EHER,23,,0.475,1,,,1,1,,,,,,,1
+sub-029,EHER,24,,399.475,841,,,1,1,,,,,,,15
+sub-030,LJAC,1,Y,57.475,121,self,Since You've Been Gone,4,4,older,68,Female,,,,3
+sub-030,LJAC,2,Y,370.975,781,self,Finesse,4,4,older,68,Female,,,,14
+sub-030,LJAC,3,Y,513.475,1081,self,I Never Can Say Goodbye,4,4,older,68,Female,,,,19
+sub-030,LJAC,4,Y,484.975,1021,self,Heat Wave,4,4,older,68,Female,,,,18
+sub-030,LJAC,5,Y,570.475,1201,self,You Send Me,4,4,older,68,Female,,,,21
+sub-030,LJAC,6,Y,171.475,361,self,Walk on By,4,4,older,68,Female,,,,7
+sub-030,LJAC,7,N,456.475,961,other,Adagio for Strings,3,2,older,68,Female,,,,17
+sub-030,LJAC,8,Y,541.975,1141,other,"Symphony No. 2, Finale",3,2,older,68,Female,,,,20
+sub-030,LJAC,9,N,598.975,1261,other,Cavatina Op. 130,4,2,older,68,Female,,,,22
+sub-030,LJAC,10,Y,256.975,541,other,John Wayne Gacy Jr.,3,2,older,68,Female,,,,10
+sub-030,LJAC,11,Y,28.975,61,other,Hurt,2,1,older,68,Female,,,,2
+sub-030,LJAC,12,Y,114.475,241,other,Sound of Silence,3,4,older,68,Female,,,,5
+sub-030,LJAC,13,Y,199.975,421,other,Reckoner,3,1,older,68,Female,,,,8
+sub-030,LJAC,14,N,228.475,481,other,Nocturne in C Sharp Minor,3,2,older,68,Female,,,,9
+sub-030,LJAC,15,Y,285.475,601,other,Nessun Dorma,1,2,older,68,Female,,,,11
+sub-030,LJAC,16,N,85.975,181,other,"Symphony No. 6, movement 1",3,3,older,68,Female,,,,4
+sub-030,LJAC,17,,313.975,661,,,1,1,,,,,,,12
+sub-030,LJAC,18,,627.475,1321,,,2,1,,,,,,,23
+sub-030,LJAC,19,,0.475,1,,,3,1,,,,,,,1
+sub-030,LJAC,20,,655.975,1381,,,1,1,,,,,,,24
+sub-030,LJAC,21,,342.475,721,,,3,2,,,,,,,13
+sub-030,LJAC,22,,142.975,301,,,2,2,,,,,,,6
+sub-030,LJAC,23,,427.975,901,,,2,1,,,,,,,16
+sub-030,LJAC,24,,399.475,841,,,1,1,,,,,,,15
+sub-032,ASHA,1,Y,85.975,181,self,1917 (The French Prostitute),4,4,older,70,Female,,,,4
+sub-032,ASHA,2,Y,114.475,241,self,Can't Find My Way Home,4,4,older,70,Female,,,,5
+sub-032,ASHA,3,Y,342.475,721,self,At Last,4,4,older,70,Female,,,,13
+sub-032,ASHA,4,Y,199.975,421,self,Something So Right,4,4,older,70,Female,,,,8
+sub-032,ASHA,5,Y,627.475,1321,self,Sir Duke,4,4,older,70,Female,,,,23
+sub-032,ASHA,6,Y,370.975,781,self,What Was it You Wanted,3,2,older,70,Female,,,,14
+sub-032,ASHA,7,N,541.975,1141,other,Adagio for Strings,2,1,older,70,Female,,,,20
+sub-032,ASHA,8,Y,456.475,961,other,"Symphony No. 2, Finale",2,1,older,70,Female,,,,17
+sub-032,ASHA,9,N,513.475,1081,other,Cavatina Op. 130,2,1,older,70,Female,,,,19
+sub-032,ASHA,10,Y,313.975,661,other,John Wayne Gacy Jr.,3,1,older,70,Female,,,,12
+sub-032,ASHA,11,Y,228.475,481,other,Hurt,3,2,older,70,Female,,,,9
+sub-032,ASHA,12,Y,171.475,361,other,Sound of Silence,4,4,older,70,Female,,,,7
+sub-032,ASHA,13,Y,655.975,1381,other,Reckoner,3,3,older,70,Female,,,,24
+sub-032,ASHA,14,N,57.475,121,other,Nocturne in C Sharp Minor,3,1,older,70,Female,,,,3
+sub-032,ASHA,15,Y,484.975,1021,other,Nessun Dorma,3,2,older,70,Female,,,,18
+sub-032,ASHA,16,N,399.475,841,other,"Symphony No. 6, movement 1",2,2,older,70,Female,,,,15
+sub-032,ASHA,17,,256.975,541,,,2,1,,,,,,,10
+sub-032,ASHA,18,,28.975,61,,,2,1,,,,,,,2
+sub-032,ASHA,19,,598.975,1261,,,1,1,,,,,,,22
+sub-032,ASHA,20,,570.475,1201,,,3,1,,,,,,,21
+sub-032,ASHA,21,,427.975,901,,,2,1,,,,,,,16
+sub-032,ASHA,22,,0.475,1,,,2,1,,,,,,,1
+sub-032,ASHA,23,,142.975,301,,,3,1,,,,,,,6
+sub-032,ASHA,24,,285.475,601,,,3,1,,,,,,,11
+sub-040,BFOR,1,Y,285.475,601,self,Dancing Queen,4,4,older,76,Female,,,,11
+sub-040,BFOR,2,Y,513.475,1081,self,Take a Chance on Me,4,4,older,76,Female,,,,19
+sub-040,BFOR,3,Y,313.975,661,self,Single Ladies,4,4,older,76,Female,,,,12
+sub-040,BFOR,4,Y,456.475,961,self,Footloose,4,4,older,76,Female,,,,17
+sub-040,BFOR,5,Y,598.975,1261,self,Beautiful Noise,4,4,older,76,Female,,,,22
+sub-040,BFOR,6,Y,228.475,481,self,Y.M.C.A.,4,4,older,76,Female,,,,9
+sub-040,BFOR,7,N,427.975,901,other,Adagio for Strings,3,1,older,76,Female,,,,16
+sub-040,BFOR,8,Y,342.475,721,other,"Symphony No. 2, Finale",3,1,older,76,Female,,,,13
+sub-040,BFOR,9,N,171.475,361,other,Cavatina Op. 130,3,1,older,76,Female,,,,7
+sub-040,BFOR,10,Y,399.475,841,other,John Wayne Gacy Jr.,2,1,older,76,Female,,,,15
+sub-040,BFOR,11,Y,57.475,121,other,Hurt,1,1,older,76,Female,,,,3
+sub-040,BFOR,12,Y,0.475,1,other,Sound of Silence,4,4,older,76,Female,,,,1
+sub-040,BFOR,13,Y,370.975,781,other,Reckoner,3,1,older,76,Female,,,,14
+sub-040,BFOR,14,N,484.975,1021,other,Nocturne in C Sharp Minor,3,1,older,76,Female,,,,18
+sub-040,BFOR,15,Y,655.975,1381,other,Nessun Dorma,1,1,older,76,Female,,,,24
+sub-040,BFOR,16,N,541.975,1141,other,"Symphony No. 6, movement 1",3,3,older,76,Female,,,,20
+sub-040,BFOR,17,,256.975,541,,,2,1,,,,,,,10
+sub-040,BFOR,18,,142.975,301,,,1,1,,,,,,,6
+sub-040,BFOR,19,,85.975,181,,,1,1,,,,,,,4
+sub-040,BFOR,20,,28.975,61,,,1,1,,,,,,,2
+sub-040,BFOR,21,,114.475,241,,,1,1,,,,,,,5
+sub-040,BFOR,22,,570.475,1201,,,2,1,,,,,,,21
+sub-040,BFOR,23,,627.475,1321,,,1,1,,,,,,,23
+sub-040,BFOR,24,,199.975,421,,,1,1,,,,,,,8
+sub-001,FKEE,1,Y,285.475,601,other,He Called Me Baby,4,4,older,56,Male,,,,11
+sub-001,FKEE,2,Y,85.975,181,other,Moon River,4,4,older,56,Male,,,,4
+sub-001,FKEE,3,N,342.475,721,other,Unchained Melody,4,4,older,56,Male,,,,13
+sub-001,FKEE,4,Y,313.975,661,other,Immigrant Song,3,4,older,56,Male,,,,12
+sub-001,FKEE,5,Y,399.475,841,other,Hey Jude,3,4,older,56,Male,,,,15
+sub-001,FKEE,6,Y,456.475,961,other,That's How I Got to Memphis,4,4,older,56,Male,,,,17
+sub-001,FKEE,7,N,627.475,1321,other,Adagio for Strings,1,1,older,56,Male,,,,23
+sub-001,FKEE,8,Y,171.475,361,other,"Symphony No. 2, Finale",2,3,older,56,Male,,,,7
+sub-001,FKEE,9,N,598.975,1261,other,Cavatina Op. 130,3,2,older,56,Male,,,,22
+sub-001,FKEE,10,Y,484.975,1021,other,John Wayne Gacy Jr.,3,2,older,56,Male,,,,18
+sub-001,FKEE,11,Y,370.975,781,other,Hurt,3,4,older,56,Male,,,,14
+sub-001,FKEE,12,Y,228.475,481,other,Sound of Silence,4,4,older,56,Male,,,,9
+sub-001,FKEE,13,Y,114.475,241,other,Reckoner,3,2,older,56,Male,,,,5
+sub-001,FKEE,14,N,427.975,901,other,Nocturne in C Sharp Minor,2,1,older,56,Male,,,,16
+sub-001,FKEE,15,Y,57.475,121,other,Nessun Dorma,2,2,older,56,Male,,,,3
+sub-001,FKEE,16,N,142.975,301,other,"Symphony No. 6, movement 1",2,2,older,56,Male,,,,6
+sub-001,FKEE,17,,541.975,1141,other,BP,1,1,older,56,Male,,,,20
+sub-001,FKEE,18,,513.475,1081,other,BP,2,1,older,56,Male,,,,19
+sub-001,FKEE,19,,28.975,61,other,BP,2,1,older,56,Male,,,,2
+sub-001,FKEE,20,,570.475,1201,other,BP,2,1,older,56,Male,,,,21
+sub-001,FKEE,21,,655.975,1381,other,Unfamiliar West,2,2,older,56,Male,,,,24
+sub-001,FKEE,22,,0.475,1,other,Unfamiliar West,2,2,older,56,Male,,,,1
+sub-001,FKEE,23,,199.975,421,other,Unfamiliar West,1,1,older,56,Male,,,,8
+sub-001,FKEE,24,,256.975,541,other,Unfamiliar West,2,2,older,56,Male,,,,10
+sub-003,JSCH,1,Y,627.475,1321,other,Sultans of Swing,,,older,67,Male,,,,23
+sub-003,JSCH,2,Y,399.475,841,other,My Old School,,,older,67,Male,,,,15
+sub-003,JSCH,3,Y,28.975,61,other,Comfortably Numb,,,older,67,Male,,,,2
+sub-003,JSCH,4,Y,85.975,181,other,Black Magic Woman,,,older,67,Male,,,,4
+sub-003,JSCH,5,N,655.975,1381,other,Jessica,,,older,67,Male,,,,24
+sub-003,JSCH,6,Y,228.475,481,other,Hotel California,,,older,67,Male,,,,9
+sub-003,JSCH,7,N,427.975,901,other,Adagio for Strings,,,older,67,Male,,,,16
+sub-003,JSCH,8,Y,142.975,301,other,"Symphony No. 2, Finale",,,older,67,Male,,,,6
+sub-003,JSCH,9,N,199.975,421,other,Cavatina Op. 130,,,older,67,Male,,,,8
+sub-003,JSCH,10,Y,285.475,601,other,John Wayne Gacy Jr.,,,older,67,Male,,,,11
+sub-003,JSCH,11,Y,171.475,361,other,Hurt,,,older,67,Male,,,,7
+sub-003,JSCH,12,Y,513.475,1081,other,Sound of Silence,,,older,67,Male,,,,19
+sub-003,JSCH,13,Y,484.975,1021,other,Reckoner,,,older,67,Male,,,,18
+sub-003,JSCH,14,N,114.475,241,other,Nocturne in C Sharp Minor,,,older,67,Male,,,,5
+sub-003,JSCH,15,Y,313.975,661,other,Nessun Dorma,,,older,67,Male,,,,12
+sub-003,JSCH,16,N,598.975,1261,other,"Symphony No. 6, movement 1",,,older,67,Male,,,,22
+sub-003,JSCH,17,,570.475,1201,,BP,,,,,,,,,21
+sub-003,JSCH,18,,456.475,961,,BP,,,,,,,,,17
+sub-003,JSCH,19,,0.475,1,,BP,,,,,,,,,1
+sub-003,JSCH,20,,57.475,121,,BP,,,,,,,,,3
+sub-003,JSCH,21,,541.975,1141,,Unfamiliar West,,,,,,,,,20
+sub-003,JSCH,22,,370.975,781,,Unfamiliar West,,,,,,,,,14
+sub-003,JSCH,23,,342.475,721,,Unfamiliar West,,,,,,,,,13
+sub-003,JSCH,24,,256.975,541,,Unfamiliar West,,,,,,,,,10
+sub-006,GHER,1,Y,0.475,1,self,Life on Mars,3,3,older,66,Male,,,,1
+sub-006,GHER,2,Y,627.475,1321,self,Eleanor Rigby,3,3,older,66,Male,,,,23
+sub-006,GHER,3,Y,142.975,301,self,Panic in Detroit,2,2,older,66,Male,,,,6
+sub-006,GHER,4,Y,513.475,1081,self,Stay,1,1,older,66,Male,,,,19
+sub-006,GHER,5,Y,342.475,721,self,Long Distance Run Around,3,3,older,66,Male,,,,13
+sub-006,GHER,6,Y,256.975,541,self,Michelle,1,2,older,66,Male,,,,10
+sub-006,GHER,7,N,199.975,421,other,Adagio for Strings,4,4,older,66,Male,,,,8
+sub-006,GHER,8,Y,285.475,601,other,"Symphony No. 2, Finale",4,2,older,66,Male,,,,11
+sub-006,GHER,9,N,228.475,481,other,Cavatina Op. 130,4,2,older,66,Male,,,,9
+sub-006,GHER,10,Y,85.975,181,other,John Wayne Gacy Jr.,4,2,older,66,Male,,,,4
+sub-006,GHER,11,Y,570.475,1201,other,Hurt,1,1,older,66,Male,,,,21
+sub-006,GHER,12,Y,370.975,781,other,Sound of Silence,4,3,older,66,Male,,,,14
+sub-006,GHER,13,Y,484.975,1021,other,Reckoner,4,1,older,66,Male,,,,18
+sub-006,GHER,14,N,399.475,841,other,Nocturne in C Sharp Minor,3,3,older,66,Male,,,,15
+sub-006,GHER,15,Y,114.475,241,other,Nessun Dorma,1,2,older,66,Male,,,,5
+sub-006,GHER,16,N,598.975,1261,other,"Symphony No. 6, movement 1",4,1,older,66,Male,,,,22
+sub-006,GHER,17,,456.475,961,,,4,2,,,,,,,17
+sub-006,GHER,18,,427.975,901,,,1,2,,,,,,,16
+sub-006,GHER,19,,655.975,1381,,,1,2,,,,,,,24
+sub-006,GHER,20,,313.975,661,,,1,2,,,,,,,12
+sub-006,GHER,21,,57.475,121,,,4,2,,,,,,,3
+sub-006,GHER,22,,541.975,1141,,,1,2,,,,,,,20
+sub-006,GHER,23,,28.975,61,,,2,2,,,,,,,2
+sub-006,GHER,24,,171.475,361,,,2,2,,,,,,,7
+sub-011,CWEI,1,Y,541.975,1141,self,As Time Goes By,4,4,older,78,Male,,,,20
+sub-011,CWEI,2,Y,456.475,961,self,Evergreen,4,4,older,78,Male,,,,17
+sub-011,CWEI,3,Y,114.475,241,self,In the Ghetto,4,4,older,78,Male,,,,5
+sub-011,CWEI,4,Y,57.475,121,self,Lonesome Tonight,4,4,older,78,Male,,,,3
+sub-011,CWEI,5,Y,598.975,1261,self,Loving You,4,3,older,78,Male,,,,22
+sub-011,CWEI,6,Y,427.975,901,self,Tomorrow,4,4,older,78,Male,,,,16
+sub-011,CWEI,7,N,85.975,181,other,Adagio for Strings,2,1,older,78,Male,,,,4
+sub-011,CWEI,8,Y,342.475,721,other,Familiar Western,3,3,older,78,Male,,,,13
+sub-011,CWEI,9,N,256.975,541,other,Familiar Western,3,2,older,78,Male,,,,10
+sub-011,CWEI,10,Y,171.475,361,other,Familiar Western,3,2,older,78,Male,,,,7
+sub-011,CWEI,11,Y,199.975,421,other,Hurt,3,2,older,78,Male,,,,8
+sub-011,CWEI,12,Y,399.475,841,other,The Sound of Silence,4,4,older,78,Male,,,,15
+sub-011,CWEI,13,Y,513.475,1081,other,Reckoner,3,3,older,78,Male,,,,19
+sub-011,CWEI,14,N,570.475,1201,other,Nocturne in C Sharp minor,4,3,older,78,Male,,,,21
+sub-011,CWEI,15,Y,313.975,661,other,Nessun Dorma,4,3,older,78,Male,,,,12
+sub-011,CWEI,16,N,28.975,61,other,Tchaikovsky 6,3,2,older,78,Male,,,,2
+sub-011,CWEI,17,,142.975,301,,,1,1,,,,,,,6
+sub-011,CWEI,18,,0.475,1,,,1,1,,,,,,,1
+sub-011,CWEI,19,,484.975,1021,,,3,3,,,,,,,18
+sub-011,CWEI,20,,627.475,1321,,,2,1,,,,,,,23
+sub-011,CWEI,21,,370.975,781,,,2,2,,,,,,,14
+sub-011,CWEI,22,,285.475,601,,,2,1,,,,,,,11
+sub-011,CWEI,23,,228.475,481,,,1,1,,,,,,,9
+sub-011,CWEI,24,,655.975,1381,,,1,1,,,,,,,24
+sub-012,MBLO,1,Y,484.975,1021,self,Enormous Tots,4,4,older,66,Male,,,,18
+sub-012,MBLO,2,Y,228.475,481,self,Small Circle of Friends,4,4,older,66,Male,,,,9
+sub-012,MBLO,3,Y,655.975,1381,self,The Crucifixion,4,4,older,66,Male,,,,24
+sub-012,MBLO,4,N,370.975,781,self,Rite of Spring,4,4,older,66,Male,,,,14
+sub-012,MBLO,5,Y,85.975,181,self,Tomorrow Never Knows,4,4,older,66,Male,,,,4
+sub-012,MBLO,6,N,0.475,1,self,WakaJawaka,4,4,older,66,Male,,,,1
+sub-012,MBLO,7,N,142.975,301,other,Adagio for Strings,3,2,older,66,Male,,,,6
+sub-012,MBLO,8,Y,598.975,1261,other,"Symphony No. 2, Finale",2,2,older,66,Male,,,,22
+sub-012,MBLO,9,N,57.475,121,other,Cavatina Op. 130,3,2,older,66,Male,,,,3
+sub-012,MBLO,10,Y,456.475,961,other,John Wayne Gacy Jr.,3,2,older,66,Male,,,,17
+sub-012,MBLO,11,Y,513.475,1081,other,Hurt,3,4,older,66,Male,,,,19
+sub-012,MBLO,12,Y,114.475,241,other,Sound of Silence,4,4,older,66,Male,,,,5
+sub-012,MBLO,13,Y,399.475,841,other,Reckoner,2,2,older,66,Male,,,,15
+sub-012,MBLO,14,N,199.975,421,other,Nocturne in C Sharp Minor,3,2,older,66,Male,,,,8
+sub-012,MBLO,15,Y,342.475,721,other,Nessun Dorma,1,2,older,66,Male,,,,13
+sub-012,MBLO,16,N,285.475,601,other,"Symphony No. 6, movement 1",3,3,older,66,Male,,,,11
+sub-012,MBLO,17,,541.975,1141,,,3,1,,,,,,,20
+sub-012,MBLO,18,,427.975,901,,,2,1,,,,,,,16
+sub-012,MBLO,19,,313.975,661,,,2,1,,,,,,,12
+sub-012,MBLO,20,,28.975,61,,,3,1,,,,,,,2
+sub-012,MBLO,21,,627.475,1321,,,3,1,,,,,,,23
+sub-012,MBLO,22,,256.975,541,,,3,1,,,,,,,10
+sub-012,MBLO,23,,171.475,361,,,3,3,,,,,,,7
+sub-012,MBLO,24,,570.475,1201,,,2,2,,,,,,,21
+sub-015,EROS,1,Y,513.475,1081,self,I Can't Get No Satisfaction,4,4,older,58,Male,,,,19
+sub-015,EROS,2,Y,655.975,1381,self,Smells Like Teen Spirit,4,4,older,58,Male,,,,24
+sub-015,EROS,3,Y,313.975,661,self,Once in a Lifetime,4,4,older,58,Male,,,,12
+sub-015,EROS,4,Y,570.475,1201,self,Stairway to Heaven,4,4,older,58,Male,,,,21
+sub-015,EROS,5,Y,598.975,1261,self,Should I Stay or Should I Go,4,4,older,58,Male,,,,22
+sub-015,EROS,6,Y,171.475,361,self,White Rabbit,4,4,older,58,Male,,,,7
+sub-015,EROS,7,N,256.975,541,other,Adagio for Strings,2,1,older,58,Male,,,,10
+sub-015,EROS,8,Y,342.475,721,other,"Symphony No. 2, Finale",2,1,older,58,Male,,,,13
+sub-015,EROS,9,N,456.475,961,other,Cavatina Op. 130,2,2,older,58,Male,,,,17
+sub-015,EROS,10,Y,370.975,781,other,John Wayne Gacy Jr.,2,2,older,58,Male,,,,14
+sub-015,EROS,11,Y,28.975,61,other,Hurt,3,4,older,58,Male,,,,2
+sub-015,EROS,12,Y,541.975,1141,other,Sound of Silence,4,4,older,58,Male,,,,20
+sub-015,EROS,13,Y,427.975,901,other,Reckoner,2,2,older,58,Male,,,,16
+sub-015,EROS,14,N,85.975,181,other,Nocturne in C Sharp Minor,2,1,older,58,Male,,,,4
+sub-015,EROS,15,Y,627.475,1321,other,Nessun Dorma,2,1,older,58,Male,,,,23
+sub-015,EROS,16,N,57.475,121,other,"Symphony No. 6, movement 1",2,1,older,58,Male,,,,3
+sub-015,EROS,17,,228.475,481,,,2,1,,,,,,,9
+sub-015,EROS,18,,399.475,841,,,3,1,,,,,,,15
+sub-015,EROS,19,,0.475,1,,,2,1,,,,,,,1
+sub-015,EROS,20,,484.975,1021,,,3,1,,,,,,,18
+sub-015,EROS,21,,114.475,241,,,3,1,,,,,,,5
+sub-015,EROS,22,,285.475,601,,,3,1,,,,,,,11
+sub-015,EROS,23,,199.975,421,,,3,1,,,,,,,8
+sub-015,EROS,24,,142.975,301,,,2,1,,,,,,,6
+sub-036,GSHA,1,Y,285.475,601,self,Respect,4,4,older,66,Female,,,,11
+sub-036,GSHA,2,N,114.475,241,self,One O'clock Jump,4,1,older,66,Female,,,,5
+sub-036,GSHA,3,Y,570.475,1201,self,Celebration,4,4,older,66,Female,,,,21
+sub-036,GSHA,4,Y,199.975,421,self,Don't Stop Til You Get Enough,4,4,older,66,Female,,,,8
+sub-036,GSHA,5,Y,513.475,1081,self,Ain't Nobody,3,4,older,66,Female,,,,19
+sub-036,GSHA,6,Y,541.975,1141,self,You Are the Sunshine of My Life,4,4,older,66,Female,,,,20
+sub-036,GSHA,7,N,313.975,661,other,Adagio for Strings,2,1,older,66,Female,,,,12
+sub-036,GSHA,8,Y,399.475,841,other,"Symphony No. 2, Finale",1,1,older,66,Female,,,,15
+sub-036,GSHA,9,N,342.475,721,other,Cavatina Op. 130,3,2,older,66,Female,,,,13
+sub-036,GSHA,10,Y,427.975,901,other,John Wayne Gacy Jr.,2,1,older,66,Female,,,,16
+sub-036,GSHA,11,Y,228.475,481,other,Hurt,2,2,older,66,Female,,,,9
+sub-036,GSHA,12,Y,598.975,1261,other,Sound of Silence,3,4,older,66,Female,,,,22
+sub-036,GSHA,13,Y,256.975,541,other,Reckoner,2,1,older,66,Female,,,,10
+sub-036,GSHA,14,N,0.475,1,other,Nocturne in C Sharp Minor,4,1,older,66,Female,,,,1
+sub-036,GSHA,15,Y,57.475,121,other,Nessun Dorma,2,1,older,66,Female,,,,3
+sub-036,GSHA,16,N,85.975,181,other,"Symphony No. 6, movement 1",2,1,older,66,Female,,,,4
+sub-036,GSHA,17,,627.475,1321,,,1,1,,,,,,,23
+sub-036,GSHA,18,,484.975,1021,,,1,1,,,,,,,18
+sub-036,GSHA,19,,655.975,1381,,,2,1,,,,,,,24
+sub-036,GSHA,20,,142.975,301,,,2,1,,,,,,,6
+sub-036,GSHA,21,,456.475,961,,,2,1,,,,,,,17
+sub-036,GSHA,22,,28.975,61,,,3,1,,,,,,,2
+sub-036,GSHA,23,,171.475,361,,,2,1,,,,,,,7
+sub-036,GSHA,24,,370.975,781,,,1,1,,,,,,,14
+sub-008,LDIR,1,Y,598.975,1261,self,Wait for It,4,4,older,63,Female,,,,22
+sub-008,LDIR,2,Y,655.975,1381,self,Afterlife,4,4,older,63,Female,,,,24
+sub-008,LDIR,3,Y,199.975,421,self,This Tornado Loves You,4,4,older,63,Female,,,,8
+sub-008,LDIR,4,Y,313.975,661,self,I Will Wait,4,4,older,63,Female,,,,12
+sub-008,LDIR,5,Y,0.475,1,self,Eet,4,4,older,63,Female,,,,1
+sub-008,LDIR,6,Y,484.975,1021,self,I'll Work for Your Love,4,4,older,63,Female,,,,18
+sub-008,LDIR,7,N,370.975,781,other,Adagio for Strings,3,1,older,63,Female,,,,14
+sub-008,LDIR,8,Y,570.475,1201,other,"Symphony No. 2, Finale",2,1,older,63,Female,,,,21
+sub-008,LDIR,9,N,399.475,841,other,Cavatina Op. 130,4,1,older,63,Female,,,,15
+sub-008,LDIR,10,Y,85.975,181,other,John Wayne Gacy Jr.,3,2,older,63,Female,,,,4
+sub-008,LDIR,11,Y,28.975,61,other,Hurt,2,1,older,63,Female,,,,2
+sub-008,LDIR,12,Y,541.975,1141,other,Sound of Silence,4,4,older,63,Female,,,,20
+sub-008,LDIR,13,Y,256.975,541,other,Reckoner,3,1,older,63,Female,,,,10
+sub-008,LDIR,14,N,627.475,1321,other,Nocturne in C Sharp Minor,3,1,older,63,Female,,,,23
+sub-008,LDIR,15,Y,285.475,601,other,Nessun Dorma,2,3,older,63,Female,,,,11
+sub-008,LDIR,16,N,427.975,901,other,"Symphony No. 6, movement 1",3,1,older,63,Female,,,,16
+sub-008,LDIR,17,,342.475,721,,,1,1,,,,,,,13
+sub-008,LDIR,18,,513.475,1081,,,1,1,,,,,,,19
+sub-008,LDIR,19,,171.475,361,,,2,1,,,,,,,7
+sub-008,LDIR,20,,228.475,481,,,1,1,,,,,,,9
+sub-008,LDIR,21,,142.975,301,,,2,1,,,,,,,6
+sub-008,LDIR,22,,456.475,961,,,1,1,,,,,,,17
+sub-008,LDIR,23,,114.475,241,,,1,1,,,,,,,5
+sub-008,LDIR,24,,57.475,121,,,1,1,,,,,,,3
+sub-016,TCIE,1,Y,513.475,1081,self,I Will,3,4,older,60,Male,,,,19
+sub-016,TCIE,2,Y,313.975,661,self,Beauty & the Beatitudes,4,4,older,60,Male,,,,12
+sub-016,TCIE,3,Y,427.975,901,self,The Saturday Boy,4,4,older,60,Male,,,,16
+sub-016,TCIE,4,N,114.475,241,self,Danse Macabre,3,4,older,60,Male,,,,5
+sub-016,TCIE,5,Y,199.975,421,self,Grindstone,4,4,older,60,Male,,,,8
+sub-016,TCIE,6,Y,598.975,1261,self,Vicious,3,4,older,60,Male,,,,22
+sub-016,TCIE,7,N,85.975,181,other,Adagio for Strings,2,3,older,60,Male,,,,4
+sub-016,TCIE,8,Y,570.475,1201,other,"Symphony No. 2, Finale",3,3,older,60,Male,,,,21
+sub-016,TCIE,9,N,627.475,1321,other,Cavatina Op. 130,3,3,older,60,Male,,,,23
+sub-016,TCIE,10,Y,57.475,121,other,John Wayne Gacy Jr.,2,3,older,60,Male,,,,3
+sub-016,TCIE,11,Y,228.475,481,other,Hurt,3,4,older,60,Male,,,,9
+sub-016,TCIE,12,Y,256.975,541,other,Sound of Silence,2,4,older,60,Male,,,,10
+sub-016,TCIE,13,Y,342.475,721,other,Reckoner,2,3,older,60,Male,,,,13
+sub-016,TCIE,14,N,484.975,1021,other,Nocturne in C Sharp Minor,3,3,older,60,Male,,,,18
+sub-016,TCIE,15,Y,171.475,361,other,Nessun Dorma,2,3,older,60,Male,,,,7
+sub-016,TCIE,16,N,370.975,781,other,"Symphony No. 6, movement 1",2,3,older,60,Male,,,,14
+sub-016,TCIE,17,,142.975,301,,,2,1,,,,,,,6
+sub-016,TCIE,18,,655.975,1381,,,2,3,,,,,,,24
+sub-016,TCIE,19,,456.475,961,,,2,1,,,,,,,17
+sub-016,TCIE,20,,399.475,841,,,3,2,,,,,,,15
+sub-016,TCIE,21,,0.475,1,,,2,3,,,,,,,1
+sub-016,TCIE,22,,541.975,1141,,,2,1,,,,,,,20
+sub-016,TCIE,23,,28.975,61,,,2,1,,,,,,,2
+sub-016,TCIE,24,,285.475,601,,,3,1,,,,,,,11
+sub-018,GCAS,1,Y,0.475,1,self,Alabaster Box,4,4,older,71,Male,,,,1
+sub-018,GCAS,2,Y,285.475,601,self,Amazing Grace,4,4,older,71,Male,,,,11
+sub-018,GCAS,3,Y,85.975,181,self,Ordinary Just Won't Do,4,4,older,71,Male,,,,4
+sub-018,GCAS,4,Y,228.475,481,self,No Weapon,4,4,older,71,Male,,,,9
+sub-018,GCAS,5,Y,370.975,781,self,Stomp,4,4,older,71,Male,,,,14
+sub-018,GCAS,6,Y,57.475,121,self,"Satan, We're Gonna Tear Your Kingdom Down",4,4,older,71,Male,,,,3
+sub-018,GCAS,7,N,313.975,661,other,Adagio for Strings,3,2,older,71,Male,,,,12
+sub-018,GCAS,8,Y,541.975,1141,other,"Symphony No. 2, Finale",3,2,older,71,Male,,,,20
+sub-018,GCAS,9,N,655.975,1381,other,Cavatina Op. 130,3,3,older,71,Male,,,,24
+sub-018,GCAS,10,Y,28.975,61,other,John Wayne Gacy Jr.,4,4,older,71,Male,,,,2
+sub-018,GCAS,11,Y,570.475,1201,other,Hurt,2,2,older,71,Male,,,,21
+sub-018,GCAS,12,Y,199.975,421,other,Sound of Silence,4,4,older,71,Male,,,,8
+sub-018,GCAS,13,Y,456.475,961,other,Reckoner,3,3,older,71,Male,,,,17
+sub-018,GCAS,14,N,142.975,301,other,Nocturne in C Sharp Minor,4,3,older,71,Male,,,,6
+sub-018,GCAS,15,Y,598.975,1261,other,Nessun Dorma,4,4,older,71,Male,,,,22
+sub-018,GCAS,16,N,342.475,721,other,"Symphony No. 6, movement 1",4,4,older,71,Male,,,,13
+sub-018,GCAS,17,,171.475,361,,,1,1,,,,,,,7
+sub-018,GCAS,18,,399.475,841,,,1,1,,,,,,,15
+sub-018,GCAS,19,,484.975,1021,,,3,3,,,,,,,18
+sub-018,GCAS,20,,427.975,901,,,1,1,,,,,,,16
+sub-018,GCAS,21,,114.475,241,,,1,1,,,,,,,5
+sub-018,GCAS,22,,513.475,1081,,,1,2,,,,,,,19
+sub-018,GCAS,23,,256.975,541,,,1,1,,,,,,,10
+sub-018,GCAS,24,,627.475,1321,,,1,1,,,,,,,23
+sub-022,DCAT,1,Y,28.975,61,self,Jerusalem,4,4,older,89,Female,,,,2
+sub-022,DCAT,2,Y,456.475,961,self,"Ah! mes amis, quel jour de fête!",4,4,older,89,Female,,,,17
+sub-022,DCAT,3,Y,570.475,1201,self,Norma - Casta Diva,4,4,older,89,Female,,,,21
+sub-022,DCAT,4,N,114.475,241,self,String Serenade No 13,4,4,older,89,Female,,,,5
+sub-022,DCAT,5,Y,142.975,301,self,No Regrets Non je ne regrette rien,4,4,older,89,Female,,,,6
+sub-022,DCAT,6,N,313.975,661,self,No Regrets Non je ne regrette rien,4,4,older,89,Female,,,,12
+sub-022,DCAT,7,N,541.975,1141,other,Adagio for Strings,3,2,older,89,Female,,,,20
+sub-022,DCAT,8,Y,399.475,841,other,"Symphony No. 2, Finale",4,3,older,89,Female,,,,15
+sub-022,DCAT,9,N,627.475,1321,other,Cavatina Op. 130,3,1,older,89,Female,,,,23
+sub-022,DCAT,10,Y,171.475,361,other,John Wayne Gacy Jr.,3,2,older,89,Female,,,,7
+sub-022,DCAT,11,Y,370.975,781,other,Hurt,4,2,older,89,Female,,,,14
+sub-022,DCAT,12,y,513.475,1081,other,Sound of Silence,4,4,older,89,Female,,,,19
+sub-022,DCAT,13,Y,342.475,721,other,Reckoner,3,1,older,89,Female,,,,13
+sub-022,DCAT,14,N,655.975,1381,other,Nocturne in C Sharp Minor,4,4,older,89,Female,,,,24
+sub-022,DCAT,15,Y,427.975,901,other,Nessun Dorma,4,4,older,89,Female,,,,16
+sub-022,DCAT,16,N,484.975,1021,other,"Symphony No. 6, movement 1",4,3,older,89,Female,,,,18
+sub-022,DCAT,17,,228.475,481,,,2,2,,,,,,,9
+sub-022,DCAT,18,,256.975,541,,,3,1,,,,,,,10
+sub-022,DCAT,19,,199.975,421,,,3,3,,,,,,,8
+sub-022,DCAT,20,,85.975,181,,,3,2,,,,,,,4
+sub-022,DCAT,21,,598.975,1261,,,3,2,,,,,,,22
+sub-022,DCAT,22,,0.475,1,,,2,2,,,,,,,1
+sub-022,DCAT,23,,57.475,121,,,3,2,,,,,,,3
+sub-022,DCAT,24,,285.475,601,,,2,1,,,,,,,11
+sub-042,AZHA,1,N,655.975,1381,self,Song for Sienna,4,4,younger,18,Female,,,,24
+sub-042,AZHA,2,Y,0.475,1,self,Set Fire to Rain,4,4,younger,18,Female,,,,1
+sub-042,AZHA,3,N,627.475,1321,self,Howl's Moving Castle,4,4,younger,18,Female,,,,23
+sub-042,AZHA,4,Y,484.975,1021,self,Picture to Burn,4,4,younger,18,Female,,,,18
+sub-042,AZHA,5,N,570.475,1201,self,MODUS,4,4,younger,18,Female,,,,21
+sub-042,AZHA,6,Y,285.475,601,self,Mr. Brightside,4,4,younger,18,Female,,,,11
+sub-042,AZHA,7,N,228.475,481,other,Adagio for Strings,2,2,younger,18,Female,,,,9
+sub-042,AZHA,8,Y,598.975,1261,other,"Symphony No. 2, Finale",1,1,younger,18,Female,,,,22
+sub-042,AZHA,9,N,114.475,241,other,Cavatina Op. 130,3,2,younger,18,Female,,,,5
+sub-042,AZHA,10,Y,171.475,361,other,John Wayne Gacy Jr.,3,3,younger,18,Female,,,,7
+sub-042,AZHA,11,Y,399.475,841,other,Hurt,2,1,younger,18,Female,,,,15
+sub-042,AZHA,12,y,456.475,961,other,Sound of Silence,3,4,younger,18,Female,,,,17
+sub-042,AZHA,13,Y,28.975,61,other,Reckoner,3,3,younger,18,Female,,,,2
+sub-042,AZHA,14,N,85.975,181,other,Nocturne in C Sharp Minor,4,4,younger,18,Female,,,,4
+sub-042,AZHA,15,Y,427.975,901,other,Nessun Dorma,2,3,younger,18,Female,,,,16
+sub-042,AZHA,16,N,370.975,781,other,"Symphony No. 6, movement 1",3,3,younger,18,Female,,,,14
+sub-042,AZHA,17,,313.975,661,,,2,1,,,,,,,12
+sub-042,AZHA,18,,142.975,301,,,2,3,,,,,,,6
+sub-042,AZHA,19,,57.475,121,,,2,2,,,,,,,3
+sub-042,AZHA,20,,513.475,1081,,,1,1,,,,,,,19
+sub-042,AZHA,21,,256.975,541,,,1,2,,,,,,,10
+sub-042,AZHA,22,,199.975,421,,,2,2,,,,,,,8
+sub-042,AZHA,23,,342.475,721,,,2,2,,,,,,,13
+sub-042,AZHA,24,,541.975,1141,,,1,1,,,,,,,20
+sub-043,SLEE,1,Y,228.475,481,self,Give You Blue,4,4,younger,18,Female,,,,9
+sub-043,SLEE,2,Y,484.975,1021,self,New York State of Mind,4,4,younger,18,Female,,,,18
+sub-043,SLEE,3,Y,28.975,61,self,Goodbye Yellow Brick Road,4,4,younger,18,Female,,,,2
+sub-043,SLEE,4,Y,598.975,1261,self,The Weekend,4,4,younger,18,Female,,,,22
+sub-043,SLEE,5,Y,513.475,1081,self,Travelin' Soldier,4,4,younger,18,Female,,,,19
+sub-043,SLEE,6,Y,313.975,661,self,Love Affair,4,4,younger,18,Female,,,,12
+sub-043,SLEE,7,N,114.475,241,other,Adagio for Strings,2,1,younger,18,Female,,,,5
+sub-043,SLEE,8,Y,85.975,181,other,"Symphony No. 2, Finale",3,1,younger,18,Female,,,,4
+sub-043,SLEE,9,N,342.475,721,other,Cavatina Op. 130,3,1,younger,18,Female,,,,13
+sub-043,SLEE,10,Y,285.475,601,other,John Wayne Gacy Jr.,3,1,younger,18,Female,,,,11
+sub-043,SLEE,11,Y,171.475,361,other,Hurt,1,1,younger,18,Female,,,,7
+sub-043,SLEE,12,Y,199.975,421,other,Sound of Silence,3,1,younger,18,Female,,,,8
+sub-043,SLEE,13,Y,570.475,1201,other,Reckoner,3,1,younger,18,Female,,,,21
+sub-043,SLEE,14,N,142.975,301,other,Nocturne in C Sharp Minor,4,1,younger,18,Female,,,,6
+sub-043,SLEE,15,Y,627.475,1321,other,Nessun Dorma,3,1,younger,18,Female,,,,23
+sub-043,SLEE,16,N,0.475,1,other,"Symphony No. 6, movement 1",3,1,younger,18,Female,,,,1
+sub-043,SLEE,17,,256.975,541,,,1,1,,,,,,,10
+sub-043,SLEE,18,,456.475,961,,,1,1,,,,,,,17
+sub-043,SLEE,19,,655.975,1381,,,2,1,,,,,,,24
+sub-043,SLEE,20,,57.475,121,,,1,1,,,,,,,3
+sub-043,SLEE,21,,541.975,1141,,,1,1,,,,,,,20
+sub-043,SLEE,22,,399.475,841,,,1,1,,,,,,,15
+sub-043,SLEE,23,,427.975,901,,,1,1,,,,,,,16
+sub-043,SLEE,24,,370.975,781,,,1,1,,,,,,,14
+sub-010,JPRE,1,N,570.475,1201,self,Concerto in D Minor for 2 Violins,4,3,older,75,Female,,,,21
+sub-010,JPRE,2,Y,256.975,541,self,Opera - Unknown,4,3,older,75,Female,,,,10
+sub-010,JPRE,3,N,199.975,421,self,Dvorak New World Symphony,3,4,older,75,Female,,,,8
+sub-010,JPRE,4,N,228.475,481,self,Enigma Variations,3,3,older,75,Female,,,,9
+sub-010,JPRE,5,N,627.475,1321,self,Clarinet Quintet in A Major,4,4,older,75,Female,,,,23
+sub-010,JPRE,6,Y,370.975,781,self,Twilight Time,4,4,older,75,Female,,,,14
+sub-010,JPRE,7,N,513.475,1081,other,Adagio for Strings,3,2,older,75,Female,,,,19
+sub-010,JPRE,8,Y,342.475,721,other,"Symphony No. 2, Finale",3,3,older,75,Female,,,,13
+sub-010,JPRE,9,N,427.975,901,other,Cavatina Op. 130,4,3,older,75,Female,,,,16
+sub-010,JPRE,10,Y,285.475,601,other,John Wayne Gacy Jr.,3,3,older,75,Female,,,,11
+sub-010,JPRE,11,Y,598.975,1261,other,Hurt,1,2,older,75,Female,,,,22
+sub-010,JPRE,12,Y,541.975,1141,other,Sound of Silence,4,4,older,75,Female,,,,20
+sub-010,JPRE,13,Y,655.975,1381,other,Reckoner,3,2,older,75,Female,,,,24
+sub-010,JPRE,14,N,484.975,1021,other,Nocturne in C Sharp Minor,3,3,older,75,Female,,,,18
+sub-010,JPRE,15,Y,313.975,661,other,Nessun Dorma,4,4,older,75,Female,,,,12
+sub-010,JPRE,16,N,399.475,841,other,"Symphony No. 6, movement 1",4,4,older,75,Female,,,,15
+sub-010,JPRE,17,,171.475,361,,,1,1,,,,,,,7
+sub-010,JPRE,18,,456.475,961,,,2,1,,,,,,,17
+sub-010,JPRE,19,,57.475,121,,,2,1,,,,,,,3
+sub-010,JPRE,20,,0.475,1,,,1,1,,,,,,,1
+sub-010,JPRE,21,,142.975,301,,,2,1,,,,,,,6
+sub-010,JPRE,22,,85.975,181,,,2,1,,,,,,,4
+sub-010,JPRE,23,,114.475,241,,,1,1,,,,,,,5
+sub-010,JPRE,24,,28.975,61,,,1,1,,,,,,,2
+sub-021,JKAY,1,Y,342.475,721,self,You Raise Me Up,4,4,older,69,Male,,,,13
+sub-021,JKAY,2,Y,456.475,961,self,Hallelujah,4,4,older,69,Male,,,,17
+sub-021,JKAY,3,Y,199.975,421,self,Nessun Dorma,3,2,older,69,Male,,,,8
+sub-021,JKAY,4,N,28.975,61,self,Mahler Symphony No. 2 Mov. 5,4,4,older,69,Male,,,,2
+sub-021,JKAY,5,N,228.475,481,self,Tchaikovsky Violin Concerto in D Major,4,3,older,69,Male,,,,9
+sub-021,JKAY,6,Y,427.975,901,self,Where The Streets Have No Name,4,3,older,69,Male,,,,16
+sub-021,JKAY,7,N,256.975,541,other,Adagio for Strings,4,3,older,69,Male,,,,10
+sub-021,JKAY,8,Y,598.975,1261,other,"Symphony No. 2, Finale",4,4,older,69,Male,,,,22
+sub-021,JKAY,9,N,57.475,121,other,Cavatina Op. 130,3,2,older,69,Male,,,,3
+sub-021,JKAY,10,Y,570.475,1201,other,John Wayne Gacy Jr.,3,3,older,69,Male,,,,21
+sub-021,JKAY,11,Y,370.975,781,other,Hurt,3,1,older,69,Male,,,,14
+sub-021,JKAY,12,Y,285.475,601,other,Sound of Silence,4,4,older,69,Male,,,,11
+sub-021,JKAY,13,Y,313.975,661,other,Reckoner,3,3,older,69,Male,,,,12
+sub-021,JKAY,14,N,484.975,1021,other,Nocturne in C Sharp Minor,4,3,older,69,Male,,,,18
+sub-021,JKAY,15,Y,655.975,1381,other,Nessun Dorma,4,4,older,69,Male,,,,24
+sub-021,JKAY,16,N,541.975,1141,other,"Symphony No. 6, movement 1",4,3,older,69,Male,,,,20
+sub-021,JKAY,17,,513.475,1081,,,1,1,,,,,,,19
+sub-021,JKAY,18,,85.975,181,,,1,1,,,,,,,4
+sub-021,JKAY,19,,114.475,241,,,2,2,,,,,,,5
+sub-021,JKAY,20,,142.975,301,,,1,1,,,,,,,6
+sub-021,JKAY,21,,627.475,1321,,,3,2,,,,,,,23
+sub-021,JKAY,22,,399.475,841,,,0,0,,,,,,,15
+sub-021,JKAY,23,,171.475,361,,,3,3,,,,,,,7
+sub-021,JKAY,24,,0.475,1,,,1,1,,,,,,,1
+sub-023,LOLE,1,Y,313.975,661,self,I Dreamed a Dream,3,3,older,73,Female,,Y,,12
+sub-023,LOLE,2,Y,570.475,1201,self,Somewhere over the Rainbow,4,4,older,73,Female,,Y,,21
+sub-023,LOLE,3,Y,342.475,721,self,Blowin in the Wind,4,4,older,73,Female,,Y,,13
+sub-023,LOLE,4,Y,114.475,241,self,The Sounds of Silence,4,4,older,73,Female,,Y,,5
+sub-023,LOLE,5,Y,228.475,481,self,Suzanne,4,4,older,73,Female,,Y,,9
+sub-023,LOLE,6,Y,399.475,841,self,The First Time Ever I Saw Your Face,4,4,older,73,Female,,Y,,15
+sub-023,LOLE,7,N,427.975,901,other,Adagio for Strings,2,1,older,73,Female,,Y,,16
+sub-023,LOLE,8,N,598.975,1261,other,"Symphony No. 2, Finale",2,3,older,73,Female,,Y,,22
+sub-023,LOLE,9,N,627.475,1321,other,Cavatina Op. 130,3,3,older,73,Female,,Y,,23
+sub-023,LOLE,10,Y,199.975,421,other,John Wayne Gacy Jr.,2,0,older,73,Female,,Y,,8
+sub-023,LOLE,11,Y,370.975,781,other,Hurt,3,2,older,73,Female,,Y,,14
+sub-023,LOLE,12,Y,28.975,61,other,Sound of Silence,4,4,older,73,Female,,Y,,2
+sub-023,LOLE,13,Y,57.475,121,other,Reckoner,2,1,older,73,Female,,Y,,3
+sub-023,LOLE,14,N,456.475,961,other,Nocturne in C Sharp Minor,3,3,older,73,Female,,Y,,17
+sub-023,LOLE,15,Y,0.475,1,other,Nessun Dorma,1,1,older,73,Female,,Y,,1
+sub-023,LOLE,16,N,484.975,1021,other,"Symphony No. 6, movement 1",2,2,older,73,Female,,Y,,18
+sub-023,LOLE,17,,285.475,601,other,,1,1,,,,,Y,,11
+sub-023,LOLE,18,,513.475,1081,other,,1,1,,,,,Y,,19
+sub-023,LOLE,19,,171.475,361,other,,2,1,,,,,Y,,7
+sub-023,LOLE,20,,256.975,541,other,,1,1,,,,,Y,,10
+sub-023,LOLE,21,,142.975,301,other,,2,1,,,,,Y,,6
+sub-023,LOLE,22,,541.975,1141,other,,2,1,,,,,Y,,20
+sub-023,LOLE,23,,85.975,181,other,,1,1,,,,,Y,,4
+sub-023,LOLE,24,,655.975,1381,other,,1,1,,,,,Y,,24
+sub-037,AEHR,1,N,427.975,901,self,Take Five,4,4,older,60,Male,,Y,,16
+sub-037,AEHR,2,Y,627.475,1321,self,Money,4,4,older,60,Male,,Y,,23
+sub-037,AEHR,3,Y,171.475,361,self,Moondance,4,4,older,60,Male,,Y,,7
+sub-037,AEHR,4,Y,57.475,121,self,What'd I Say,4,4,older,60,Male,,Y,,3
+sub-037,AEHR,5,Y,541.975,1141,self,I Wish,0,0,older,60,Male,,Y,,20
+sub-037,AEHR,6,Y,228.475,481,self,You Can Call Me Al,3,4,older,60,Male,,Y,,9
+sub-037,AEHR,7,N,399.475,841,other,Adagio for Strings,2,1,older,60,Male,,Y,,15
+sub-037,AEHR,8,Y,313.975,661,other,"Symphony No. 2, Finale",1,1,older,60,Male,,Y,,12
+sub-037,AEHR,9,N,142.975,301,other,Cavatina Op. 130,2,1,older,60,Male,,Y,,6
+sub-037,AEHR,10,Y,484.975,1021,other,John Wayne Gacy Jr.,2,1,older,60,Male,,Y,,18
+sub-037,AEHR,11,Y,342.475,721,other,Hurt,2,3,older,60,Male,,Y,,13
+sub-037,AEHR,12,Y,28.975,61,other,Sound of Silence,3,4,older,60,Male,,Y,,2
+sub-037,AEHR,13,Y,114.475,241,other,Reckoner,3,2,older,60,Male,,Y,,5
+sub-037,AEHR,14,N,513.475,1081,other,Nocturne in C Sharp Minor,3,3,older,60,Male,,Y,,19
+sub-037,AEHR,15,Y,0.475,1,other,Nessun Dorma,3,4,older,60,Male,,Y,,1
+sub-037,AEHR,16,N,456.475,961,other,"Symphony No. 6, movement 1",2,2,older,60,Male,,Y,,17
+sub-037,AEHR,17,,655.975,1381,,,1,1,,,,,Y,,24
+sub-037,AEHR,18,,370.975,781,,,3,2,,,,,Y,,14
+sub-037,AEHR,19,,285.475,601,,,1,1,,,,,Y,,11
+sub-037,AEHR,20,,598.975,1261,,,2,2,,,,,Y,,22
+sub-037,AEHR,21,,570.475,1201,,,3,3,,,,,Y,,21
+sub-037,AEHR,22,,256.975,541,,,1,1,,,,,Y,,10
+sub-037,AEHR,23,,85.975,181,,,2,2,,,,,Y,,4
+sub-037,AEHR,24,,199.975,421,,,3,2,,,,,Y,,8
+sub-039,ELAR,1,Y,655.975,1381,self,Rocket Man,4,4,older,61,Male,,,,24
+sub-039,ELAR,2,Y,256.975,541,self,Box of Rain,4,4,older,61,Male,,,,10
+sub-039,ELAR,3,Y,484.975,1021,self,Steam Powered Aereo Plane,4,4,older,61,Male,,,,18
+sub-039,ELAR,4,Y,142.975,301,self,Bodhisattva,4,4,older,61,Male,,,,6
+sub-039,ELAR,5,Y,456.475,961,self,Isn't She Lovely,4,4,older,61,Male,,,,17
+sub-039,ELAR,6,N,114.475,241,self,Watermelon Man,4,4,older,61,Male,,,,5
+sub-039,ELAR,7,N,399.475,841,other,Adagio for Strings,2,2,older,61,Male,,,,15
+sub-039,ELAR,8,Y,570.475,1201,other,"Symphony No. 2, Finale",2,3,older,61,Male,,,,21
+sub-039,ELAR,9,N,199.975,421,other,Cavatina Op. 130,3,2,older,61,Male,,,,8
+sub-039,ELAR,10,Y,85.975,181,other,John Wayne Gacy Jr.,3,2,older,61,Male,,,,4
+sub-039,ELAR,11,Y,0.475,1,other,Hurt,2,1,older,61,Male,,,,1
+sub-039,ELAR,12,Y,57.475,121,other,Sound of Silence,4,4,older,61,Male,,,,3
+sub-039,ELAR,13,Y,228.475,481,other,Reckoner,3,2,older,61,Male,,,,9
+sub-039,ELAR,14,N,541.975,1141,other,Nocturne in C Sharp Minor,3,3,older,61,Male,,,,20
+sub-039,ELAR,15,Y,28.975,61,other,Nessun Dorma,2,1,older,61,Male,,,,2
+sub-039,ELAR,16,N,370.975,781,other,"Symphony No. 6, movement 1",3,3,older,61,Male,,,,14
+sub-039,ELAR,17,,285.475,601,,,1,1,,,,,,,11
+sub-039,ELAR,18,,598.975,1261,,,2,2,,,,,,,22
+sub-039,ELAR,19,,171.475,361,,,1,1,,,,,,,7
+sub-039,ELAR,20,,513.475,1081,,,1,1,,,,,,,19
+sub-039,ELAR,21,,342.475,721,,,1,1,,,,,,,13
+sub-039,ELAR,22,,313.975,661,,,1,1,,,,,,,12
+sub-039,ELAR,23,,627.475,1321,,,1,1,,,,,,,23
+sub-039,ELAR,24,,427.975,901,,,2,1,,,,,,,16
+sub-043,LGAR,1,Y,142.975,301,self,Yonaguni,4,4,younger,19,Female,,,,6
+sub-043,LGAR,2,Y,28.975,61,self,Moriremos,4,4,younger,19,Female,,,,2
+sub-043,LGAR,3,Y,342.475,721,self,Industry Baby,4,4,younger,19,Female,,,,13
+sub-043,LGAR,4,Y,256.975,541,self,Hawái Remix,4,4,younger,19,Female,,,,10
+sub-043,LGAR,5,Y,427.975,901,self,Classic,4,4,younger,19,Female,,,,16
+sub-043,LGAR,6,Y,0.475,1,self,La Mejor Version De Mi,4,4,younger,19,Female,,,,1
+sub-043,LGAR,7,N,513.475,1081,other,Adagio for Strings,3,3,younger,19,Female,,,,19
+sub-043,LGAR,8,Y,399.475,841,other,"Symphony No. 2, Finale",1,3,younger,19,Female,,,,15
+sub-043,LGAR,9,N,228.475,481,other,Cavatina Op. 130,2,3,younger,19,Female,,,,9
+sub-043,LGAR,10,Y,57.475,121,other,John Wayne Gacy Jr.,0,1,younger,19,Female,,,,3
+sub-043,LGAR,11,Y,199.975,421,other,Hurt,2,3,younger,19,Female,,,,8
+sub-043,LGAR,12,Y,655.975,1381,other,Sound of Silence,3,4,younger,19,Female,,,,24
+sub-043,LGAR,13,Y,171.475,361,other,Reckoner,1,3,younger,19,Female,,,,7
+sub-043,LGAR,14,N,570.475,1201,other,Nocturne in C Sharp Minor,3,3,younger,19,Female,,,,21
+sub-043,LGAR,15,Y,114.475,241,other,Nessun Dorma,2,3,younger,19,Female,,,,5
+sub-043,LGAR,16,N,541.975,1141,other,"Symphony No. 6, movement 1",3,3,younger,19,Female,,,,20
+sub-043,LGAR,17,,370.975,781,,,1,3,,,,,,,14
+sub-043,LGAR,18,,85.975,181,,,2,2,,,,,,,4
+sub-043,LGAR,19,,598.975,1261,,,2,3,,,,,,,22
+sub-043,LGAR,20,,285.475,601,,,1,1,,,,,,,11
+sub-043,LGAR,21,,484.975,1021,,,1,3,,,,,,,18
+sub-043,LGAR,22,,313.975,661,,,3,3,,,,,,,12
+sub-043,LGAR,23,,456.475,961,,,1,1,,,,,,,17
+sub-043,LGAR,24,,627.475,1321,,,1,3,,,,,,,23
+sub-045,CZAL,1,Y,285.475,601,self,I'm Not In Love,4,4,younger,18,Female,,,,11
+sub-045,CZAL,2,Y,513.475,1081,self,After Dark,4,4,younger,18,Female,,,,19
+sub-045,CZAL,3,Y,256.975,541,self,Baby Blue,3,4,younger,18,Female,,,,10
+sub-045,CZAL,4,Y,0.475,1,self,Space Song,4,4,younger,18,Female,,,,1
+sub-045,CZAL,5,N,570.475,1201,self,"Shostakovich Jazz Suite, Waltz No. 2",4,4,younger,18,Female,,,,21
+sub-045,CZAL,6,N,456.475,961,self,Rachmaninov Prelude in C Sharp Minor,4,4,younger,18,Female,,,,17
+sub-045,CZAL,7,N,598.975,1261,other,Adagio for Strings,3,3,younger,18,Female,,,,22
+sub-045,CZAL,8,Y,171.475,361,other,"Symphony No. 2, Finale",3,2,younger,18,Female,,,,7
+sub-045,CZAL,9,N,627.475,1321,other,Cavatina Op. 130,3,2,younger,18,Female,,,,23
+sub-045,CZAL,10,Y,484.975,1021,other,John Wayne Gacy Jr.,2,2,younger,18,Female,,,,18
+sub-045,CZAL,11,Y,313.975,661,other,Hurt,4,4,younger,18,Female,,,,12
+sub-045,CZAL,12,Y,57.475,121,other,Sound of Silence,3,4,younger,18,Female,,,,3
+sub-045,CZAL,13,Y,199.975,421,other,Reckoner,2,1,younger,18,Female,,,,8
+sub-045,CZAL,14,N,228.475,481,other,Nocturne in C Sharp Minor,4,4,younger,18,Female,,,,9
+sub-045,CZAL,15,Y,655.975,1381,other,Nessun Dorma,3,4,younger,18,Female,,,,24
+sub-045,CZAL,16,N,427.975,901,other,"Symphony No. 6, movement 1",3,3,younger,18,Female,,,,16
+sub-045,CZAL,17,,28.975,61,,,2,1,,,,,,,2
+sub-045,CZAL,18,,85.975,181,,,2,1,,,,,,,4
+sub-045,CZAL,19,,114.475,241,,,2,2,,,,,,,5
+sub-045,CZAL,20,,541.975,1141,,,2,1,,,,,,,20
+sub-045,CZAL,21,,142.975,301,,,2,2,,,,,,,6
+sub-045,CZAL,22,,399.475,841,,,2,2,,,,,,,15
+sub-045,CZAL,23,,342.475,721,,,2,1,,,,,,,13
+sub-045,CZAL,24,,370.975,781,,,2,1,,,,,,,14
+sub-046,APOP,1,Y,171.475,361,self,Electric,4,4,younger,18,Female,,,,7
+sub-046,APOP,2,Y,28.975,61,self,Girlfriend,4,4,younger,18,Female,,,,2
+sub-046,APOP,3,Y,285.475,601,self,Die For You,4,4,younger,18,Female,,,,11
+sub-046,APOP,4,Y,598.975,1261,self,Need To Know,4,4,younger,18,Female,,,,22
+sub-046,APOP,5,Y,0.475,1,self,Jealousy,4,4,younger,18,Female,,,,1
+sub-046,APOP,6,Y,399.475,841,self,Good Days,4,4,younger,18,Female,,,,15
+sub-046,APOP,7,N,370.975,781,other,Adagio for Strings,3,3,younger,18,Female,,,,14
+sub-046,APOP,8,Y,342.475,721,other,"Symphony No. 2, Finale",3,2,younger,18,Female,,,,13
+sub-046,APOP,9,N,541.975,1141,other,Cavatina Op. 130,3,2,younger,18,Female,,,,20
+sub-046,APOP,10,Y,570.475,1201,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,21
+sub-046,APOP,11,Y,313.975,661,other,Hurt,2,1,younger,18,Female,,,,12
+sub-046,APOP,12,Y,427.975,901,other,Sound of Silence,2,3,younger,18,Female,,,,16
+sub-046,APOP,13,Y,256.975,541,other,Reckoner,3,1,younger,18,Female,,,,10
+sub-046,APOP,14,N,655.975,1381,other,Nocturne in C Sharp Minor,2,3,younger,18,Female,,,,24
+sub-046,APOP,15,Y,142.975,301,other,Nessun Dorma,2,3,younger,18,Female,,,,6
+sub-046,APOP,16,N,57.475,121,other,"Symphony No. 6, movement 1",2,3,younger,18,Female,,,,3
+sub-046,APOP,17,,627.475,1321,,,1,1,,,,,,,23
+sub-046,APOP,18,,456.475,961,,,1,1,,,,,,,17
+sub-046,APOP,19,,85.975,181,,,2,2,,,,,,,4
+sub-046,APOP,20,,228.475,481,,,1,1,,,,,,,9
+sub-046,APOP,21,,513.475,1081,,,2,3,,,,,,,19
+sub-046,APOP,22,,484.975,1021,,,2,2,,,,,,,18
+sub-046,APOP,23,,114.475,241,,,1,1,,,,,,,5
+sub-046,APOP,24,,199.975,421,,,2,2,,,,,,,8
+sub-047,TSTA,1,Y,598.975,1261,self,Easy On Me,4,4,older,62,Male,,Y,,22
+sub-047,TSTA,2,Y,627.475,1321,self,Landslide,4,4,older,62,Male,,Y,,23
+sub-047,TSTA,3,Y,199.975,421,self,Hallelujah 2,4,4,older,62,Male,,Y,,8
+sub-047,TSTA,4,Y,0.475,1,self,One,4,4,older,62,Male,,Y,,1
+sub-047,TSTA,5,Y,513.475,1081,self,Lacrimosa ,3,2,older,62,Male,,Y,,19
+sub-047,TSTA,6,Y,57.475,121,self,Stay With Me,4,4,older,62,Male,,Y,,3
+sub-047,TSTA,7,N,370.975,781,other,Adagio for Strings,2,2,older,62,Male,,Y,,14
+sub-047,TSTA,8,Y,285.475,601,other,"Symphony No. 2, Finale",3,2,older,62,Male,,Y,,11
+sub-047,TSTA,9,N,228.475,481,other,Cavatina Op. 130,3,2,older,62,Male,,Y,,9
+sub-047,TSTA,10,Y,171.475,361,other,John Wayne Gacy Jr.,3,2,older,62,Male,,Y,,7
+sub-047,TSTA,11,Y,142.975,301,other,Hurt,3,2,older,62,Male,,Y,,6
+sub-047,TSTA,12,Y,399.475,841,other,Sound of Silence,4,4,older,62,Male,,Y,,15
+sub-047,TSTA,13,Y,313.975,661,other,Reckoner,2,1,older,62,Male,,Y,,12
+sub-047,TSTA,14,N,484.975,1021,other,Nocturne in C Sharp Minor,2,2,older,62,Male,,Y,,18
+sub-047,TSTA,15,Y,28.975,61,other,Nessun Dorma,4,4,older,62,Male,,Y,,2
+sub-047,TSTA,16,N,541.975,1141,other,"Symphony No. 6, movement 1",3,2,older,62,Male,,Y,,20
+sub-047,TSTA,17,,655.975,1381,,,1,1,,,,,,,24
+sub-047,TSTA,18,,342.475,721,,,1,1,,,,,,,13
+sub-047,TSTA,19,,114.475,241,,,2,2,,,,,,,5
+sub-047,TSTA,20,,427.975,901,,,1,1,,,,,,,16
+sub-047,TSTA,21,,256.975,541,,,1,1,,,,,,,10
+sub-047,TSTA,22,,456.475,961,,,1,1,,,,,,,17
+sub-047,TSTA,23,,570.475,1201,,,1,1,,,,,,,21
+sub-047,TSTA,24,,85.975,181,,,1,1,,,,,,,4
+sub-048,LWIE,1,Y,228.475,481,self,Fine By Me,3,4,younger,18,Female,,,,9
+sub-048,LWIE,2,Y,513.475,1081,self,Don't Tell 'Em,4,4,younger,18,Female,,,,19
+sub-048,LWIE,3,Y,256.975,541,self,Better,4,4,younger,18,Female,,,,10
+sub-048,LWIE,4,Y,342.475,721,self,Knock Knock,4,4,younger,18,Female,,,,13
+sub-048,LWIE,5,Y,655.975,1381,self,Have Yourself a Merry Little Christmas,4,4,younger,18,Female,,,,24
+sub-048,LWIE,6,Y,598.975,1261,self,Magic In The Hamptons,4,4,younger,18,Female,,,,22
+sub-048,LWIE,7,N,570.475,1201,other,Adagio for Strings,3,1,younger,18,Female,,,,21
+sub-048,LWIE,8,Y,399.475,841,other,"Symphony No. 2, Finale",2,2,younger,18,Female,,,,15
+sub-048,LWIE,9,N,370.975,781,other,Cavatina Op. 130,3,2,younger,18,Female,,,,14
+sub-048,LWIE,10,Y,627.475,1321,other,John Wayne Gacy Jr.,2,1,younger,18,Female,,,,23
+sub-048,LWIE,11,Y,541.975,1141,other,Hurt,3,4,younger,18,Female,,,,20
+sub-048,LWIE,12,Y,484.975,1021,other,Sound of Silence,3,1,younger,18,Female,,,,18
+sub-048,LWIE,13,Y,427.975,901,other,Reckoner,3,1,younger,18,Female,,,,16
+sub-048,LWIE,14,N,28.975,61,other,Nocturne in C Sharp Minor,3,2,younger,18,Female,,,,2
+sub-048,LWIE,15,Y,285.475,601,other,Nessun Dorma,2,2,younger,18,Female,,,,11
+sub-048,LWIE,16,N,313.975,661,other,"Symphony No. 6, movement 1",3,2,younger,18,Female,,,,12
+sub-048,LWIE,17,,199.975,421,,,2,1,,,,,,,8
+sub-048,LWIE,18,,0.475,1,,,2,1,,,,,,,1
+sub-048,LWIE,19,,142.975,301,,,2,1,,,,,,,6
+sub-048,LWIE,20,,171.475,361,,,1,1,,,,,,,7
+sub-048,LWIE,21,,85.975,181,,,2,1,,,,,,,4
+sub-048,LWIE,22,,114.475,241,,,2,2,,,,,,,5
+sub-048,LWIE,23,,456.475,961,,,2,1,,,,,,,17
+sub-048,LWIE,24,,57.475,121,,,1,1,,,,,,,3
+sub-049,GWAI,1,Y,85.975,181,self,Angeline,4,4,younger,18,Male,,,,4
+sub-049,GWAI,2,Y,570.475,1201,self,Doses and Mimosas,4,4,younger,18,Male,,,,21
+sub-049,GWAI,3,N,0.475,1,self,Cornfield Chase,4,4,younger,18,Male,,,,1
+sub-049,GWAI,4,Y,57.475,121,self,Off The Grid,4,4,younger,18,Male,,,,3
+sub-049,GWAI,5,Y,199.975,421,self,Perfect Strangers,4,4,younger,18,Male,,,,8
+sub-049,GWAI,6,Y,28.975,61,self,Clarity ,4,4,younger,18,Male,,,,2
+sub-049,GWAI,7,N,484.975,1021,other,Adagio for Strings,2,2,younger,18,Male,,,,18
+sub-049,GWAI,8,Y,541.975,1141,other,"Symphony No. 2, Finale",3,2,younger,18,Male,,,,20
+sub-049,GWAI,9,N,171.475,361,other,Cavatina Op. 130,3,2,younger,18,Male,,,,7
+sub-049,GWAI,10,Y,114.475,241,other,John Wayne Gacy Jr.,2,2,younger,18,Male,,,,5
+sub-049,GWAI,11,Y,427.975,901,other,Hurt,2,3,younger,18,Male,,,,16
+sub-049,GWAI,12,Y,456.475,961,other,Sound of Silence,3,4,younger,18,Male,,,,17
+sub-049,GWAI,13,Y,285.475,601,other,Reckoner,3,3,younger,18,Male,,,,11
+sub-049,GWAI,14,N,342.475,721,other,Nocturne in C Sharp Minor,3,3,younger,18,Male,,,,13
+sub-049,GWAI,15,Y,598.975,1261,other,Nessun Dorma,3,2,younger,18,Male,,,,22
+sub-049,GWAI,16,N,627.475,1321,other,"Symphony No. 6, movement 1",4,3,younger,18,Male,,,,23
+sub-049,GWAI,17,,256.975,541,,,1,1,,,,,,,10
+sub-049,GWAI,18,,228.475,481,,,1,1,,,,,,,9
+sub-049,GWAI,19,,142.975,301,,,2,1,,,,,,,6
+sub-049,GWAI,20,,513.475,1081,,,1,2,,,,,,,19
+sub-049,GWAI,21,,313.975,661,,,2,3,,,,,,,12
+sub-049,GWAI,22,,399.475,841,,,1,1,,,,,,,15
+sub-049,GWAI,23,,655.975,1381,,,2,1,,,,,,,24
+sub-049,GWAI,24,,370.975,781,,,1,1,,,,,,,14
+sub-050,SCAM,1,Y,427.975,901,self,Command V,4,4,younger,18,Female,,,,16
+sub-050,SCAM,2,Y,598.975,1261,self,Home,4,4,younger,18,Female,,,,22
+sub-050,SCAM,3,Y,285.475,601,self,Fool,4,4,younger,18,Female,,,,11
+sub-050,SCAM,4,Y,655.975,1381,self,Hold My Liquor,4,4,younger,18,Female,,,,24
+sub-050,SCAM,5,Y,342.475,721,self,Nobody,4,4,younger,18,Female,,,,13
+sub-050,SCAM,6,Y,256.975,541,self,Hold Me,4,4,younger,18,Female,,,,10
+sub-050,SCAM,7,N,513.475,1081,other,Adagio for Strings,3,2,younger,18,Female,,,,19
+sub-050,SCAM,8,Y,171.475,361,other,"Symphony No. 2, Finale",2,2,younger,18,Female,,,,7
+sub-050,SCAM,9,N,57.475,121,other,Cavatina Op. 130,3,2,younger,18,Female,,,,3
+sub-050,SCAM,10,Y,313.975,661,other,John Wayne Gacy Jr.,4,4,younger,18,Female,,,,12
+sub-050,SCAM,11,Y,399.475,841,other,Hurt,3,4,younger,18,Female,,,,15
+sub-050,SCAM,12,Y,199.975,421,other,Sound of Silence,3,3,younger,18,Female,,,,8
+sub-050,SCAM,13,Y,484.975,1021,other,Reckoner,3,2,younger,18,Female,,,,18
+sub-050,SCAM,14,N,370.975,781,other,Nocturne in C Sharp Minor,4,4,younger,18,Female,,,,14
+sub-050,SCAM,15,Y,114.475,241,other,Nessun Dorma,2,2,younger,18,Female,,,,5
+sub-050,SCAM,16,N,142.975,301,other,"Symphony No. 6, movement 1",3,3,younger,18,Female,,,,6
+sub-050,SCAM,17,,627.475,1321,,,2,1,,,,,,,23
+sub-050,SCAM,18,,228.475,481,,,2,2,,,,,,,9
+sub-050,SCAM,19,,541.975,1141,,,3,2,,,,,,,20
+sub-050,SCAM,20,,28.975,61,,,2,2,,,,,,,2
+sub-050,SCAM,21,,456.475,961,,,2,2,,,,,,,17
+sub-050,SCAM,22,,570.475,1201,,,1,3,,,,,,,21
+sub-050,SCAM,23,,0.475,1,,,3,2,,,,,,,1
+sub-050,SCAM,24,,85.975,181,,,1,1,,,,,,,4
+sub-051,KCHU,1,Y,513.475,1081,self,After School,4,4,younger,18,Female,,,,19
+sub-051,KCHU,2,Y,484.975,1021,self,Chicken Tendies,4,4,younger,18,Female,,,,18
+sub-051,KCHU,3,Y,285.475,601,self,Good Thing,4,4,younger,18,Female,,,,11
+sub-051,KCHU,4,Y,57.475,121,self,Just That Girl,4,4,younger,18,Female,,,,3
+sub-051,KCHU,5,Y,228.475,481,self,Here Comes Forever,4,4,younger,18,Female,,,,9
+sub-051,KCHU,6,Y,456.475,961,self,Someone To You,4,4,younger,18,Female,,,,17
+sub-051,KCHU,7,N,142.975,301,other,Adagio for Strings,2,2,younger,18,Female,,,,6
+sub-051,KCHU,8,Y,199.975,421,other,"Symphony No. 2, Finale",2,2,younger,18,Female,,,,8
+sub-051,KCHU,9,N,28.975,61,other,Cavatina Op. 130,3,2,younger,18,Female,,,,2
+sub-051,KCHU,10,Y,114.475,241,other,John Wayne Gacy Jr.,2,2,younger,18,Female,,,,5
+sub-051,KCHU,11,Y,342.475,721,other,Hurt,2,2,younger,18,Female,,,,13
+sub-051,KCHU,12,Y,399.475,841,other,Sound of Silence,2,4,younger,18,Female,,,,15
+sub-051,KCHU,13,Y,256.975,541,other,Reckoner,2,1,younger,18,Female,,,,10
+sub-051,KCHU,14,N,598.975,1261,other,Nocturne in C Sharp Minor,3,3,younger,18,Female,,,,22
+sub-051,KCHU,15,Y,427.975,901,other,Nessun Dorma,3,4,younger,18,Female,,,,16
+sub-051,KCHU,16,N,85.975,181,other,"Symphony No. 6, movement 1",3,3,younger,18,Female,,,,4
+sub-051,KCHU,17,,171.475,361,,,1,1,,,,,,,7
+sub-051,KCHU,18,,0.475,1,,,1,1,,,,,,,1
+sub-051,KCHU,19,,541.975,1141,,,2,1,,,,,,,20
+sub-051,KCHU,20,,655.975,1381,,,2,2,,,,,,,24
+sub-051,KCHU,21,,570.475,1201,,,1,3,,,,,,,21
+sub-051,KCHU,22,,313.975,661,,,2,1,,,,,,,12
+sub-051,KCHU,23,,370.975,781,,,2,2,,,,,,,14
+sub-051,KCHU,24,,627.475,1321,,,2,2,,,,,,,23
+sub-052,KPLU,1,Y,570.475,1201,self,Drive,4,4,younger,19,Female,,,,21
+sub-052,KPLU,2,Y,256.975,541,self,Piece of Me,4,4,younger,19,Female,,,,10
+sub-052,KPLU,3,Y,199.975,421,self,Sunday Morning,4,4,younger,19,Female,,,,8
+sub-052,KPLU,4,Y,513.475,1081,self,Soldier,4,4,younger,19,Female,,,,19
+sub-052,KPLU,5,Y,655.975,1381,self,Wish You Well,4,4,younger,19,Female,,,,24
+sub-052,KPLU,6,Y,484.975,1021,self,Cruel,4,4,younger,19,Female,,,,18
+sub-052,KPLU,7,N,627.475,1321,other,Adagio for Strings,1,1,younger,19,Female,,,,23
+sub-052,KPLU,8,Y,399.475,841,other,"Symphony No. 2, Finale",2,3,younger,19,Female,,,,15
+sub-052,KPLU,9,N,370.975,781,other,Cavatina Op. 130,1,1,younger,19,Female,,,,14
+sub-052,KPLU,10,Y,142.975,301,other,John Wayne Gacy Jr.,2,1,younger,19,Female,,,,6
+sub-052,KPLU,11,Y,598.975,1261,other,Hurt,1,1,younger,19,Female,,,,22
+sub-052,KPLU,12,Y,171.475,361,other,Sound of Silence,2,1,younger,19,Female,,,,7
+sub-052,KPLU,13,Y,342.475,721,other,Reckoner,3,2,younger,19,Female,,,,13
+sub-052,KPLU,14,N,228.475,481,other,Nocturne in C Sharp Minor,1,1,younger,19,Female,,,,9
+sub-052,KPLU,15,Y,427.975,901,other,Nessun Dorma,1,2,younger,19,Female,,,,16
+sub-052,KPLU,16,N,541.975,1141,other,"Symphony No. 6, movement 1",1,1,younger,19,Female,,,,20
+sub-052,KPLU,17,,0.475,1,,,1,1,,,,,,,1
+sub-052,KPLU,18,,57.475,121,,,1,1,,,,,,,3
+sub-052,KPLU,19,,456.475,961,,,1,1,,,,,,,17
+sub-052,KPLU,20,,285.475,601,,,1,1,,,,,,,11
+sub-052,KPLU,21,,28.975,61,,,2,2,,,,,,,2
+sub-052,KPLU,22,,85.975,181,,,1,1,,,,,,,4
+sub-052,KPLU,23,,114.475,241,,,1,1,,,,,,,5
+sub-052,KPLU,24,,313.975,661,,,1,1,,,,,,,12
+sub-053,KWAL,1,Y,0.475,1,self,Chinese Satellite,4,4,younger,18,Female,,,,1
+sub-053,KWAL,2,Y,513.475,1081,self,Gold Rush,4,4,younger,18,Female,,,,19
+sub-053,KWAL,3,Y,427.975,901,self,Fire,4,4,younger,18,Female,,,,16
+sub-053,KWAL,4,Y,484.975,1021,self,Scott Street,4,4,younger,18,Female,,,,18
+sub-053,KWAL,5,Y,28.975,61,self,Silk Chiffon,4,4,younger,18,Female,,,,2
+sub-053,KWAL,6,Y,142.975,301,self,All the Time in the World,4,4,younger,18,Female,,,,6
+sub-053,KWAL,7,N,313.975,661,other,Adagio for Strings,3,2,younger,18,Female,,,,12
+sub-053,KWAL,8,Y,114.475,241,other,"Symphony No. 2, Finale",4,3,younger,18,Female,,,,5
+sub-053,KWAL,9,N,285.475,601,other,Cavatina Op. 130,3,3,younger,18,Female,,,,11
+sub-053,KWAL,10,Y,399.475,841,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,15
+sub-053,KWAL,11,Y,598.975,1261,other,Hurt,1,1,younger,18,Female,,,,22
+sub-053,KWAL,12,Y,256.975,541,other,Sound of Silence,1,4,younger,18,Female,,,,10
+sub-053,KWAL,13,Y,541.975,1141,other,Reckoner,3,2,younger,18,Female,,,,20
+sub-053,KWAL,14,N,228.475,481,other,Nocturne in C Sharp Minor,3,3,younger,18,Female,,,,9
+sub-053,KWAL,15,Y,570.475,1201,other,Nessun Dorma,4,4,younger,18,Female,,,,21
+sub-053,KWAL,16,N,85.975,181,other,"Symphony No. 6, movement 1",4,3,younger,18,Female,,,,4
+sub-053,KWAL,17,,342.475,721,,,1,1,,,,,,,13
+sub-053,KWAL,18,,57.475,121,,,2,1,,,,,,,3
+sub-053,KWAL,19,,171.475,361,,,2,1,,,,,,,7
+sub-053,KWAL,20,,370.975,781,,,2,2,,,,,,,14
+sub-053,KWAL,21,,456.475,961,,,2,2,,,,,,,17
+sub-053,KWAL,22,,199.975,421,,,3,3,,,,,,,8
+sub-053,KWAL,23,,627.475,1321,,,3,2,,,,,,,23
+sub-053,KWAL,24,,655.975,1381,,,1,1,,,,,,,24
+sub-054,ZCAR,1,Y,0.475,1,self,Gimme Gimme Gimme,3,2,younger,18,Female,,,,1
+sub-054,ZCAR,2,Y,627.475,1321,self,777,3,4,younger,18,Female,,,,23
+sub-054,ZCAR,3,Y,655.975,1381,self,Chief Keef,4,4,younger,18,Female,,,,24
+sub-054,ZCAR,4,Y,484.975,1021,self,Industry Baby,4,4,younger,18,Female,,,,18
+sub-054,ZCAR,5,Y,313.975,661,self,Hey Stephen,4,4,younger,18,Female,,,,12
+sub-054,ZCAR,6,Y,370.975,781,self,Gaslighter,4,4,younger,18,Female,,,,14
+sub-054,ZCAR,7,N,142.975,301,other,Adagio for Strings,2,1,younger,18,Female,,,,6
+sub-054,ZCAR,8,Y,85.975,181,other,"Symphony No. 2, Finale",3,1,younger,18,Female,,,,4
+sub-054,ZCAR,9,N,456.475,961,other,Cavatina Op. 130,2,1,younger,18,Female,,,,17
+sub-054,ZCAR,10,Y,342.475,721,other,John Wayne Gacy Jr.,2,1,younger,18,Female,,,,13
+sub-054,ZCAR,11,Y,28.975,61,other,Hurt,1,1,younger,18,Female,,,,2
+sub-054,ZCAR,12,Y,598.975,1261,other,Sound of Silence,2,1,younger,18,Female,,,,22
+sub-054,ZCAR,13,Y,513.475,1081,other,Reckoner,2,2,younger,18,Female,,,,19
+sub-054,ZCAR,14,N,256.975,541,other,Nocturne in C Sharp Minor,3,2,younger,18,Female,,,,10
+sub-054,ZCAR,15,Y,199.975,421,other,Nessun Dorma,3,3,younger,18,Female,,,,8
+sub-054,ZCAR,16,N,541.975,1141,other,"Symphony No. 6, movement 1",3,3,younger,18,Female,,,,20
+sub-054,ZCAR,17,,171.475,361,,,1,1,,,,,,,7
+sub-054,ZCAR,18,,570.475,1201,,,1,1,,,,,,,21
+sub-054,ZCAR,19,,57.475,121,,,2,1,,,,,,,3
+sub-054,ZCAR,20,,285.475,601,,,1,1,,,,,,,11
+sub-054,ZCAR,21,,399.475,841,,,2,1,,,,,,,15
+sub-054,ZCAR,22,,114.475,241,,,3,1,,,,,,,5
+sub-054,ZCAR,23,,228.475,481,,,2,1,,,,,,,9
+sub-054,ZCAR,24,,427.975,901,,,2,1,,,,,,,16
+sub-055,JLAW,1,Y,484.975,1021,self,34+35,4,4,younger,18,Female,,,,18
+sub-055,JLAW,2,Y,370.975,781,self,Drankin N Smokin,4,4,younger,18,Female,,,,14
+sub-055,JLAW,3,Y,627.475,1321,self,Kiss Me More,4,0,younger,18,Female,,,,23
+sub-055,JLAW,4,Y,399.475,841,self,Type Shit,4,4,younger,18,Female,,,,15
+sub-055,JLAW,5,Y,57.475,121,self,Itty Bitty Piggy,4,4,younger,18,Female,,,,3
+sub-055,JLAW,6,Y,655.975,1381,self,WUSYANAME,4,4,younger,18,Female,,,,24
+sub-055,JLAW,7,N,256.975,541,other,Adagio for Strings,2,1,younger,18,Female,,,,10
+sub-055,JLAW,8,Y,171.475,361,other,"Symphony No. 2, Finale",3,1,younger,18,Female,,,,7
+sub-055,JLAW,9,N,513.475,1081,other,Cavatina Op. 130,2,1,younger,18,Female,,,,19
+sub-055,JLAW,10,Y,85.975,181,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,4
+sub-055,JLAW,11,Y,598.975,1261,other,Hurt,2,0,younger,18,Female,,,,22
+sub-055,JLAW,12,Y,427.975,901,other,Sound of Silence,3,3,younger,18,Female,,,,16
+sub-055,JLAW,13,Y,456.475,961,other,Reckoner,2,2,younger,18,Female,,,,17
+sub-055,JLAW,14,N,114.475,241,other,Nocturne in C Sharp Minor,2,1,younger,18,Female,,,,5
+sub-055,JLAW,15,Y,228.475,481,other,Nessun Dorma,2,1,younger,18,Female,,,,9
+sub-055,JLAW,16,N,342.475,721,other,"Symphony No. 6, movement 1",2,1,younger,18,Female,,,,13
+sub-055,JLAW,17,,541.975,1141,,,2,1,,,,,,,20
+sub-055,JLAW,18,,0.475,1,,,2,1,,,,,,,1
+sub-055,JLAW,19,,28.975,61,,,2,1,,,,,,,2
+sub-055,JLAW,20,,313.975,661,,,3,1,,,,,,,12
+sub-055,JLAW,21,,285.475,601,,,2,1,,,,,,,11
+sub-055,JLAW,22,,570.475,1201,,,0,1,,,,,,,21
+sub-055,JLAW,23,,199.975,421,,,0,1,,,,,,,8
+sub-055,JLAW,24,,142.975,301,,,2,1,,,,,,,6
+sub-056,ASUR,1,Y,199.975,421,self,All Too Well,4,4,younger,20,Female,,,,8
+sub-056,ASUR,2,Y,570.475,1201,self,Ghost,4,4,younger,20,Female,,,,21
+sub-056,ASUR,3,Y,541.975,1141,self,Please Come Home for Christmas,4,4,younger,20,Female,,,,20
+sub-056,ASUR,4,Y,513.475,1081,self,Tears in Heaven,4,4,younger,20,Female,,,,19
+sub-056,ASUR,5,Y,228.475,481,self,Spicy,4,4,younger,20,Female,,,,9
+sub-056,ASUR,6,Y,598.975,1261,self,I Have Nothing,4,4,younger,20,Female,,,,22
+sub-056,ASUR,7,N,85.975,181,other,Adagio for Strings,2,1,younger,20,Female,,,,4
+sub-056,ASUR,8,Y,142.975,301,other,"Symphony No. 2, Finale",2,3,younger,20,Female,,,,6
+sub-056,ASUR,9,N,399.475,841,other,Cavatina Op. 130,3,2,younger,20,Female,,,,15
+sub-056,ASUR,10,Y,484.975,1021,other,John Wayne Gacy Jr.,2,1,younger,20,Female,,,,18
+sub-056,ASUR,11,Y,627.475,1321,other,Hurt,2,1,younger,20,Female,,,,23
+sub-056,ASUR,12,Y,370.975,781,other,Sound of Silence,3,2,younger,20,Female,,,,14
+sub-056,ASUR,13,Y,114.475,241,other,Reckoner,2,1,younger,20,Female,,,,5
+sub-056,ASUR,14,N,0.475,1,other,Nocturne in C Sharp Minor,4,3,younger,20,Female,,,,1
+sub-056,ASUR,15,Y,342.475,721,other,Nessun Dorma,3,3,younger,20,Female,,,,13
+sub-056,ASUR,16,N,427.975,901,other,"Symphony No. 6, movement 1",4,2,younger,20,Female,,,,16
+sub-056,ASUR,17,,28.975,61,,,3,2,,,,,,,2
+sub-056,ASUR,18,,285.475,601,,,1,1,,,,,,,11
+sub-056,ASUR,19,,171.475,361,,,2,1,,,,,,,7
+sub-056,ASUR,20,,256.975,541,,,1,1,,,,,,,10
+sub-056,ASUR,21,,456.475,961,,,2,1,,,,,,,17
+sub-056,ASUR,22,,313.975,661,,,2,2,,,,,,,12
+sub-056,ASUR,23,,57.475,121,,,2,2,,,,,,,3
+sub-056,ASUR,24,,655.975,1381,,,1,1,,,,,,,24
+sub-057,IZIK,1,Y,199.975,421,self,Chamber of Reflection,4,4,younger,23,Male,,,,8
+sub-057,IZIK,2,Y,57.475,121,self,Overthinker,4,4,younger,23,Male,,,,3
+sub-057,IZIK,3,N,655.975,1381,self,Emerald Rush,4,4,younger,23,Male,,,,24
+sub-057,IZIK,4,Y,114.475,241,self,Mystical Beginning,4,4,younger,23,Male,,,,5
+sub-057,IZIK,5,Y,313.975,661,self,Here With You,4,4,younger,23,Male,,,,12
+sub-057,IZIK,6,Y,228.475,481,self,By My Side,4,4,younger,23,Male,,,,9
+sub-057,IZIK,7,N,171.475,361,other,Adagio for Strings,3,2,younger,23,Male,,,,7
+sub-057,IZIK,8,Y,399.475,841,other,"Symphony No. 2, Finale",2,2,younger,23,Male,,,,15
+sub-057,IZIK,9,N,370.975,781,other,Cavatina Op. 130,2,1,younger,23,Male,,,,14
+sub-057,IZIK,10,Y,142.975,301,other,John Wayne Gacy Jr.,2,2,younger,23,Male,,,,6
+sub-057,IZIK,11,Y,541.975,1141,other,Hurt,4,4,younger,23,Male,,,,20
+sub-057,IZIK,12,Y,85.975,181,other,Sound of Silence,4,4,younger,23,Male,,,,4
+sub-057,IZIK,13,Y,342.475,721,other,Reckoner,2,1,younger,23,Male,,,,13
+sub-057,IZIK,14,N,256.975,541,other,Nocturne in C Sharp Minor,3,1,younger,23,Male,,,,10
+sub-057,IZIK,15,Y,570.475,1201,other,Nessun Dorma,2,1,younger,23,Male,,,,21
+sub-057,IZIK,16,N,513.475,1081,other,"Symphony No. 6, movement 1",4,2,younger,23,Male,,,,19
+sub-057,IZIK,17,,598.975,1261,,,2,3,,,,,,,22
+sub-057,IZIK,18,,0.475,1,,,3,3,,,,,,,1
+sub-057,IZIK,19,,28.975,61,,,2,3,,,,,,,2
+sub-057,IZIK,20,,627.475,1321,,,2,1,,,,,,,23
+sub-057,IZIK,21,,427.975,901,,,3,3,,,,,,,16
+sub-057,IZIK,22,,285.475,601,,,3,3,,,,,,,11
+sub-057,IZIK,23,,484.975,1021,,,2,3,,,,,,,18
+sub-057,IZIK,24,,456.475,961,,,2,3,,,,,,,17
+sub-058,SAPE,1,Y,142.975,301,self,Complexion,4,4,younger,18,Female,,,,6
+sub-058,SAPE,2,Y,256.975,541,self,Tragic,4,4,younger,18,Female,,,,10
+sub-058,SAPE,3,Y,456.475,961,self,Girls,4,4,younger,18,Female,,,,17
+sub-058,SAPE,4,Y,399.475,841,self,Ain't Equal,4,4,younger,18,Female,,,,15
+sub-058,SAPE,5,Y,570.475,1201,self,Hey You!,4,4,younger,18,Female,,,,21
+sub-058,SAPE,6,Y,484.975,1021,self,iPhone,4,4,younger,18,Female,,,,18
+sub-058,SAPE,7,N,513.475,1081,other,Adagio for Strings,2,3,younger,18,Female,,,,19
+sub-058,SAPE,8,Y,285.475,601,other,"Symphony No. 2, Finale",2,2,younger,18,Female,,,,11
+sub-058,SAPE,9,N,627.475,1321,other,Cavatina Op. 130,2,1,younger,18,Female,,,,23
+sub-058,SAPE,10,Y,85.975,181,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,4
+sub-058,SAPE,11,Y,313.975,661,other,Hurt,2,1,younger,18,Female,,,,12
+sub-058,SAPE,12,Y,655.975,1381,other,Sound of Silence,2,4,younger,18,Female,,,,24
+sub-058,SAPE,13,Y,342.475,721,other,Reckoner,2,2,younger,18,Female,,,,13
+sub-058,SAPE,14,N,199.975,421,other,Nocturne in C Sharp Minor,2,3,younger,18,Female,,,,8
+sub-058,SAPE,15,Y,0.475,1,other,Nessun Dorma,2,4,younger,18,Female,,,,1
+sub-058,SAPE,16,N,171.475,361,other,"Symphony No. 6, movement 1",2,3,younger,18,Female,,,,7
+sub-058,SAPE,17,,427.975,901,,,2,4,,,,,,,16
+sub-058,SAPE,18,,598.975,1261,,,2,3,,,,,,,22
+sub-058,SAPE,19,,57.475,121,,,2,3,,,,,,,3
+sub-058,SAPE,20,,541.975,1141,,,2,2,,,,,,,20
+sub-058,SAPE,21,,28.975,61,,,2,4,,,,,,,2
+sub-058,SAPE,22,,370.975,781,,,2,4,,,,,,,14
+sub-058,SAPE,23,,114.475,241,,,2,2,,,,,,,5
+sub-058,SAPE,24,,228.475,481,,,2,4,,,,,,,9
+sub-059,TBOY,1,Y,85.975,181,self,Woods,4,4,younger,18,Male,,,,4
+sub-059,TBOY,2,Y,570.475,1201,self,Ticket To The Moon,4,4,younger,18,Male,,,,21
+sub-059,TBOY,3,Y,627.475,1321,self,In Too Deep,4,4,younger,18,Male,,,,23
+sub-059,TBOY,4,Y,57.475,121,self,Future Sounds,4,4,younger,18,Male,,,,3
+sub-059,TBOY,5,Y,513.475,1081,self,All Caps,4,4,younger,18,Male,,,,19
+sub-059,TBOY,6,Y,114.475,241,self,On Sight,4,4,younger,18,Male,,,,5
+sub-059,TBOY,7,N,285.475,601,other,Adagio for Strings,3,1,younger,18,Male,,,,11
+sub-059,TBOY,8,Y,256.975,541,other,"Symphony No. 2, Finale",3,3,younger,18,Male,,,,10
+sub-059,TBOY,9,N,142.975,301,other,Cavatina Op. 130,3,1,younger,18,Male,,,,6
+sub-059,TBOY,10,Y,456.475,961,other,John Wayne Gacy Jr.,3,1,younger,18,Male,,,,17
+sub-059,TBOY,11,Y,655.975,1381,other,Hurt,4,4,younger,18,Male,,,,24
+sub-059,TBOY,12,Y,28.975,61,other,Sound of Silence,2,4,younger,18,Male,,,,2
+sub-059,TBOY,13,Y,370.975,781,other,Reckoner,4,1,younger,18,Male,,,,14
+sub-059,TBOY,14,N,598.975,1261,other,Nocturne in C Sharp Minor,4,2,younger,18,Male,,,,22
+sub-059,TBOY,15,Y,171.475,361,other,Nessun Dorma,3,3,younger,18,Male,,,,7
+sub-059,TBOY,16,N,313.975,661,other,"Symphony No. 6, movement 1",4,4,younger,18,Male,,,,12
+sub-059,TBOY,17,,541.975,1141,,,1,2,,,,,,,20
+sub-059,TBOY,18,,484.975,1021,,,1,0,,,,,,,18
+sub-059,TBOY,19,,0.475,1,,,2,2,,,,,,,1
+sub-059,TBOY,20,,342.475,721,,,1,1,,,,,,,13
+sub-059,TBOY,21,,399.475,841,,,1,2,,,,,,,15
+sub-059,TBOY,22,,228.475,481,,,1,2,,,,,,,9
+sub-059,TBOY,23,,199.975,421,,,1,3,,,,,,,8
+sub-059,TBOY,24,,427.975,901,,,1,3,,,,,,,16
+sub-060,MCHI,1,Y,285.475,601,self,Burn,4,4,younger,18,Female,,,,11
+sub-060,MCHI,2,Y,570.475,1201,self,War With Heaven,4,4,younger,18,Female,,,,21
+sub-060,MCHI,3,Y,484.975,1021,self,Magic Shop,4,4,younger,18,Female,,,,18
+sub-060,MCHI,4,Y,627.475,1321,self,Just Friends,4,4,younger,18,Female,,,,23
+sub-060,MCHI,5,N,313.975,661,self,One Summer's Day,4,4,younger,18,Female,,,,12
+sub-060,MCHI,6,Y,256.975,541,self,Beautiful,4,4,younger,18,Female,,,,10
+sub-060,MCHI,7,N,427.975,901,other,Adagio for Strings,4,1,younger,18,Female,,,,16
+sub-060,MCHI,8,Y,655.975,1381,other,"Symphony No. 2, Finale",3,3,younger,18,Female,,,,24
+sub-060,MCHI,9,N,342.475,721,other,Cavatina Op. 130,4,3,younger,18,Female,,,,13
+sub-060,MCHI,10,Y,171.475,361,other,John Wayne Gacy Jr.,3,1,younger,18,Female,,,,7
+sub-060,MCHI,11,Y,85.975,181,other,Hurt,1,3,younger,18,Female,,,,4
+sub-060,MCHI,12,Y,541.975,1141,other,Sound of Silence,2,1,younger,18,Female,,,,20
+sub-060,MCHI,13,Y,28.975,61,other,Reckoner,3,3,younger,18,Female,,,,2
+sub-060,MCHI,14,N,456.475,961,other,Nocturne in C Sharp Minor,4,3,younger,18,Female,,,,17
+sub-060,MCHI,15,Y,513.475,1081,other,Nessun Dorma,3,1,younger,18,Female,,,,19
+sub-060,MCHI,16,N,598.975,1261,other,"Symphony No. 6, movement 1",4,4,younger,18,Female,,,,22
+sub-060,MCHI,17,,199.975,421,,,2,4,,,,,,,8
+sub-060,MCHI,18,,57.475,121,,,2,4,,,,,,,3
+sub-060,MCHI,19,,228.475,481,,,3,4,,,,,,,9
+sub-060,MCHI,20,,142.975,301,,,2,3,,,,,,,6
+sub-060,MCHI,21,,114.475,241,,,3,4,,,,,,,5
+sub-060,MCHI,22,,399.475,841,,,4,3,,,,,,,15
+sub-060,MCHI,23,,370.975,781,,,3,3,,,,,,,14
+sub-060,MCHI,24,,0.475,1,,,3,3,,,,,,,1
+sub-061,JCLA,1,Y,342.475,721,self,3005,4,4,younger,19,Female,,,,13
+sub-061,JCLA,2,Y,513.475,1081,self,Happier Than Ever,4,4,younger,19,Female,,,,19
+sub-061,JCLA,3,Y,456.475,961,self,Juicy,4,4,younger,19,Female,,,,17
+sub-061,JCLA,4,Y,570.475,1201,self,Killing Me Softly With His Song,4,4,younger,19,Female,,,,21
+sub-061,JCLA,5,Y,171.475,361,self,Kiss Me More,4,4,younger,19,Female,,,,7
+sub-061,JCLA,6,Y,256.975,541,self,Need to Know 2,4,4,younger,19,Female,,,,10
+sub-061,JCLA,7,N,114.475,241,other,Adagio for Strings,4,1,younger,19,Female,,,,5
+sub-061,JCLA,8,Y,627.475,1321,other,"Symphony No. 2, Finale",1,1,younger,19,Female,,,,23
+sub-061,JCLA,9,N,85.975,181,other,Cavatina Op. 130,4,1,younger,19,Female,,,,4
+sub-061,JCLA,10,Y,313.975,661,other,John Wayne Gacy Jr.,2,1,younger,19,Female,,,,12
+sub-061,JCLA,11,Y,598.975,1261,other,Hurt,1,1,younger,19,Female,,,,22
+sub-061,JCLA,12,Y,399.475,841,other,Sound of Silence,2,3,younger,19,Female,,,,15
+sub-061,JCLA,13,Y,370.975,781,other,Reckoner,1,1,younger,19,Female,,,,14
+sub-061,JCLA,14,N,541.975,1141,other,Nocturne in C Sharp Minor,1,1,younger,19,Female,,,,20
+sub-061,JCLA,15,Y,285.475,601,other,Nessun Dorma,3,3,younger,19,Female,,,,11
+sub-061,JCLA,16,N,484.975,1021,other,"Symphony No. 6, movement 1",2,1,younger,19,Female,,,,18
+sub-061,JCLA,17,,142.975,301,,,2,2,,,,,,,6
+sub-061,JCLA,18,,28.975,61,,,2,3,,,,,,,2
+sub-061,JCLA,19,,0.475,1,,,3,3,,,,,,,1
+sub-061,JCLA,20,,199.975,421,,,2,2,,,,,,,8
+sub-061,JCLA,21,,427.975,901,,,2,3,,,,,,,16
+sub-061,JCLA,22,,228.475,481,,,2,2,,,,,,,9
+sub-061,JCLA,23,,655.975,1381,,,1,1,,,,,,,24
+sub-061,JCLA,24,,57.475,121,,,2,2,,,,,,,3
+sub-062,SSOH,1,Y,427.975,901,self,Dark Knight Dummo,4,4,younger,19,NB,,,,16
+sub-062,SSOH,2,Y,28.975,61,self,Die For You,4,4,younger,19,NB,,,,2
+sub-062,SSOH,3,Y,399.475,841,self,You Right,4,4,younger,19,NB,,,,15
+sub-062,SSOH,4,Y,570.475,1201,self,Obsession,4,4,younger,19,NB,,,,21
+sub-062,SSOH,5,Y,313.975,661,self,Badhaai Ho,4,4,younger,19,NB,,,,12
+sub-062,SSOH,6,Y,57.475,121,self,Only,4,4,younger,19,NB,,,,3
+sub-062,SSOH,7,N,541.975,1141,other,Adagio for Strings,2,2,younger,19,NB,,,,20
+sub-062,SSOH,8,Y,256.975,541,other,"Symphony No. 2, Finale",2,3,younger,19,NB,,,,10
+sub-062,SSOH,9,N,627.475,1321,other,Cavatina Op. 130,3,2,younger,19,NB,,,,23
+sub-062,SSOH,10,Y,655.975,1381,other,John Wayne Gacy Jr.,2,2,younger,19,NB,,,,24
+sub-062,SSOH,11,Y,171.475,361,other,Hurt,1,2,younger,19,NB,,,,7
+sub-062,SSOH,12,Y,228.475,481,other,Sound of Silence,3,4,younger,19,NB,,,,9
+sub-062,SSOH,13,Y,513.475,1081,other,Reckoner,3,3,younger,19,NB,,,,19
+sub-062,SSOH,14,N,285.475,601,other,Nocturne in C Sharp Minor,3,3,younger,19,NB,,,,11
+sub-062,SSOH,15,Y,114.475,241,other,Nessun Dorma,2,3,younger,19,NB,,,,5
+sub-062,SSOH,16,N,370.975,781,other,"Symphony No. 6, movement 1",4,3,younger,19,NB,,,,14
+sub-062,SSOH,17,,199.975,421,,,2,3,,,,,,,8
+sub-062,SSOH,18,,85.975,181,,,2,2,,,,,,,4
+sub-062,SSOH,19,,342.475,721,,,2,2,,,,,,,13
+sub-062,SSOH,20,,456.475,961,,,2,3,,,,,,,17
+sub-062,SSOH,21,,0.475,1,,,3,3,,,,,,,1
+sub-062,SSOH,22,,142.975,301,,,2,3,,,,,,,6
+sub-062,SSOH,23,,598.975,1261,,,1,3,,,,,,,22
+sub-062,SSOH,24,,484.975,1021,,,1,2,,,,,,,18
+sub-063,AWIL,1,Y,114.475,241,self,Chill Bill,4,4,younger,19,Female,,,,5
+sub-063,AWIL,2,Y,598.975,1261,self,Die For You,4,4,younger,19,Female,,,,22
+sub-063,AWIL,3,Y,256.975,541,self,Ghost Town,4,4,younger,19,Female,,,,10
+sub-063,AWIL,4,Y,513.475,1081,self,Violent Crimes,4,4,younger,19,Female,,,,19
+sub-063,AWIL,5,Y,655.975,1381,self,The Spins,4,4,younger,19,Female,,,,24
+sub-063,AWIL,6,Y,313.975,661,self,Wet Dreamz,4,4,younger,19,Female,,,,12
+sub-063,AWIL,7,N,570.475,1201,other,Adagio for Strings,2,3,younger,19,Female,,,,21
+sub-063,AWIL,8,Y,399.475,841,other,"Symphony No. 2, Finale",2,1,younger,19,Female,,,,15
+sub-063,AWIL,9,N,142.975,301,other,Cavatina Op. 130,3,2,younger,19,Female,,,,6
+sub-063,AWIL,10,Y,28.975,61,other,John Wayne Gacy Jr.,2,1,younger,19,Female,,,,2
+sub-063,AWIL,11,Y,484.975,1021,other,Hurt,1,1,younger,19,Female,,,,18
+sub-063,AWIL,12,Y,370.975,781,other,Sound of Silence,2,4,younger,19,Female,,,,14
+sub-063,AWIL,13,Y,171.475,361,other,Reckoner,2,1,younger,19,Female,,,,7
+sub-063,AWIL,14,N,342.475,721,other,Nocturne in C Sharp Minor,3,2,younger,19,Female,,,,13
+sub-063,AWIL,15,Y,57.475,121,other,Nessun Dorma,2,2,younger,19,Female,,,,3
+sub-063,AWIL,16,N,285.475,601,other,"Symphony No. 6, movement 1",3,3,younger,19,Female,,,,11
+sub-063,AWIL,17,,0.475,1,,,2,3,,,,,,,1
+sub-063,AWIL,18,,541.975,1141,,,2,3,,,,,,,20
+sub-063,AWIL,19,,85.975,181,,,3,4,,,,,,,4
+sub-063,AWIL,20,,228.475,481,,,2,4,,,,,,,9
+sub-063,AWIL,21,,199.975,421,,,3,4,,,,,,,8
+sub-063,AWIL,22,,627.475,1321,,,3,3,,,,,,,23
+sub-063,AWIL,23,,427.975,901,,,2,4,,,,,,,16
+sub-063,AWIL,24,,456.475,961,,,2,4,,,,,,,17
+sub-064,STHO,1,Y,57.475,121,self,Lucid Dreams,4,4,younger,21,Female,,,,3
+sub-064,STHO,2,Y,570.475,1201,self,Industry Baby,4,4,younger,21,Female,,,,21
+sub-064,STHO,3,Y,342.475,721,self,Night Changes,4,4,younger,21,Female,,,,13
+sub-064,STHO,4,Y,256.975,541,self,Champagne Problems,4,4,younger,21,Female,,,,10
+sub-064,STHO,5,Y,655.975,1381,self,Wildest Dreams,4,4,younger,21,Female,,,,24
+sub-064,STHO,6,Y,456.475,961,self,Stay,4,4,younger,21,Female,,,,17
+sub-064,STHO,7,N,28.975,61,other,Adagio for Strings,2,1,younger,21,Female,,,,2
+sub-064,STHO,8,Y,370.975,781,other,"Symphony No. 2, Finale",3,3,younger,21,Female,,,,14
+sub-064,STHO,9,N,513.475,1081,other,Cavatina Op. 130,3,1,younger,21,Female,,,,19
+sub-064,STHO,10,Y,484.975,1021,other,John Wayne Gacy Jr.,2,1,younger,21,Female,,,,18
+sub-064,STHO,11,Y,228.475,481,other,Hurt,3,1,younger,21,Female,,,,9
+sub-064,STHO,12,Y,285.475,601,other,Sound of Silence,3,4,younger,21,Female,,,,11
+sub-064,STHO,13,Y,171.475,361,other,Reckoner,2,1,younger,21,Female,,,,7
+sub-064,STHO,14,N,627.475,1321,other,Nocturne in C Sharp Minor,2,1,younger,21,Female,,,,23
+sub-064,STHO,15,Y,313.975,661,other,Nessun Dorma,3,2,younger,21,Female,,,,12
+sub-064,STHO,16,N,427.975,901,other,"Symphony No. 6, movement 1",3,3,younger,21,Female,,,,16
+sub-064,STHO,17,,85.975,181,,,2,2,,,,,,,4
+sub-064,STHO,18,,142.975,301,,,2,1,,,,,,,6
+sub-064,STHO,19,,199.975,421,,,1,4,,,,,,,8
+sub-064,STHO,20,,0.475,1,,,2,4,,,,,,,1
+sub-064,STHO,21,,399.475,841,,,1,4,,,,,,,15
+sub-064,STHO,22,,114.475,241,,,3,3,,,,,,,5
+sub-064,STHO,23,,598.975,1261,,,1,3,,,,,,,22
+sub-064,STHO,24,,541.975,1141,,,2,4,,,,,,,20
+sub-065,MBIC,1,Y,627.475,1321,self,Magic Shop,4,4,younger,18,Female,,,,23
+sub-065,MBIC,2,Y,28.975,61,self,God Shuffled His Feet,4,4,younger,18,Female,,,,2
+sub-065,MBIC,3,Y,570.475,1201,self,Falling,4,4,younger,18,Female,,,,21
+sub-065,MBIC,4,Y,399.475,841,self,Tornade,4,4,younger,18,Female,,,,15
+sub-065,MBIC,5,N,171.475,361,self,Nuvole Bianche,4,4,younger,18,Female,,,,7
+sub-065,MBIC,6,Y,57.475,121,self,Dans Ma Rue,4,4,younger,18,Female,,,,3
+sub-065,MBIC,7,N,342.475,721,other,Adagio for Strings,2,3,younger,18,Female,,,,13
+sub-065,MBIC,8,Y,285.475,601,other,"Symphony No. 2, Finale",3,4,younger,18,Female,,,,11
+sub-065,MBIC,9,N,513.475,1081,other,Cavatina Op. 130,4,3,younger,18,Female,,,,19
+sub-065,MBIC,10,Y,313.975,661,other,John Wayne Gacy Jr.,3,3,younger,18,Female,,,,12
+sub-065,MBIC,11,Y,256.975,541,other,Hurt,2,3,younger,18,Female,,,,10
+sub-065,MBIC,12,Y,114.475,241,other,Sound of Silence,4,4,younger,18,Female,,,,5
+sub-065,MBIC,13,Y,199.975,421,other,Reckoner,3,3,younger,18,Female,,,,8
+sub-065,MBIC,14,N,370.975,781,other,Nocturne in C Sharp Minor,3,3,younger,18,Female,,,,14
+sub-065,MBIC,15,Y,0.475,1,other,Nessun Dorma,4,4,younger,18,Female,,,,1
+sub-065,MBIC,16,N,598.975,1261,other,"Symphony No. 6, movement 1",4,4,younger,18,Female,,,,22
+sub-065,MBIC,17,,456.475,961,,,2,3,,,,,,,17
+sub-065,MBIC,18,,142.975,301,,,3,3,,,,,,,6
+sub-065,MBIC,19,,484.975,1021,,,2,3,,,,,,,18
+sub-065,MBIC,20,,655.975,1381,,,2,3,,,,,,,24
+sub-065,MBIC,21,,228.475,481,,,3,3,,,,,,,9
+sub-065,MBIC,22,,427.975,901,,,3,3,,,,,,,16
+sub-065,MBIC,23,,85.975,181,,,2,3,,,,,,,4
+sub-065,MBIC,24,,541.975,1141,,,2,3,,,,,,,20
+sub-066,CKOB,1,Y,513.475,1081,self,More,4,4,younger,18,Female,,,,19
+sub-066,CKOB,2,Y,655.975,1381,self,Biblical,4,4,younger,18,Female,,,,24
+sub-066,CKOB,3,N,627.475,1321,self,Einaudi Golder Butterflies,4,4,younger,18,Female,,,,23
+sub-066,CKOB,4,Y,342.475,721,self,Juice,4,4,younger,18,Female,,,,13
+sub-066,CKOB,5,Y,313.975,661,self,Cover Me Up,4,4,younger,18,Female,,,,12
+sub-066,CKOB,6,Y,57.475,121,self,Turning Page,4,4,younger,18,Female,,,,3
+sub-066,CKOB,7,N,484.975,1021,other,Adagio for Strings,3,1,younger,18,Female,,,,18
+sub-066,CKOB,8,Y,0.475,1,other,"Symphony No. 2, Finale",4,3,younger,18,Female,,,,1
+sub-066,CKOB,9,N,256.975,541,other,Cavatina Op. 130,3,1,younger,18,Female,,,,10
+sub-066,CKOB,10,Y,598.975,1261,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,22
+sub-066,CKOB,11,Y,456.475,961,other,Hurt,3,2,younger,18,Female,,,,17
+sub-066,CKOB,12,Y,541.975,1141,other,Sound of Silence,3,4,younger,18,Female,,,,20
+sub-066,CKOB,13,Y,228.475,481,other,Reckoner,4,1,younger,18,Female,,,,9
+sub-066,CKOB,14,N,28.975,61,other,Nocturne in C Sharp Minor,4,4,younger,18,Female,,,,2
+sub-066,CKOB,15,Y,85.975,181,other,Nessun Dorma,3,1,younger,18,Female,,,,4
+sub-066,CKOB,16,N,427.975,901,other,"Symphony No. 6, movement 1",4,1,younger,18,Female,,,,16
+sub-066,CKOB,17,,570.475,1201,,,2,4,,,,,,,21
+sub-066,CKOB,18,,370.975,781,,,2,4,,,,,,,14
+sub-066,CKOB,19,,399.475,841,,,2,4,,,,,,,15
+sub-066,CKOB,20,,199.975,421,,,2,4,,,,,,,8
+sub-066,CKOB,21,,114.475,241,,,3,4,,,,,,,5
+sub-066,CKOB,22,,171.475,361,,,3,4,,,,,,,7
+sub-066,CKOB,23,,285.475,601,,,2,4,,,,,,,11
+sub-066,CKOB,24,,142.975,301,,,3,4,,,,,,,6
+sub-067,CNOR,1,Y,228.475,481,self,Gorgeous,4,4,younger,18,Male,,,,9
+sub-067,CNOR,2,Y,199.975,421,self,Express Yourself,4,4,younger,18,Male,,,,8
+sub-067,CNOR,3,Y,513.475,1081,self,Running on Empty,4,4,younger,18,Male,,,,19
+sub-067,CNOR,4,Y,427.975,901,self,Sing About Me I'm Dying Of Thirst,4,4,younger,18,Male,,,,16
+sub-067,CNOR,5,Y,598.975,1261,self,Juicy 2,4,4,younger,18,Male,,,,22
+sub-067,CNOR,6,Y,484.975,1021,self,The Real Slim Shady,4,4,younger,18,Male,,,,18
+sub-067,CNOR,7,N,0.475,1,other,Adagio for Strings,4,2,younger,18,Male,,,,1
+sub-067,CNOR,8,Y,541.975,1141,other,"Symphony No. 2, Finale",4,2,younger,18,Male,,,,20
+sub-067,CNOR,9,N,171.475,361,other,Cavatina Op. 130,4,3,younger,18,Male,,,,7
+sub-067,CNOR,10,Y,399.475,841,other,John Wayne Gacy Jr.,0,1,younger,18,Male,,,,15
+sub-067,CNOR,11,Y,256.975,541,other,Hurt,3,2,younger,18,Male,,,,10
+sub-067,CNOR,12,Y,655.975,1381,other,Sound of Silence,4,4,younger,18,Male,,,,24
+sub-067,CNOR,13,Y,370.975,781,other,Reckoner,4,3,younger,18,Male,,,,14
+sub-067,CNOR,14,N,285.475,601,other,Nocturne in C Sharp Minor,3,2,younger,18,Male,,,,11
+sub-067,CNOR,15,Y,114.475,241,other,Nessun Dorma,4,4,younger,18,Male,,,,5
+sub-067,CNOR,16,N,627.475,1321,other,"Symphony No. 6, movement 1",4,3,younger,18,Male,,,,23
+sub-067,CNOR,17,,85.975,181,,,4,3,,,,,,,4
+sub-067,CNOR,18,,57.475,121,,,4,4,,,,,,,3
+sub-067,CNOR,19,,28.975,61,,,4,3,,,,,,,2
+sub-067,CNOR,20,,313.975,661,,,3,4,,,,,,,12
+sub-067,CNOR,21,,142.975,301,,,4,4,,,,,,,6
+sub-067,CNOR,22,,456.475,961,,,4,4,,,,,,,17
+sub-067,CNOR,23,,570.475,1201,,,3,1,,,,,,,21
+sub-067,CNOR,24,,342.475,721,,,0,3,,,,,,,13
+sub-068,ALIU,1,N,456.475,961,self,Chopin Mazurka,4,4,younger,18,Female,,,,17
+sub-068,ALIU,2,N,171.475,361,self,Hungarian Dance No. 1,4,4,younger,18,Female,,,,7
+sub-068,ALIU,3,N,85.975,181,self,Bach Prelude and Fugue,4,4,younger,18,Female,,,,4
+sub-068,ALIU,4,Y,513.475,1081,self,Amore Ti Vieta,4,4,younger,18,Female,,,,19
+sub-068,ALIU,5,N,57.475,121,self,Piana Sonata No. 30,4,4,younger,18,Female,,,,3
+sub-068,ALIU,6,Y,484.975,1021,self,When You Believe,4,4,younger,18,Female,,,,18
+sub-068,ALIU,7,N,370.975,781,other,Adagio for Strings,4,3,younger,18,Female,,,,14
+sub-068,ALIU,8,Y,199.975,421,other,"Symphony No. 2, Finale",4,3,younger,18,Female,,,,8
+sub-068,ALIU,9,N,256.975,541,other,Cavatina Op. 130,4,3,younger,18,Female,,,,10
+sub-068,ALIU,10,Y,541.975,1141,other,John Wayne Gacy Jr.,3,3,younger,18,Female,,,,20
+sub-068,ALIU,11,Y,114.475,241,other,Hurt,3,3,younger,18,Female,,,,5
+sub-068,ALIU,12,Y,627.475,1321,other,Sound of Silence,3,4,younger,18,Female,,,,23
+sub-068,ALIU,13,Y,0.475,1,other,Reckoner,3,3,younger,18,Female,,,,1
+sub-068,ALIU,14,N,399.475,841,other,Nocturne in C Sharp Minor,4,4,younger,18,Female,,,,15
+sub-068,ALIU,15,Y,427.975,901,other,Nessun Dorma,4,4,younger,18,Female,,,,16
+sub-068,ALIU,16,N,570.475,1201,other,"Symphony No. 6, movement 1",4,3,younger,18,Female,,,,21
+sub-068,ALIU,17,,285.475,601,,,2,2,,,,,,,11
+sub-068,ALIU,18,,598.975,1261,,,2,3,,,,,,,22
+sub-068,ALIU,19,,655.975,1381,,,2,4,,,,,,,24
+sub-068,ALIU,20,,342.475,721,,,2,4,,,,,,,13
+sub-068,ALIU,21,,228.475,481,,,2,4,,,,,,,9
+sub-068,ALIU,22,,142.975,301,,,1,4,,,,,,,6
+sub-068,ALIU,23,,313.975,661,,,1,4,,,,,,,12
+sub-068,ALIU,24,,28.975,61,,,0,1,,,,,,,2
+sub-069,OKHE,1,Y,456.475,961,self,Pepas,4,4,younger,23,Male,,,,17
+sub-069,OKHE,2,Y,114.475,241,self,Empire State of Mind,4,4,younger,23,Male,,,,5
+sub-069,OKHE,3,Y,513.475,1081,self,Good Life,4,4,younger,23,Male,,,,19
+sub-069,OKHE,4,Y,427.975,901,self,Maluma Farruko,4,4,younger,23,Male,,,,16
+sub-069,OKHE,5,Y,627.475,1321,self,Natti Nat,4,4,younger,23,Male,,,,23
+sub-069,OKHE,6,Y,85.975,181,self,Jalebi Baby,4,4,younger,23,Male,,,,4
+sub-069,OKHE,7,N,598.975,1261,other,Adagio for Strings,2,1,younger,23,Male,,,,22
+sub-069,OKHE,8,Y,370.975,781,other,"Symphony No. 2, Finale",3,1,younger,23,Male,,,,14
+sub-069,OKHE,9,N,484.975,1021,other,Cavatina Op. 130,2,2,younger,23,Male,,,,18
+sub-069,OKHE,10,Y,57.475,121,other,John Wayne Gacy Jr.,2,1,younger,23,Male,,,,3
+sub-069,OKHE,11,Y,142.975,301,other,Hurt,3,1,younger,23,Male,,,,6
+sub-069,OKHE,12,Y,285.475,601,other,Sound of Silence,2,2,younger,23,Male,,,,11
+sub-069,OKHE,13,Y,399.475,841,other,Reckoner,3,2,younger,23,Male,,,,15
+sub-069,OKHE,14,N,541.975,1141,other,Nocturne in C Sharp Minor,3,2,younger,23,Male,,,,20
+sub-069,OKHE,15,Y,570.475,1201,other,Nessun Dorma,3,1,younger,23,Male,,,,21
+sub-069,OKHE,16,N,228.475,481,other,"Symphony No. 6, movement 1",0,4,younger,23,Male,,,,9
+sub-069,OKHE,17,,171.475,361,,,3,4,,,,,,,7
+sub-069,OKHE,18,,342.475,721,,,3,3,,,,,,,13
+sub-069,OKHE,19,,256.975,541,,,3,2,,,,,,,10
+sub-069,OKHE,20,,28.975,61,,,3,2,,,,,,,2
+sub-069,OKHE,21,,655.975,1381,,,3,3,,,,,,,24
+sub-069,OKHE,22,,0.475,1,,,4,4,,,,,,,1
+sub-069,OKHE,23,,313.975,661,,,3,3,,,,,,,12
+sub-069,OKHE,24,,199.975,421,,,3,3,,,,,,,8
+sub-070,OEGB,1,Y,57.475,121,self,360,4,4,younger,18,Female,,,,3
+sub-070,OEGB,2,Y,171.475,361,self,Bibanke,4,4,younger,18,Female,,,,7
+sub-070,OEGB,3,Y,427.975,901,self,Rise,3,4,younger,18,Female,,,,16
+sub-070,OEGB,4,Y,256.975,541,self,What A Wonderful World,4,4,younger,18,Female,,,,10
+sub-070,OEGB,5,Y,285.475,601,self,Oyigiyigi,4,4,younger,18,Female,,,,11
+sub-070,OEGB,6,Y,142.975,301,self,Stand Up,4,4,younger,18,Female,,,,6
+sub-070,OEGB,7,N,484.975,1021,other,Adagio for Strings,3,1,younger,18,Female,,,,18
+sub-070,OEGB,8,Y,541.975,1141,other,"Symphony No. 2, Finale",4,1,younger,18,Female,,,,20
+sub-070,OEGB,9,N,370.975,781,other,Cavatina Op. 130,3,1,younger,18,Female,,,,14
+sub-070,OEGB,10,Y,342.475,721,other,John Wayne Gacy Jr.,3,1,younger,18,Female,,,,13
+sub-070,OEGB,11,Y,570.475,1201,other,Hurt,2,1,younger,18,Female,,,,21
+sub-070,OEGB,12,Y,0.475,1,other,Sound of Silence,4,4,younger,18,Female,,,,1
+sub-070,OEGB,13,Y,228.475,481,other,Reckoner,4,1,younger,18,Female,,,,9
+sub-070,OEGB,14,N,513.475,1081,other,Nocturne in C Sharp Minor,4,1,younger,18,Female,,,,19
+sub-070,OEGB,15,Y,399.475,841,other,Nessun Dorma,4,1,younger,18,Female,,,,15
+sub-070,OEGB,16,N,199.975,421,other,"Symphony No. 6, movement 1",4,2,younger,18,Female,,,,8
+sub-070,OEGB,17,,313.975,661,,,2,3,,,,,,,12
+sub-070,OEGB,18,,627.475,1321,,,2,3,,,,,,,23
+sub-070,OEGB,19,,114.475,241,,,2,3,,,,,,,5
+sub-070,OEGB,20,,655.975,1381,,,2,3,,,,,,,24
+sub-070,OEGB,21,,598.975,1261,,,2,4,,,,,,,22
+sub-070,OEGB,22,,456.475,961,,,2,3,,,,,,,17
+sub-070,OEGB,23,,85.975,181,,,3,3,,,,,,,4
+sub-070,OEGB,24,,28.975,61,,,3,4,,,,,,,2
+sub-071,EMCG,1,Y,342.475,721,self,Jungleland,4,4,younger,18,Female,,,,13
+sub-071,EMCG,2,Y,370.975,781,self,Pink Pony Club,4,4,younger,18,Female,,,,14
+sub-071,EMCG,3,Y,313.975,661,self,Dreams,4,4,younger,18,Female,,,,12
+sub-071,EMCG,4,Y,199.975,421,self,Cheek to Cheek,4,4,younger,18,Female,,,,8
+sub-071,EMCG,5,Y,399.475,841,self,Blood On Me,4,4,younger,18,Female,,,,15
+sub-071,EMCG,6,N,655.975,1381,self,Shhh Peaceful,4,4,younger,18,Female,,,,24
+sub-071,EMCG,7,N,228.475,481,other,Adagio for Strings,3,2,younger,18,Female,,,,9
+sub-071,EMCG,8,Y,541.975,1141,other,"Symphony No. 2, Finale",4,4,younger,18,Female,,,,20
+sub-071,EMCG,9,N,142.975,301,other,Cavatina Op. 130,3,3,younger,18,Female,,,,6
+sub-071,EMCG,10,Y,256.975,541,other,John Wayne Gacy Jr.,3,2,younger,18,Female,,,,10
+sub-071,EMCG,11,Y,456.475,961,other,Hurt,3,3,younger,18,Female,,,,17
+sub-071,EMCG,12,Y,513.475,1081,other,Sound of Silence,4,4,younger,18,Female,,,,19
+sub-071,EMCG,13,Y,171.475,361,other,Reckoner,4,2,younger,18,Female,,,,7
+sub-071,EMCG,14,N,570.475,1201,other,Nocturne in C Sharp Minor,4,3,younger,18,Female,,,,21
+sub-071,EMCG,15,Y,85.975,181,other,Nessun Dorma,3,3,younger,18,Female,,,,4
+sub-071,EMCG,16,N,484.975,1021,other,"Symphony No. 6, movement 1",4,3,younger,18,Female,,,,18
+sub-071,EMCG,17,,627.475,1321,,,3,4,,,,,,,23
+sub-071,EMCG,18,,285.475,601,,,2,3,,,,,,,11
+sub-071,EMCG,19,,598.975,1261,,,2,4,,,,,,,22
+sub-071,EMCG,20,,0.475,1,,,2,3,,,,,,,1
+sub-071,EMCG,21,,427.975,901,,,3,4,,,,,,,16
+sub-071,EMCG,22,,114.475,241,,,3,4,,,,,,,5
+sub-071,EMCG,23,,28.975,61,,,3,4,,,,,,,2
+sub-071,EMCG,24,,57.475,121,,,3,4,,,,,,,3
+sub-072,YDIA,1,Y,427.975,901,self,A Song For Mama,4,4,younger,19,Female,,,,16
+sub-072,YDIA,2,Y,199.975,421,self,Drowning,4,4,younger,19,Female,,,,8
+sub-072,YDIA,3,Y,28.975,61,self,Dos Locos Enamorados,4,4,younger,19,Female,,,,2
+sub-072,YDIA,4,Y,256.975,541,self,Seora de las 4 de,4,4,younger,19,Female,,,,10
+sub-072,YDIA,5,Y,142.975,301,self,Vino el Amor ,4,4,younger,19,Female,,,,6
+sub-072,YDIA,6,Y,171.475,361,self,Dale Pal Piso,4,4,younger,19,Female,,,,7
+sub-072,YDIA,7,N,370.975,781,other,Adagio for Strings,1,1,younger,19,Female,,,,14
+sub-072,YDIA,8,Y,598.975,1261,other,"Symphony No. 2, Finale",1,4,younger,19,Female,,,,22
+sub-072,YDIA,9,N,228.475,481,other,Cavatina Op. 130,2,1,younger,19,Female,,,,9
+sub-072,YDIA,10,Y,627.475,1321,other,John Wayne Gacy Jr.,2,2,younger,19,Female,,,,23
+sub-072,YDIA,11,Y,0.475,1,other,Hurt,2,1,younger,19,Female,,,,1
+sub-072,YDIA,12,Y,570.475,1201,other,Sound of Silence,1,4,younger,19,Female,,,,21
+sub-072,YDIA,13,Y,456.475,961,other,Reckoner,2,2,younger,19,Female,,,,17
+sub-072,YDIA,14,N,114.475,241,other,Nocturne in C Sharp Minor,2,1,younger,19,Female,,,,5
+sub-072,YDIA,15,Y,57.475,121,other,Nessun Dorma,3,2,younger,19,Female,,,,3
+sub-072,YDIA,16,N,655.975,1381,other,"Symphony No. 6, movement 1",1,3,younger,19,Female,,,,24
+sub-072,YDIA,17,,541.975,1141,,,1,3,,,,,,,20
+sub-072,YDIA,18,,85.975,181,,,2,4,,,,,,,4
+sub-072,YDIA,19,,313.975,661,,,2,3,,,,,,,12
+sub-072,YDIA,20,,342.475,721,,,1,3,,,,,,,13
+sub-072,YDIA,21,,513.475,1081,,,1,3,,,,,,,19
+sub-072,YDIA,22,,484.975,1021,,,1,4,,,,,,,18
+sub-072,YDIA,23,,285.475,601,,,1,2,,,,,,,11
+sub-072,YDIA,24,,399.475,841,,,2,4,,,,,,,15
+sub-072,NLEN,1,Y,484.975,1021,self,Imagination,4,4,older,79,Female,,Y,,18
+sub-073,NLEN,2,Y,57.475,121,self,La rondine,4,4,older,79,Female,,Y,,3
+sub-073,NLEN,3,Y,541.975,1141,self,Now You Know,4,4,older,79,Female,,Y,,20
+sub-073,NLEN,4,Y,199.975,421,self,We'll Be Together Again,4,4,older,79,Female,,Y,,8
+sub-073,NLEN,5,Y,171.475,361,self,What Are You Doing The Rest of Your Life,4,4,older,79,Female,,Y,,7
+sub-073,NLEN,6,Y,427.975,901,self,You Stepped Out of A Dream,4,4,older,79,Female,,Y,,16
+sub-073,NLEN,7,N,285.475,601,other,Adagio for Strings,3,3,older,79,Female,,Y,,11
+sub-073,NLEN,8,Y,513.475,1081,other,"Symphony No. 2, Finale",3,3,older,79,Female,,Y,,19
+sub-073,NLEN,9,N,142.975,301,other,Cavatina Op. 130,3,3,older,79,Female,,Y,,6
+sub-073,NLEN,10,Y,0.475,1,other,John Wayne Gacy Jr.,0,1,older,79,Female,,Y,,1
+sub-073,NLEN,11,Y,85.975,181,other,Hurt,4,3,older,79,Female,,Y,,4
+sub-073,NLEN,12,Y,228.475,481,other,Sound of Silence,4,4,older,79,Female,,Y,,9
+sub-073,NLEN,13,Y,570.475,1201,other,Reckoner,3,2,older,79,Female,,Y,,21
+sub-073,NLEN,14,N,456.475,961,other,Nocturne in C Sharp Minor,4,3,older,79,Female,,Y,,17
+sub-073,NLEN,15,Y,114.475,241,other,Nessun Dorma,4,4,older,79,Female,,Y,,5
+sub-073,NLEN,16,N,370.975,781,other,"Symphony No. 6, movement 1",3,3,older,79,Female,,Y,,14
+sub-073,NLEN,17,,598.975,1261,,,3,2,,,,,,,22
+sub-073,NLEN,18,,28.975,61,,,2,1,,,,,,,2
+sub-073,NLEN,19,,342.475,721,,,3,1,,,,,,,13
+sub-073,NLEN,20,,256.975,541,,,3,2,,,,,,,10
+sub-073,NLEN,21,,655.975,1381,,,3,2,,,,,,,24
+sub-073,NLEN,22,,627.475,1321,,,3,1,,,,,,,23
+sub-073,NLEN,23,,313.975,661,,,3,2,,,,,,,12
+sub-073,NLEN,24,,399.475,841,,,3,2,,,,,,,15
+sub-074,MCHO,1,N,570.475,1201,self,First Arabesque,4,4,younger,19,Male,,,,21
+sub-074,MCHO,2,N,370.975,781,self,Flow,4,4,younger,19,Male,,,,14
+sub-074,MCHO,3,N,28.975,61,self,Sibelius Violin Concerto,4,4,younger,19,Male,,,,2
+sub-074,MCHO,4,N,313.975,661,self,Tchaikovsky Symphony 4,4,4,younger,19,Male,,,,12
+sub-074,MCHO,5,Y,57.475,121,self,In Circles,4,4,younger,19,Male,,,,3
+sub-074,MCHO,6,N,285.475,601,self,Shostakovich Violin,4,4,younger,19,Male,,,,11
+sub-074,MCHO,7,N,142.975,301,other,Adagio for Strings,3,3,younger,19,Male,,,,6
+sub-074,MCHO,8,Y,541.975,1141,other,"Symphony No. 2, Finale",4,3,younger,19,Male,,,,20
+sub-074,MCHO,9,N,456.475,961,other,Cavatina Op. 130,4,3,younger,19,Male,,,,17
+sub-074,MCHO,10,Y,228.475,481,other,John Wayne Gacy Jr.,4,2,younger,19,Male,,,,9
+sub-074,MCHO,11,Y,427.975,901,other,Hurt,2,1,younger,19,Male,,,,16
+sub-074,MCHO,12,Y,199.975,421,other,Sound of Silence,4,4,younger,19,Male,,,,8
+sub-074,MCHO,13,Y,85.975,181,other,Reckoner,4,3,younger,19,Male,,,,4
+sub-074,MCHO,14,N,256.975,541,other,Nocturne in C Sharp Minor,4,4,younger,19,Male,,,,10
+sub-074,MCHO,15,Y,0.475,1,other,Nessun Dorma,4,2,younger,19,Male,,,,1
+sub-074,MCHO,16,N,114.475,241,other,"Symphony No. 6, movement 1",4,4,younger,19,Male,,,,5
+sub-074,MCHO,17,,627.475,1321,,,2,4,,,,,,,23
+sub-074,MCHO,18,,171.475,361,,,2,4,,,,,,,7
+sub-074,MCHO,19,,655.975,1381,,,2,4,,,,,,,24
+sub-074,MCHO,20,,484.975,1021,,,2,4,,,,,,,18
+sub-074,MCHO,21,,342.475,721,,,2,4,,,,,,,13
+sub-074,MCHO,22,,399.475,841,,,2,4,,,,,,,15
+sub-074,MCHO,23,,513.475,1081,,,2,4,,,,,,,19
+sub-074,MCHO,24,,598.975,1261,,,2,4,,,,,,,22
+sub-075,ETIN,1,Y,285.475,601,self,Undrunk,4,4,younger,23,Female,,,,11
+sub-075,ETIN,2,Y,541.975,1141,self,im so tired,4,4,younger,23,Female,,,,20
+sub-075,ETIN,3,Y,456.475,961,self,Someone You Loved,4,4,younger,23,Female,,,,17
+sub-075,ETIN,4,Y,655.975,1381,self,Stacy,4,4,younger,23,Female,,,,24
+sub-075,ETIN,5,Y,171.475,361,self,Loving is Easy,4,4,younger,23,Female,,,,7
+sub-075,ETIN,6,Y,28.975,61,self,Never Seen the Rain,4,4,younger,23,Female,,,,2
+sub-075,ETIN,7,N,57.475,121,other,Adagio for Strings,2,2,younger,23,Female,,,,3
+sub-075,ETIN,8,Y,570.475,1201,other,"Symphony No. 2, Finale",2,3,younger,23,Female,,,,21
+sub-075,ETIN,9,N,199.975,421,other,Cavatina Op. 130,2,3,younger,23,Female,,,,8
+sub-075,ETIN,10,Y,598.975,1261,other,John Wayne Gacy Jr.,2,3,younger,23,Female,,,,22
+sub-075,ETIN,11,Y,513.475,1081,other,Hurt,1,2,younger,23,Female,,,,19
+sub-075,ETIN,12,Y,427.975,901,other,Sound of Silence,1,3,younger,23,Female,,,,16
+sub-075,ETIN,13,Y,142.975,301,other,Reckoner,3,3,younger,23,Female,,,,6
+sub-075,ETIN,14,N,484.975,1021,other,Nocturne in C Sharp Minor,2,2,younger,23,Female,,,,18
+sub-075,ETIN,15,Y,342.475,721,other,Nessun Dorma,1,2,younger,23,Female,,,,13
+sub-075,ETIN,16,N,370.975,781,other,"Symphony No. 6, movement 1",2,2,younger,23,Female,,,,14
+sub-075,ETIN,17,,85.975,181,,,1,4,,,,,,,4
+sub-075,ETIN,18,,256.975,541,,,1,4,,,,,,,10
+sub-075,ETIN,19,,228.475,481,,,1,4,,,,,,,9
+sub-075,ETIN,20,,0.475,1,,,2,4,,,,,,,1
+sub-075,ETIN,21,,313.975,661,,,1,4,,,,,,,12
+sub-075,ETIN,22,,399.475,841,,,1,4,,,,,,,15
+sub-075,ETIN,23,,114.475,241,,,1,4,,,,,,,5
+sub-075,ETIN,24,,627.475,1321,,,1,4,,,,,,,23
+sub-076,SSHA,1,Y,85.975,181,self,Brazil,4,4,younger,23,Female,,,,4
+sub-076,SSHA,2,Y,28.975,61,self,Go Your Own Way,4,4,younger,23,Female,,,,2
+sub-076,SSHA,3,Y,456.475,961,self,Movement,4,4,younger,23,Female,,,,17
+sub-076,SSHA,4,Y,513.475,1081,self,Snow Hey Oh,4,4,younger,23,Female,,,,19
+sub-076,SSHA,5,Y,541.975,1141,self,The Less I Know the Better,4,4,younger,23,Female,,,,20
+sub-076,SSHA,6,Y,285.475,601,self,Georgia,4,4,younger,23,Female,,,,11
+sub-076,SSHA,7,N,0.475,1,other,Adagio for Strings,3,4,younger,23,Female,,,,1
+sub-076,SSHA,8,Y,370.975,781,other,"Symphony No. 2, Finale",3,3,younger,23,Female,,,,14
+sub-076,SSHA,9,N,199.975,421,other,Cavatina Op. 130,3,3,younger,23,Female,,,,8
+sub-076,SSHA,10,Y,342.475,721,other,John Wayne Gacy Jr.,3,2,younger,23,Female,,,,13
+sub-076,SSHA,11,Y,114.475,241,other,Hurt,2,3,younger,23,Female,,,,5
+sub-076,SSHA,12,Y,427.975,901,other,Sound of Silence,4,4,younger,23,Female,,,,16
+sub-076,SSHA,13,Y,228.475,481,other,Reckoner,3,2,younger,23,Female,,,,9
+sub-076,SSHA,14,N,399.475,841,other,Nocturne in C Sharp Minor,3,3,younger,23,Female,,,,15
+sub-076,SSHA,15,Y,570.475,1201,other,Nessun Dorma,3,4,younger,23,Female,,,,21
+sub-076,SSHA,16,N,484.975,1021,other,"Symphony No. 6, movement 1",3,2,younger,23,Female,,,,18
+sub-076,SSHA,17,,598.975,1261,,,1,4,,,,,,,22
+sub-076,SSHA,18,,655.975,1381,,,1,4,,,,,,,24
+sub-076,SSHA,19,,57.475,121,,,1,4,,,,,,,3
+sub-076,SSHA,20,,171.475,361,,,1,4,,,,,,,7
+sub-076,SSHA,21,,313.975,661,,,1,4,,,,,,,12
+sub-076,SSHA,22,,142.975,301,,,2,4,,,,,,,6
+sub-076,SSHA,23,,256.975,541,,,1,4,,,,,,,10
+sub-076,SSHA,24,,627.475,1321,,,1,4,,,,,,,23

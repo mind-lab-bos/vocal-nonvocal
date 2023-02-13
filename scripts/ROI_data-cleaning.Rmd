@@ -10,14 +10,14 @@ library(tidyverse)
 ```
 #read in data
 ```{r}
-vocal_nonvocal<- read.csv('../nickkathios/Downloads/vocal_nonvocal.csv')
-roidata <- read.csv('../nickkathios/Downloads/roidata.csv')
-roistim_order <- read.csv('../nickkathios/Downloads/roi_participantorder.csv')
+vocal_nonvocal<- read.csv('../data/vocal_nonvocal.csv')
+roidata <- read.csv('../data/roidata.csv')
+roistim_order <- read.csv('../data/roi_participantorder.csv')
 ```
 
 #get TRs w/ coded data
 ```{r}
-ID = Sys.glob('/Users/nickkathios/Downloads/MRI_mus-bid_task/**********1_mus-bid-biddata.txt')
+ID = Sys.glob('../data/MRI_mus-bid_task/**********1_mus-bid-biddata.txt')
 post_df = ID %>% 
   map_dfr(read_table, .id = "source")
 
@@ -29,7 +29,7 @@ ID <- cbind(source,ID)
 post_df <- merge(post_df, ID, by.y ="source", by.x="source") 
 
 post_df$ID <-  gsub("1_mus-bid-biddata.txt", "", post_df$ID)
-post_df$ID <-  gsub("/Users/nickkathios/Downloads/MRI_mus-bid_task/", "", post_df$ID)
+post_df$ID <-  gsub("../data/MRI_mus-bid_task/", "", post_df$ID)
 
 names(post_df)<- c("Source", "Stim", "Liking", "Familiarity", "SUBID")
 

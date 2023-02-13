@@ -24,7 +24,7 @@ timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475 # adding 
 average_activation <-
 timeseries %>%
   group_by(SUBID, older_younger, self_other) %>% ## here you can add which variables you'd be interested in looking at 
-  summarise_at(vars(pMTGR), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+  summarise_at(vars(pMTGR_univariatecluster), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
 names(average_activation)[4] = "average" #renaming the output of previous function
 
@@ -46,16 +46,16 @@ onset_value <-
   group_by(SUBID) %>%
   subset(seconds==0.475) %>%
   mutate(
-    onset_value = pMTGR #update ROI here
+    onset_value = pMTGR_univariatecluster #update ROI here
   )
-onset_value <- cbind(onset_value[3],onset_value[35])
+onset_value <- cbind(onset_value[3],onset_value[28])
 
 timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
 timeseries_stimothervocal <- 
   timeseries_stimothervocal %>%
   group_by(SUBID) %>%
   mutate(
-    scaled = ((pMTGR  - onset_value)/sd(pMTGR)) #update ROI here as well
+    scaled = ((pMTGR_univariatecluster  - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
   )
 
 ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
