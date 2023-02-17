@@ -29,6 +29,7 @@ vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeserie
 ```{r}
 average_activation <-
 timeseries %>%
+  subset(vocal=="Y") %>%
   group_by(SUBID, older_younger, self_other) %>% ## here you can add which variables you'd be interested in looking at 
   summarise_at(vars(pMTGR_univariatecluster), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
@@ -66,7 +67,10 @@ timeseries_stimothervocal <-
 
 ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
   geom_smooth() +
-  theme_light()
+  theme_light() +
+  xlab("Seconds") +
+  ylab("Scaled ROI Activity") +
+  ggtitle("pMTG Right Cluster from Univariate Analysis") 
 
 ## Plotting timeseries of other-selected non-vocal trial
 timeseries_stimothernonvocal <- subset(timeseries, Stim == 9) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
