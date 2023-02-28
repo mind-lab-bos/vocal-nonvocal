@@ -11,7 +11,7 @@ library(tidyverse)
 #read in data
 ```{r}
 vocal_nonvocal<- read.csv('../data/vocal_nonvocal.csv')
-roidata <- read.csv('../data/roidata.csv')
+roidata <- read.csv('roidata2.csv')
 roistim_order <- read.csv('../data/roi_participantorder.csv')
 ```
 
@@ -85,6 +85,6 @@ for (i in x){
 attempt<-attempt[!is.na(attempt$TR),]
 attempt<-subset(attempt, Stim < 17)
 
-roi_timeseries <- write.csv(attempt, file="roitimeseries.csv")
+roi_timeseries <- write.csv(attempt, file="limbicroitimeseries.csv")
 ```
 
