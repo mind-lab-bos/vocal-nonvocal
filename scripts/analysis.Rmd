@@ -23,21 +23,28 @@ vocal_nonvocal$vocal= ifelse(vocal_nonvocal$vocal=="y","Y", timeseries$vocal ) #
 vocal_nonvocal$liking= ifelse(vocal_nonvocal$liking=="0",NA, timeseries$liking ) #recoding some values
 vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeseries$familiarity ) #recoding some values
 
+vocal_nonvocalnlp <- read.csv(file='../data/NLP.csv') 
+names(vocal_nonvocalnlp)[6] <- "SUBID"
+
+vocal_nonvocalnlp <- vocal_nonvocalnlp %>%
+  select(SUBID, stim_name, vadersenti_score)
+
+timeseries_NLP <- merge(timeseries, vocal_nonvocalnlp, by=c("stim_name","SUBID"))
 ```
 
 #data cleaning
 ```{r}
 average_activation <-
 timeseries %>%
-  subset(vocal=="Y") %>%
-  group_by(SUBID, older_younger, self_other) %>% ## here you can add which variables you'd be interested in looking at 
-  summarise_at(vars(pMTGR_univariatecluster), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+  subset(vocal=="N") %>%
+  group_by(SUBID, older_younger, self_other, sex) %>% ## here you can add which variables you'd be interested in looking at 
+  summarise_at(vars(pMTGL_univariatecluster), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
-names(average_activation)[4] = "average" #renaming the output of previous function
+names(average_activation)[5] = "average" #renaming the output of previous function
 
-average_activation$older_younger<-as.factor(average_activation$older_younger)#if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
+average_activation$self_other<-as.factor(average_activation$older_younger)#if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
 
-contrasts(average_activation$older_younger)<-c(-0.5,0.5) #if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
+#contrasts(average_activation$sex)<-c(-0.5,0.5) #if you are interested in another binary variable, just update this to the variable you're using (i.e. "average_activation$[VARIABLE NAME]" in parentheses)
 
 test<-lmer(average~older_younger + (1|SUBID), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
 summary(test)
@@ -45,8 +52,216 @@ summary(test)
 
 #plotting timeseries
 ```{r}
+## just messy stuff in this chunk
+timeseries_stimothervocal <- subset(timeseries, Stim == 13) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+
+onset_value <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = aSTGl #update ROI here
+  )
+onset_value <- cbind(onset_value[3],onset_value[28])
+
+timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
+timeseries_stimothervocal <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
+  mutate(
+    scaled = ((aSTGl - onset_value)/sd(aSTGl)) #update ROI here as well
+  )
+
+ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth() +
+  theme_classic() +
+  xlab("Time (s)") +
+  ylab("Scaled ROI Activity") +
+  ggtitle("pMTG Left Cluster from Univariate Analysis, Stimulus 15 (Vocal)") +
+  theme(plot.title = element_text(face="bold", hjust = 0.5))
+
+#ggsave('pMTGLTimeseriesUnivariate15.png', plot= plot, dpi=350)
+
+## Plotting timeseries of other-selected nonvocal trial
+timeseries_stimothernonvocal <- subset(timeseries, Stim == 16) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
+
+onset_value <- 
+  timeseries_stimothernonvocal %>%
+  group_by(SUBID) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = aSTGl #update ROIs here
+  )
+onset_value <- cbind(onset_value[3],onset_value[28])
+
+timeseries_stimothernonvocal <- merge(timeseries_stimothernonvocal, onset_value, by.x="SUBID", by.y="SUBID")
+
+timeseries_stimothernonvocal <- 
+  timeseries_stimothernonvocal %>%
+  group_by(SUBID) %>%
+  mutate(
+    scaled = ((aSTGl  - onset_value)/sd(aSTGl)) #update ROIs here
+  )
+
+ggplot(timeseries_stimothernonvocal, aes(x=round(seconds), y=scaled)) +
+  geom_smooth()+
+  theme_light()+
+  xlab("time (s)") +
+  ylab("Scaled ROI Activity") 
+  #ggtitle("pMTG Left Cluster from Univariate Analysis, Stimulus 16 (Nonvocal)") #update labels
+
+#ggsave('pMTGLTimeseries16Univariate.png', plot= plot2, dpi=350)
+```
+
+```{r}
+## doing roi-analyses for all music (i.e. vocal v non-vocal)
+timeseries_other <- subset(timeseries, self_other=="other")
+
+onset_value <- 
+  timeseries_other %>%
+  group_by(SUBID, Stim) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGL_univariatecluster #update ROIs here
+  )
+
+onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
+
+timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+
+timeseries_stimother <-
+  timeseries_stimother %>%
+  group_by(SUBID, Stim) %>%
+  mutate(
+    scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROIs here
+  )
+
+ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) + 
+  geom_smooth(aes(color=vocal, fill=vocal))+
+  theme_classic() +
+  xlab("Time (s)") +
+  ylab("Scaled ROI Activity") +
+  ggtitle("pMTG Left Cluster") +#update labels
+  theme(plot.title = element_text(face="bold", hjust = 0.5, size=18), axis.text=element_text(size=15), axis.title=element_text(size=15))
+
+ggsave('pMTGLTimeseriesAllComparison.png', plot = last_plot(), dpi=350) #uncomment when saving
+```
+
+```{r}
+##two stimuli one time series ##
+
+timeseries_other <- subset(timeseries, self_other=="other")
+
+onset_value <- 
+  timeseries_other %>%
+  group_by(SUBID, Stim) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGR_univariatecluster #update ROIs here
+  )
+
+onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
+
+timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+
+timeseries_stimother <-
+  timeseries_stimother %>%
+  group_by(SUBID, Stim) %>%
+  mutate(
+    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROIs here
+  )
+
+timeseries_otherselected <-
+  timeseries_stimother %>%
+  subset(Stim == 8 | Stim == 10) #pick stims want to compare
+
+ggplot(timeseries_otherselected, aes(x=round(seconds), y=scaled)) + 
+  geom_smooth(aes(color=factor(Stim, labels = c("Nonverbal", "English")), fill=factor(Stim, labels = c("Nonverbal", "English"))))+
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="vocal type", fill="vocal type")+
+  ggtitle("pMTG Right Cluster") +
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
+  ggsave('pMTGREnglishvsNonverbal.png', plot = last_plot(), scale=1, dpi=350)
+
+```
+
+```{r}
+##all together 
+
+timeseries_other <- subset(timeseries, self_other=="other")
+
+onset_value <- 
+  timeseries_other %>%
+  group_by(SUBID, Stim) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGR_univariatecluster #update ROIs here
+  )
+
+onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
+
+timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+
+timeseries_stimother <-
+  timeseries_stimother %>%
+  group_by(SUBID, Stim) %>%
+  mutate(
+    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROIs here
+  )
+
+timeseries_otherselected <-
+  timeseries_stimother %>%
+  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 7) #pick stims want to compare
+
+ggplot(timeseries_otherselected, aes(x=round(seconds), y=scaled)) + 
+  geom_smooth(aes(color=factor(Stim, labels = c("Nonvocal", "Nonverbal", "English", "Other Language")), fill=factor(Stim, labels = c("Nonvocal", "Nonverbal", "English", "Other Language"))))+
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="vocal type", fill="vocal type")+
+  ggtitle("pMTG Right Cluster") + #update labels
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
+ggsave('pMTGRallvocaltypes.png', plot = last_plot(), scale=1, dpi=350)
+```
+
+```{r}
+## Plotting timeseries of other-selected vocal trial Stim 11
+timeseries_stimothervocal <- subset(timeseries, Stim == 11) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+
+onset_value <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGL_univariatecluster #update ROI here
+  )
+onset_value <- cbind(onset_value[3],onset_value[28])
+
+timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
+timeseries_stimothervocal <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
+  mutate(
+    scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROI here as well
+  )
+
+ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth() +
+  theme_classic() +
+  annotate(xmin = 0, xmax = 3, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
+  annotate(xmin = 4, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
+  annotate(xmin = 9, xmax = 13, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
+  annotate(xmin = 14, xmax = 20, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
+  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
+  labs(x= "Time (s)", y="Scaled ROI Activity")+
+  ggtitle("Stimulus 11: \"Hurt\"") + #update labels
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
+
+ggsave('pMTGLStim11.png', plot = last_plot(), scale=1, dpi=350)
+
+```
+
+```{r}
 ## Plotting timeseries of other-selected vocal trial
-timeseries_stimothervocal <- subset(timeseries, Stim == 12) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
+timeseries_stimothervocal <- subset(timeseries, Stim == 8) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
 
 onset_value <- 
   timeseries_stimothervocal %>%
@@ -62,67 +277,88 @@ timeseries_stimothervocal <-
   timeseries_stimothervocal %>%
   group_by(SUBID) %>%
   mutate(
-    scaled = ((pMTGR_univariatecluster  - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
+    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
   )
 
 ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
   geom_smooth() +
-  theme_light() +
-  xlab("Seconds") +
-  ylab("Scaled ROI Activity") +
-  ggtitle("pMTG Right Cluster from Univariate Analysis") 
+  theme_classic() +
+  annotate(xmin = 0, xmax = 15, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
+  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
+  labs(x= "Time (s)", y="Scaled ROI Activity") +
+  ggtitle(expression(bold("Stimulus 8: ") * bolditalic("Symphony No. 2, Finale"))) + #update labels
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
 
-## Plotting timeseries of other-selected non-vocal trial
-timeseries_stimothernonvocal <- subset(timeseries, Stim == 9) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
+ggsave('pMTGRStim8.png', plot = last_plot(), scale=1, dpi=350)
+
+```
+
+```{r}
+## Plotting timeseries of other-selected vocal trial
+timeseries_stimothervocal <- subset(timeseries, Stim == 10) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
 
 onset_value <- 
-  timeseries_stimothernonvocal %>%
+  timeseries_stimothervocal %>%
   group_by(SUBID) %>%
   subset(seconds==0.475) %>%
   mutate(
-    onset_value = pMTGL #update ROIs here
+    onset_value = pMTGR_univariatecluster #update ROI here
   )
-onset_value <- cbind(onset_value[3],onset_value[35])
+onset_value <- cbind(onset_value[3],onset_value[28])
 
-timeseries_stimothernonvocal <- merge(timeseries_stimothernonvocal, onset_value, by.x="SUBID", by.y="SUBID")
-
-timeseries_stimothernonvocal <- 
-  timeseries_stimothernonvocal %>%
+timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
+timeseries_stimothervocal <- 
+  timeseries_stimothervocal %>%
   group_by(SUBID) %>%
   mutate(
-    scaled = ((pMTGL  - onset_value)/sd(pMTGL)) #update ROIs here
+    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
   )
 
-ggplot(timeseries_stimothernonvocal, aes(x=round(seconds), y=scaled)) +
-  geom_smooth()+
-  theme_light()
+ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth() +
+  theme_classic() +
+  annotate(xmin = 0, xmax = 17, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
+  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
+  labs(x= "Time (s)", y="Scaled ROI Activity")+
+  ggtitle("Stimulus 10: \"John Wayne Gacy, Jr.\"") + #update labels
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
 
-## doing roi-analyses for all music (i.e. vocal v non-vocal)
-timeseries_other <- subset(timeseries, self_other=="other")
+ggsave('pMTGRStim10.png', plot = last_plot(), scale=1, dpi=350)
+
+```
+
+```{r}
+## Plotting timeseries of other-selected vocal trial Stim 12,13,15
+timeseries_stimothervocal <- subset(timeseries, Stim == 15) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
 
 onset_value <- 
-  timeseries_other %>%
-  group_by(SUBID, Stim) %>%
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
   subset(seconds==0.475) %>%
   mutate(
-    onset_value = PCC #update ROIs here
+    onset_value = pMTGR_univariatecluster #update ROI here
   )
+onset_value <- cbind(onset_value[3],onset_value[28])
 
-onset_value <- cbind(onset_value[3],onset_value[5],onset_value[35])
-
-timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
-
-
-timeseries_stimother <-
-  timeseries_stimother %>%
-  group_by(SUBID, Stim) %>%
+timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
+timeseries_stimothervocal <- 
+  timeseries_stimothervocal %>%
+  group_by(SUBID) %>%
   mutate(
-    scaled = ((PCC  - onset_value)/sd(PCC)) #update ROIs here
+    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
   )
 
-ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) + 
-  geom_smooth(aes(color=vocal, fill=vocal))+
-  theme_light()
+ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
+  geom_smooth() +
+  theme_classic() +
+  annotate(xmin = 0, xmax = 20, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
+  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
+  labs(x= "Time (s)", y="Scaled ROI Activity")+
+  ggtitle(expression(bold("Stimulus 15: ") * bolditalic("Nessun Dorma"))) + #update labels
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
+
+ggsave('pMTGRStim15.png', plot = last_plot(), scale=1, dpi=350)
+
 ```
 
 #investigating differences in liking + familiarity
@@ -137,4 +373,21 @@ summary(m1)
 
 m1 <- lmer(familiarity ~ vocal + older_younger + (1|participant_ID), data=vocal_nonvocal_other)
 summary(m1)
+```
+
+#sentiment score analysis
+#data cleaning
+```{r}
+average_activation <-
+timeseries_NLP %>%
+  subset(vocal=="Y") %>%
+  group_by(SUBID, older_younger, self_other, sex, vadersenti_score) %>% ## here you can add which variables you'd be interested in looking at 
+  summarise_at(vars(aSTGr), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+
+names(average_activation)[6] = "average" #renaming the output of previous function
+
+average_activation$vadersenti_score <- as.numeric(average_activation$vadersenti_score)
+
+test<-lmer(average~vadersenti_score + (1|SUBID), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
+summary(test)
 ```
