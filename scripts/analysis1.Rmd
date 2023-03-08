@@ -191,35 +191,40 @@ timeseries_stimother <-
 
 timeseries_otherselected <-
   timeseries_stimother %>%
-  subset(Stim == 8 | Stim == 10) #pick stims want to compare
+  subset(Stim == 8 | Stim == 15 | Stim == 7 | Stim == 9 | Stim == 14 | Stim == 16) #pick stims want to compare
+
+timeseries_otherselected$vocals <- ifelse(timeseries_otherselected$Stim==15 | timeseries_otherselected$Stim==8,  "Non-English", "Nonvocal")
+timeseries_otherselected$Stim <- as.factor(timeseries_otherselected$Stim) 
 
 ggplot(timeseries_otherselected, aes(x=round(seconds), y=scaled)) + 
-  geom_smooth(aes(color=factor(Stim, labels = c("Nonverbal", "English")), fill=factor(Stim, labels = c("Nonverbal", "English"))),alpha=0.2)+
+  geom_smooth(aes(color=factor(vocals, labels = c("Non-English Vocal", "Nonvocal")), fill=factor(vocals, labels = c("Non-English Vocal", "Nonvocal"))), alpha=0.2) +
   theme_classic()+
-  labs(x= "Time (s)", y="Scaled ROI Activity", color="Stimulus Type", fill="Stimulus Type")+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="stimulus type", fill="stimulus type")+
   ggtitle("pMTG Right Cluster") +
   theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15)) +
-  scale_color_manual(values=c("#E69F00", "#56B4E9")) +
-  scale_fill_manual(values=c("#E69F00", "#56B4E9")) 
+  scale_color_manual(values=c("#00BA38", "#F8766D")) +
+  scale_fill_manual(values=c("#00BA38", "#F8766D")) #F8766D
 
 
-ggsave('pMTGREnglishvsNonverbal.png', plot = last_plot(), scale=1, dpi=350)
+ggsave('pMTGRnonvocalvsnonEnglish.png', plot = last_plot(), scale=1, dpi=350)
+```
 
+```{r}
 ### statistics: english vs. non-verbal
 average_activation <-
 timeseries %>%
    group_by(SUBID, Stim) %>%
   #subset(vocal=="Y") %>%
   subset(self_other=="other") %>%
-  subset(Stim == 8 | Stim == 7) %>% ## pick which stimuli you'd like to pick
+  subset(Stim == 8 | Stim == 15 | Stim == 7 | Stim == 9 | Stim == 14 | Stim == 16) %>% #pick stims want to compare %>% ## pick which stimuli you'd like to pick
   summarise_at(vars(pMTGR_univariatecluster), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
-average_activation$vocals <- ifelse(average_activation$Stim==8, "non-verbal","English")
+average_activation$vocals <- ifelse(average_activation$Stim==15 | average_activation$Stim==8,  "Non-English", "English")
 average_activation$Stim <- as.factor(average_activation$Stim)
 
 names(average_activation)[3] = "average" #renaming the output of previous function
 
-test<-lmer(average~Stim + (1|SUBID), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
+test<-lmer(average~vocals + (1|SUBID) + (1|Stim), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
 summary(test) ## all music
 ```
 
@@ -416,11 +421,15 @@ summary(m1)
 #sentiment score analysis
 #data cleaning
 ```{r}
+timeseries_NLP <-
+timeseries %>% 
+  select(SUBID, TR, aSTGl, aSTGr, pMTGL_univariatecluster, pMTGR_univariatecluster) %>% #pMTG extract from our paper, aSTG as informed by norman-haignere
+  merge(timeseries_NLP, by=c("SUBID", "TR"))
 average_activation <-
 timeseries_NLP %>%
   subset(vocal=="Y") %>%
   group_by(SUBID, older_younger, self_other, sex, vadersenti_score, stim_name) %>% ## here you can add which variables you'd be interested in looking at 
-  summarise_at(vars(Icl), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+  summarise_at(vars(hippocampusr), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
 names(average_activation)[7] = "average" #renaming the output of previous function
 
@@ -428,14 +437,16 @@ average_activation$vadersenti_score <- as.numeric(average_activation$vadersenti_
 
 test<-lmer(average~vadersenti_score + (1|SUBID) + (1|stim_name), data=average_activation) #I can explain these stats the next time we meet-- a significant p-value for older_younger1 = a significant effect of age; you can update the "older_younger" variable to test which ones you're interested in
 summary(test) ## all music
+```
 
+```{r}
 ## let's test just other-selected w/ vocals
 average_activation <-
 timeseries_NLP %>%
   subset(vocal=="Y") %>%
   subset(self_other=="other") %>%
   group_by(SUBID, older_younger, sex, vadersenti_score,stim_name) %>% ## here you can add which variables you'd be interested in looking at 
-  summarise_at(vars(amygdalal), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
+  summarise_at(vars(aSTGl), list(name = mean)) ##if you want to look at different ROIs, update the variable in the "vars()" argument to whichever column ROI you want
 
 names(average_activation)[6] = "average" #renaming the output of previous function
 
