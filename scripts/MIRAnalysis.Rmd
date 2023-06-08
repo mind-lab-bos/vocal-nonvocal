@@ -1,0 +1,66 @@
+---
+title: "MIR"
+output: html_document
+date: '2023-04-04'
+---
+
+```{r}
+library(tidyverse)
+library(lmerTest)
+library(lme4)
+library(misty)
+```
+
+## R Markdown
+
+```{r cars}
+stimuli <- read.csv(file='../data/audioExtraction.csv')
+```
+
+```{r}
+timeseries <- read.csv(file='../data/roitimeseries.csv')
+timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
+timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475 # adding seconds to df
+
+vocal_nonvocal <- read.csv(file='../data/vocal_nonvocal.csv')
+vocal_nonvocal$vocal= ifelse(vocal_nonvocal$vocal=="y","Y", timeseries$vocal ) #recoding some values
+vocal_nonvocal$liking= ifelse(vocal_nonvocal$liking=="0",NA, timeseries$liking ) #recoding some values
+vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeseries$familiarity ) #recoding some values
+
+timeseries_MIR <- merge(timeseries, stimuli, by="Stim")
+```
+
+```{r pressure, echo=FALSE}
+test<-lm(RMS_energy~vocal, data=stimuli)
+summary(test)
+test<-lm(pulse_clarity~vocal, data=stimuli)
+summary(test)
+test<-lm(event_density~vocal, data=stimuli)
+summary(test)
+```
+
+```{r}
+
+time_seriespeak<-
+timeseries_MIR %>%
+  subset((seconds) >=6) %>%
+  subset((seconds) <= 8)
+
+test<-lmer(pMTGR_univariatecluster~vocal.x + RMS_energy + event_density + (1|SUBID), data=time_seriespeak) #random intercepts
+summary(test)
+
+#sex comparison
+test<-lmer(pMTGL_univariatecluster~sex + (1|SUBID), data=time_seriespeak) #random intercepts
+summary(test)
+```
+
+```{r}
+timeseries_language <-
+  time_seriespeak%>%
+  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13 ) #pick stims want to compare
+
+timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "English")
+
+test<-lmer(pMTGL_univariatecluster ~ language + (1|SUBID), data=timeseries_language) #random  intercepts
+summary(test)
+```
