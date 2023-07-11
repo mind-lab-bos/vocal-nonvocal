@@ -31,26 +31,25 @@ timeseries_MIR <- merge(timeseries, stimuli, by="Stim")
 ```
 
 ```{r pressure, echo=FALSE}
-test<-lm(RMS_energy~vocal, data=stimuli)
-summary(test)
-test<-lm(pulse_clarity~vocal, data=stimuli)
-summary(test)
-test<-lm(event_density~vocal, data=stimuli)
-summary(test)
+non_vocal <- subset(stimuli, vocal=="N")
+
+vocal <- subset(stimuli, vocal=="Y")
+
+t.test(vocal$pulse_clarity, non_vocal$pulse_clarity)
+
+t.test(vocal$RMS_energy, non_vocal$RMS_energy)
+
+t.test(vocal$event_density, non_vocal$event_density)
 ```
 
 ```{r}
-
 time_seriespeak<-
 timeseries_MIR %>%
   subset((seconds) >=6) %>%
   subset((seconds) <= 8)
 
-test<-lmer(pMTGR_univariatecluster~vocal.x + RMS_energy + event_density + (1|SUBID), data=time_seriespeak) #random intercepts
-summary(test)
+test<-lmer(pMTGR_univariatecluster~vocal.x + RMS_energy + event_density + (vocal.x + RMS_energy + event_density|SUBID), data=time_seriespeak) #random intercepts and slopes. consider adding ratings?
 
-#sex comparison
-test<-lmer(pMTGL_univariatecluster~sex + (1|SUBID), data=time_seriespeak) #random intercepts
 summary(test)
 ```
 

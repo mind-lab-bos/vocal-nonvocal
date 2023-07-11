@@ -16,6 +16,7 @@ library(ggrepel)
 #loading in data
 ```{r}
 timeseries <- read.csv(file='../data/roitimeseries.csv')
+unique(timeseries$SUBID)
 timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
 timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475 # adding seconds to df
 
@@ -23,8 +24,8 @@ vocal_nonvocal <- read.csv(file='../data/vocal_nonvocal.csv')
 vocal_nonvocal$vocal= ifelse(vocal_nonvocal$vocal=="y","Y", timeseries$vocal ) #recoding some values
 vocal_nonvocal$liking= ifelse(vocal_nonvocal$liking=="0",NA, timeseries$liking ) #recoding some values
 vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeseries$familiarity ) #recoding some values
-
 ```
+
 #older vs. younger comparisons
 ```{r}
 timeseries_vocal <- subset(timeseries, timeseries$vocal=="Y")
@@ -438,9 +439,9 @@ vocal_nonvocal_other <-
   subset(self_other=="other") %>%
   subset(MCI!="Y")
 
-m1 <- lmer(liking ~ vocal + older_younger + (1|participant_ID), data=vocal_nonvocal_other)
+m1 <- lmer(scale(liking) ~ vocal + (vocal|participant_ID), data=vocal_nonvocal_other)
 summary(m1)
 
-m1 <- lmer(familiarity ~ vocal + older_younger + (1|participant_ID), data=vocal_nonvocal_other)
+m1 <- lmer(scale(familiarity) ~ vocal + (vocal|participant_ID), data=vocal_nonvocal_other)
 summary(m1)
 ```
