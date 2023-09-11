@@ -19,15 +19,13 @@ timeseries <- read.csv(file='../data/roitimeseries.csv')
 unique(timeseries$SUBID)
 timeseries$vocal= ifelse(timeseries$vocal=="y","Y", timeseries$vocal ) #recoding some values
 timeseries$seconds<- (timeseries$TR - ((timeseries$order-1)*60))*0.475 # adding seconds to df
+MIR <- read.csv(file='../data/audioExtraction.csv')
 
 vocal_nonvocal <- read.csv(file='../data/vocal_nonvocal.csv')
 vocal_nonvocal$vocal= ifelse(vocal_nonvocal$vocal=="y","Y", timeseries$vocal ) #recoding some values
 vocal_nonvocal$liking= ifelse(vocal_nonvocal$liking=="0",NA, timeseries$liking ) #recoding some values
 vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeseries$familiarity ) #recoding some values
-```
 
-#older vs. younger comparisons
-```{r}
 timeseries_vocal <- subset(timeseries, timeseries$vocal=="Y")
 
 time_seriespeak<-
@@ -35,7 +33,12 @@ timeseries %>%
   subset((seconds) >=6) %>%
   subset((seconds) <= 8)
 
+#merge MIR features w/ MIR peaks
+MIR_timeseries <- merge(time_seriespeak, MIR, by="Stim")
+```
 
+#older vs. younger comparisons
+```{r}
 test<-lmer(pMTGL_univariatecluster~older_younger + (1|SUBID), data=time_seriespeak) #random intercepts
 summary(test)
 
@@ -101,23 +104,45 @@ ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) +
 #non-english vs english comparison
 ```{r}
 timeseries_language <-
-  time_seriespeak%>%
+  MIR_timeseries%>%
   subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13 ) #pick stims want to compare
 
 timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "English")
 
-test<-lmer(pMTGL_univariatecluster ~ language + (1|SUBID), data=timeseries_language) #random  intercepts
+test<-lmer(scale(pMTGL_univariatecluster) ~ (language) +  scale(RMS_energy) + scale(event_density) + ((language)|SUBID), data=timeseries_language) #random  intercepts + slopes
+summary(test)
+
+test<-lmer(scale(pMTGR_univariatecluster) ~ (language) +  scale(RMS_energy) + scale(event_density) + ((language)|SUBID), data=timeseries_language) #random  intercepts + slopes
 summary(test)
 ```
 
 #non-english vs non-vocal comparison
 ```{r}
 timeseries_language <-
-  time_seriespeak%>%
+  MIR_timeseries%>%
   subset(Stim == 8 | Stim == 15 | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
 
 timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "Non-Vocal")
-test<-lmer(pMTGR_univariatecluster ~ language + (1|SUBID), data=timeseries_language) #random intercepts
+
+test<-lmer(scale(pMTGL_univariatecluster) ~ language + scale(RMS_energy) + scale(event_density) + (language|SUBID), data=timeseries_language) #random intercepts
+summary(test)
+
+test<-lmer(scale(pMTGR_univariatecluster) ~ language + scale(RMS_energy) + scale(event_density) + (language|SUBID), data=timeseries_language) #random intercepts
+summary(test)
+```
+
+#english vs non-vocal comparison
+```{r}
+timeseries_language <-
+  MIR_timeseries%>%
+  subset(Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13  | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
+
+timeseries_language$language <- ifelse(timeseries_language$Stim == 10 | timeseries_language$Stim == 11 | timeseries_language$Stim == 12 | timeseries_language$Stim == 13, "English", "Non-Vocal")
+
+test<-lmer(pMTGL_univariatecluster ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
+summary(test)
+
+test<-lmer(pMTGR_univariatecluster ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
 summary(test)
 ```
 
