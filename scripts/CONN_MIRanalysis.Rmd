@@ -13,43 +13,65 @@ library(lmerTest)
 
 ```{r}
 vocal_nonvocal<- read.csv('../data/vocal_nonvocal.csv')
+CONN_ID <- read.csv('../data/CONN_ID.csv')
 
 ID <- read.csv('../data/CONN_ID.csv') %>%
   subset(!is.na(CONN.id))
 
+MIR <- read.csv(file='../data/audioExtraction.csv')
 names <- ID$X
 
 TRS <- seq(1,1440,1)
 
 aMTGl <- read.csv(file='aMTGlTSCONN.csv', header=F)
-aMTGl <- aMTGl[-(1:947),] %>%
-  cbind(TRS)
+aMTGl <- aMTGl[-(1:947),]
+colnames(aMTGl) = names 
+aMTGl <- cbind(aMTGl, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "aMTGl")
 
 aMTGr <- read.csv(file='aMTGrTSCONN.csv', header=F)
-aMTGr <- aMTGr[-(1:947),] %>%
-  cbind(TRS)
+aMTGr <- aMTGr[-(1:947),] 
+colnames(aMTGr) = names 
+aMTGr <- cbind(aMTGr, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "aMTGr")
 
 pMTGr <- read.csv(file='pMTGrTSCONN.csv', header=F)
-pMTGr <- pMTGr[-(1:947),] %>%
-  cbind(TRS)
+pMTGr <- pMTGr[-(1:947),]
+colnames(pMTGr) = names 
+pMTGr <- cbind(pMTGr, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "pMTGr")
 
 pMTGl <- read.csv(file='pMTGlTSCONN.csv', header=F)
-pMTGl <- pMTGl[-(1:947),] %>%
-  cbind(TRS)
+pMTGl <- pMTGl[-(1:947),]
+colnames(pMTGl) = names 
+pMTGl <- cbind(pMTGl, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "pMTGl")
 
 aSTGl <- read.csv(file='aSTGlTSCONN.csv', header=F)
-aSTGl <- aSTGl[-(1:947),] %>%
-  cbind(TRS)
+aSTGl <- aSTGl[-(1:947),]
+colnames(aSTGl) = names 
+aSTGl <- cbind(aSTGl, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "aSTGl")
 
 aSTGr <- read.csv(file='aSTGlTSCONN.csv', header=F)
-aSTGr <- aSTGr[-(1:947),] %>%
-  cbind(TRS)
+aSTGr <- aSTGr[-(1:947),]
+colnames(aSTGr) = names 
+aSTGr <- cbind(aSTGr, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "aSTGr")
 
 HGl <- read.csv(file='HGlTSCONN.csv', header=F)
-HGl <- HGl[-(1:947),] %>%
-  cbind(TRS)
+HGl <- HGl[-(1:947),]
+colnames(HGl) = names 
+HGl <- cbind(HGl, TRS) %>%
+  pivot_longer(`190716FKEE1`:`200211DCAT1`, values_to = "HGl")
 
-#next: label each column as participant, then pivot to have participants + ROI values (NOT TRS) into wide, then merge with vocal_nonvocal
+
+#put all data frames into list
+df_list <- list(aMTGl, aMTGr, aSTGl, aSTGr, pMTGl, pMTGr, HGl)
+
+#merge all data frames in list
+master <- df_list %>% reduce(full_join, by=c('name','TRS')) 
+master$SUBID<-gsub('[[:digit:]]+', '',master$name)
 ```
 
 #get TRs w/ coded data
@@ -91,16 +113,17 @@ TRs_vocalnonvocal<-merge(TRs, onsets_stim, by.x="order",by.y="stim_order")
 
 #cleaning ROI-stim orde
 ```{r}
+roistim_order <- read.csv('../data/roi_participantorder.csv')
+
 roi_ID <- seq(1,71,1)
 roi_ID <- as.data.frame(rep(roi_ID, 1440))
 names(roi_ID) <- "ID"
 roi_ID <- arrange(roi_ID, ID)
 
-roi_data<-cbind(roi_ID, roidata)
 TRs<- (seq(1,1440,1))
 TRs_roi<- as.data.frame(rep(TRs, 71))
 names(TRs_roi) <- "TR"
-roi_data<-cbind(TRs_roi, roi_data)
+roi_data<-cbind(TRs_roi, roi_ID)
 ```
 
 #merge coded data w/ TRs
@@ -122,4 +145,13 @@ for (i in x){
 
 attempt<-attempt[!is.na(attempt$TR),]
 attempt<-subset(attempt, Stim < 17)
+
+master_final <- merge(attempt, master, by.x = c("TR", "SUBID"), by.y=c("TRS", "SUBID")) %>%
+  merge(MIR, by="Stim")
+
+x=1:nrow(master_final)
+for (i in x){
+    master_final$cor[i] = mean(cor(master_final[i,21:27]))
+}
+
 ```
