@@ -1,0 +1,125 @@
+---
+title: "CONN_MIRanalysis"
+author: "Nick Kathios"
+date: "2023-09-15"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(lme4)
+library(lmerTest)
+```
+
+```{r}
+vocal_nonvocal<- read.csv('../data/vocal_nonvocal.csv')
+
+ID <- read.csv('../data/CONN_ID.csv') %>%
+  subset(!is.na(CONN.id))
+
+names <- ID$X
+
+TRS <- seq(1,1440,1)
+
+aMTGl <- read.csv(file='aMTGlTSCONN.csv', header=F)
+aMTGl <- aMTGl[-(1:947),] %>%
+  cbind(TRS)
+
+aMTGr <- read.csv(file='aMTGrTSCONN.csv', header=F)
+aMTGr <- aMTGr[-(1:947),] %>%
+  cbind(TRS)
+
+pMTGr <- read.csv(file='pMTGrTSCONN.csv', header=F)
+pMTGr <- pMTGr[-(1:947),] %>%
+  cbind(TRS)
+
+pMTGl <- read.csv(file='pMTGlTSCONN.csv', header=F)
+pMTGl <- pMTGl[-(1:947),] %>%
+  cbind(TRS)
+
+aSTGl <- read.csv(file='aSTGlTSCONN.csv', header=F)
+aSTGl <- aSTGl[-(1:947),] %>%
+  cbind(TRS)
+
+aSTGr <- read.csv(file='aSTGlTSCONN.csv', header=F)
+aSTGr <- aSTGr[-(1:947),] %>%
+  cbind(TRS)
+
+HGl <- read.csv(file='HGlTSCONN.csv', header=F)
+HGl <- HGl[-(1:947),] %>%
+  cbind(TRS)
+
+#next: label each column as participant, then pivot to have participants + ROI values (NOT TRS) into wide, then merge with vocal_nonvocal
+```
+
+#get TRs w/ coded data
+```{r}
+ID = Sys.glob('../data/MRI_mus-bid_task/**********1_mus-bid-biddata.txt')
+post_df = ID %>% 
+  map_dfr(read_table, .id = "source")
+
+
+post_df$source <- as.integer(post_df$source)
+source <- seq(1,71,by=1)
+ID <- cbind(source,ID)
+
+post_df <- merge(post_df, ID, by.y ="source", by.x="source") 
+
+post_df$ID <-  gsub("1_mus-bid-biddata.txt", "", post_df$ID)
+post_df$ID <-  gsub("../data/MRI_mus-bid_task/", "", post_df$ID)
+
+names(post_df)<- c("Source", "Stim", "Liking", "Familiarity", "SUBID")
+
+post_df<- subset(post_df, select=c("Stim", "SUBID"))
+#to do: merge w/ vocal-nonvocal & expand df to have all TRs
+post_df$SUBID<-gsub('[[:digit:]]+', '',post_df$SUBID)
+onsets_stim <- merge(post_df, vocal_nonvocal, by.x=c("SUBID", "Stim"), by.y=c("participant_ID", "stim_ID"))
+
+
+stim_order <- seq(1,24,1)
+stim_order <- as.data.frame(rep(stim_order, 60))
+TRs<- as.data.frame(seq(1,1440,1))
+names(stim_order) <- "order"
+names(TRs) <- "TR"
+
+stim_order$order <- arrange(stim_order, order)
+TRs <- cbind(stim_order$order, TRs)
+
+TRs_vocalnonvocal<-merge(TRs, onsets_stim, by.x="order",by.y="stim_order")
+```
+
+
+#cleaning ROI-stim orde
+```{r}
+roi_ID <- seq(1,71,1)
+roi_ID <- as.data.frame(rep(roi_ID, 1440))
+names(roi_ID) <- "ID"
+roi_ID <- arrange(roi_ID, ID)
+
+roi_data<-cbind(roi_ID, roidata)
+TRs<- (seq(1,1440,1))
+TRs_roi<- as.data.frame(rep(TRs, 71))
+names(TRs_roi) <- "TR"
+roi_data<-cbind(TRs_roi, roi_data)
+```
+
+#merge coded data w/ TRs
+```{r}
+#merge
+roistim_order <- subset(roistim_order, roi_order <= 18 | roi_order >= 36)
+
+roi_dataID<- merge(roi_data, roistim_order, by.x = "ID", by.y="roi_order")
+
+attempt <- merge(TRs_vocalnonvocal, roi_dataID, by.x=c("TR", "SUBID"), by.y=c("TR","SUBID"))
+
+#isolate just music-listening TR
+x=1:77760
+for (i in x){
+  if (attempt$TR[i] >= (60*(attempt$order[i]-1)+43) & attempt$TR[i] <= (60*(attempt$order[i]-1)+60)){
+    attempt$TR[i] = NA
+  }
+}
+
+attempt<-attempt[!is.na(attempt$TR),]
+attempt<-subset(attempt, Stim < 17)
+```
