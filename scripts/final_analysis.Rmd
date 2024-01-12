@@ -28,32 +28,10 @@ vocal_nonvocal$familiarity= ifelse(vocal_nonvocal$familiarity=="0",NA, timeserie
 
 timeseries_vocal <- subset(timeseries, timeseries$vocal=="Y")
 
-time_seriespeak<-
-timeseries %>%
-  subset((seconds) >=6) %>%
-  subset((seconds) <= 8)
-
-#merge MIR features w/ MIR peaks
-MIR_timeseries <- merge(time_seriespeak, MIR, by="Stim")
-```
-
-#older vs. younger comparisons
-```{r}
-test<-lmer(pMTGL_univariatecluster~older_younger + (1|SUBID), data=time_seriespeak) #random intercepts
-summary(test)
-
-#sex comparison
-test<-lmer(pMTGL_univariatecluster~sex + (1|SUBID), data=time_seriespeak) #random intercepts
-summary(test)
-```
-
-```{r}
-## doing roi-analyses for all music (i.e. vocal v non-vocal)
-timeseries_other <- subset(timeseries, self_other=="other")
-
+#get scaled values - pMTGL
 onset_value <- 
-  timeseries_other %>%
-  group_by(SUBID, Stim) %>%
+  timeseries %>%
+  group_by(SUBID) %>%
   subset(seconds==0.475) %>%
   mutate(
     onset_value = pMTGL_univariatecluster #update ROIs here
@@ -61,14 +39,47 @@ onset_value <-
 
 onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
 
-timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+timeseries_scaled <- merge(timeseries, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
 
-timeseries_stimother <-
-  timeseries_stimother %>%
+timeseries_scaled <-
+  timeseries_scaled %>%
   group_by(SUBID, Stim) %>%
   mutate(
-    scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROIs here
+    pMTGL_univariatecluster_scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROIs here
   )
+  
+#get scaled values - pMTGR
+onset_value <- 
+  timeseries %>%
+  group_by(SUBID) %>%
+  subset(seconds==0.475) %>%
+  mutate(
+    onset_value = pMTGR_univariatecluster
+  )
+
+onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
+
+timeseries_scaled <- merge(timeseries_scaled, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
+
+timeseries_scaled <-
+  timeseries_scaled %>%
+  group_by(SUBID, Stim) %>%
+  mutate(
+    pMTGR_univariatecluster_scaled = ((pMTGR_univariatecluster - onset_value.y)/sd(pMTGR_univariatecluster)) 
+  )
+
+timeseries_scaled_peak <- timeseries_scaled %>%
+  subset((seconds) >=6) %>%
+  subset((seconds) <= 8)
+
+#merge MIR features w/ MIR peaks
+MIR_timeseries <- merge(timeseries_scaled_peak, MIR, by="Stim")
+```
+
+
+#visualizing ROI timeseries
+```{r}
+timeseries_other <- subset(timeseries_scaled, self_other=="other")
 
 label<-
   expand.grid(
@@ -76,9 +87,9 @@ label<-
     seconds=12
   )
 label$scaled <- ifelse(label$vocal=="Vocal", 1.25, 0.25)
-timeseries_stimother$vocal <- ifelse(timeseries_stimother$vocal=="Y", "Vocal", "Nonvocal")
+timeseries_other$vocal <- ifelse(timeseries_other$vocal=="Y", "Vocal", "Nonvocal")
 
-ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) + 
+ggplot(timeseries_other, aes(x=round(seconds), y=pMTGL_univariatecluster_scaled)) + 
   annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.4, fill="#F0E442") +
   geom_smooth(aes(color=vocal, fill=vocal))+
   theme_classic() +
@@ -86,14 +97,14 @@ ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) +
   ylab("Scaled ROI Activity") +
   ggtitle("pMTG Left Cluster") +#update labels
   theme(plot.title = element_text(face="bold", hjust = 0.5, size=18), axis.text=element_text(size=15), axis.title=element_text(size=15))+
-  geom_label_repel(aes(label = vocal, x=seconds, y=scaled, color=vocal),
-                   na.rm = TRUE,
-                   data=label,
-                   min.segment.length = Inf,
-                   point.size = NA,
-                   family="Arial",
-                   size=8
-                   ) +
+  #geom_label_repel(aes(label = vocal, x=seconds, y=scaled, color=vocal),
+   #                na.rm = TRUE,
+              #     data=label,
+     #              min.segment.length = Inf,
+                 #  point.size = NA,
+     #      #        family="Arial",
+                #   size=8
+                #   ) +
   scale_color_manual(values = c("#D55E00", "#56B4E9"))+
   scale_fill_manual(values = c("#D55E00", "#56B4E9"))+
   theme(legend.position = "none")
@@ -101,361 +112,6 @@ ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) +
 #ggsave('pMTGLTimeseriesAllComparison.png', plot = last_plot(), dpi=350) #uncomment when saving
 ```
 
-#non-english vs english comparison
-```{r}
-timeseries_language <-
-  MIR_timeseries%>%
-  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13 ) #pick stims want to compare
-
-timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "English")
-
-test<-lmer(scale(pMTGL_univariatecluster) ~ (language) +  scale(RMS_energy) + scale(event_density) + ((language)|SUBID), data=timeseries_language) #random  intercepts + slopes
-summary(test)
-
-test<-lmer(scale(pMTGR_univariatecluster) ~ (language) +  scale(RMS_energy) + scale(event_density) + ((language)|SUBID), data=timeseries_language) #random  intercepts + slopes
-summary(test)
-```
-
-#non-english vs non-vocal comparison
-```{r}
-timeseries_language <-
-  MIR_timeseries%>%
-  subset(Stim == 8 | Stim == 15 | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
-
-timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "Non-Vocal")
-
-test<-lmer(scale(pMTGL_univariatecluster) ~ language + scale(RMS_energy) + scale(event_density) + (language|SUBID), data=timeseries_language) #random intercepts
-summary(test)
-
-test<-lmer(scale(pMTGR_univariatecluster) ~ language + scale(RMS_energy) + scale(event_density) + (language|SUBID), data=timeseries_language) #random intercepts
-summary(test)
-```
-
-#english vs non-vocal comparison
-```{r}
-timeseries_language <-
-  MIR_timeseries%>%
-  subset(Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13  | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
-
-timeseries_language$language <- ifelse(timeseries_language$Stim == 10 | timeseries_language$Stim == 11 | timeseries_language$Stim == 12 | timeseries_language$Stim == 13, "English", "Non-Vocal")
-
-test<-lmer(pMTGL_univariatecluster ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
-summary(test)
-
-test<-lmer(pMTGR_univariatecluster ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
-summary(test)
-```
-
-#plotting timeseries
-```{r}
-## just messy stuff in this chunk
-timeseries_stimothervocal <- subset(timeseries, Stim == 13) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-
-onset_value <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = aSTGl #update ROI here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
-timeseries_stimothervocal <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((aSTGl - onset_value)/sd(aSTGl)) #update ROI here as well
-  )
-
-ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth() +
-  theme_classic() +
-  xlab("Time (s)") +
-  ylab("Scaled ROI Activity") +
-  ggtitle("pMTG Left Cluster from Univariate Analysis, Stimulus 15 (Vocal)") +
-  theme(plot.title = element_text(face="bold", hjust = 0.5))
-
-#ggsave('pMTGLTimeseriesUnivariate15.png', plot= plot, dpi=350)
-
-## Plotting timeseries of other-selected nonvocal trial
-timeseries_stimothernonvocal <- subset(timeseries, Stim == 16) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it *does not* have vocals.
-
-onset_value <- 
-  timeseries_stimothernonvocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = aSTGl #update ROIs here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothernonvocal <- merge(timeseries_stimothernonvocal, onset_value, by.x="SUBID", by.y="SUBID")
-
-timeseries_stimothernonvocal <- 
-  timeseries_stimothernonvocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((aSTGl  - onset_value)/sd(aSTGl)) #update ROIs here
-  )
-
-ggplot(timeseries_stimothernonvocal, aes(x=round(seconds), y=scaled)) +
-  geom_smooth()+
-  theme_light()+
-  xlab("time (s)") +
-  ylab("Scaled ROI Activity") 
-  #ggtitle("pMTG Left Cluster from Univariate Analysis, Stimulus 16 (Nonvocal)") #update labels
-
-#ggsave('pMTGLTimeseries16Univariate.png', plot= plot2, dpi=350)
-```
-
-```{r}
-## doing roi-analyses for all music (i.e. vocal v non-vocal)
-timeseries_other <- subset(timeseries, self_other=="other")
-
-onset_value <- 
-  timeseries_other %>%
-  group_by(SUBID, Stim) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGL_univariatecluster #update ROIs here
-  )
-
-onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
-
-timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
-
-timeseries_stimother <-
-  timeseries_stimother %>%
-  group_by(SUBID, Stim) %>%
-  mutate(
-    scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROIs here
-  )
-
-ggplot(timeseries_stimother, aes(x=round(seconds), y=scaled)) + 
-  geom_smooth(aes(color=vocal, fill=vocal))+
-  theme_classic() +
-  xlab("Time (s)") +
-  ylab("Scaled ROI Activity") +
-  ggtitle("pMTG Left Cluster") +#update labels
-  theme(plot.title = element_text(face="bold", hjust = 0.5, size=18), axis.text=element_text(size=15), axis.title=element_text(size=15)) 
-
-ggsave('pMTGLTimeseriesAllComparison.png', plot = last_plot(), dpi=350) #uncomment when saving
-```
-
-```{r}
-##two stimuli one time series ##
-
-timeseries_other <- subset(timeseries, self_other=="other")
-
-onset_value <- 
-  timeseries_other %>%
-  group_by(SUBID, Stim) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGR_univariatecluster #update ROIs here
-  )
-
-onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
-
-timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
-
-timeseries_stimother <-
-  timeseries_stimother %>%
-  group_by(SUBID, Stim) %>%
-  mutate(
-    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROIs here
-  )
-
-timeseries_otherselected <-
-  timeseries_stimother %>%
-  subset(Stim == 8 | Stim == 10) #pick stims want to compare
-
-ggplot(timeseries_otherselected, aes(x=round(seconds), y=scaled)) + 
-  geom_smooth(aes(color=factor(Stim, labels = c("Nonverbal", "English")), fill=factor(Stim, labels = c("Nonverbal", "English"))))+
-  theme_classic()+
-  labs(x= "Time (s)", y="Scaled ROI Activity", color="vocal type", fill="vocal type")+
-  ggtitle("pMTG Right Cluster") +
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-  ggsave('pMTGREnglishvsNonverbal.png', plot = last_plot(), scale=1, dpi=350)
-
-```
-
-```{r}
-##all together 
-
-timeseries_other <- subset(timeseries, self_other=="other")
-
-onset_value <- 
-  timeseries_other %>%
-  group_by(SUBID, Stim) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGR_univariatecluster #update ROIs here
-  )
-
-onset_value <- cbind(onset_value[3],onset_value[5],onset_value[28])
-
-timeseries_stimother <- merge(timeseries_other, onset_value, by.x=c("SUBID","Stim"), by.y=c("SUBID", "Stim"))
-
-timeseries_stimother <-
-  timeseries_stimother %>%
-  group_by(SUBID, Stim) %>%
-  mutate(
-    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROIs here
-  )
-
-timeseries_otherselected <-
-  timeseries_stimother %>%
-  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 7) #pick stims want to compare
-
-ggplot(timeseries_otherselected, aes(x=round(seconds), y=scaled)) + 
-  geom_smooth(aes(color=factor(Stim, labels = c("Nonvocal", "Nonverbal", "English", "Other Language")), fill=factor(Stim, labels = c("Nonvocal", "Nonverbal", "English", "Other Language"))))+
-  theme_classic()+
-  labs(x= "Time (s)", y="Scaled ROI Activity", color="vocal type", fill="vocal type")+
-  ggtitle("pMTG Right Cluster") + #update labels
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-ggsave('pMTGRallvocaltypes.png', plot = last_plot(), scale=1, dpi=350)
-```
-
-```{r}
-## Plotting timeseries of other-selected vocal trial Stim 11
-timeseries_stimothervocal <- subset(timeseries, Stim == 11) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-
-onset_value <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGL_univariatecluster #update ROI here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
-timeseries_stimothervocal <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((pMTGL_univariatecluster - onset_value)/sd(pMTGL_univariatecluster)) #update ROI here as well
-  )
-
-ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth() +
-  theme_classic() +
-  annotate(xmin = 0, xmax = 3, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
-  annotate(xmin = 4, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
-  annotate(xmin = 9, xmax = 13, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
-  annotate(xmin = 14, xmax = 20, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9")+
-  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
-  labs(x= "Time (s)", y="Scaled ROI Activity")+
-  ggtitle("Stimulus 11: \"Hurt\"") + #update labels
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-
-ggsave('pMTGLStim11.png', plot = last_plot(), scale=1, dpi=350)
-
-```
-
-```{r}
-## Plotting timeseries of other-selected vocal trial
-timeseries_stimothervocal <- subset(timeseries, Stim == 8) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-
-onset_value <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGR_univariatecluster #update ROI here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
-timeseries_stimothervocal <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
-  )
-
-ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth() +
-  theme_classic() +
-  annotate(xmin = 0, xmax = 15, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
-  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
-  labs(x= "Time (s)", y="Scaled ROI Activity") +
-  ggtitle(expression(bold("Stimulus 8: ") * bolditalic("Symphony No. 2, Finale"))) + #update labels
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-
-ggsave('pMTGRStim8.png', plot = last_plot(), scale=1, dpi=350)
-
-```
-
-```{r}
-## Plotting timeseries of other-selected vocal trial
-timeseries_stimothervocal <- subset(timeseries, Stim == 10) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-
-onset_value <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGR_univariatecluster #update ROI here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
-timeseries_stimothervocal <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
-  )
-
-ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth() +
-  theme_classic() +
-  annotate(xmin = 0, xmax = 17, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
-  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
-  labs(x= "Time (s)", y="Scaled ROI Activity")+
-  ggtitle("Stimulus 10: \"John Wayne Gacy, Jr.\"") + #update labels
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-
-ggsave('pMTGRStim10.png', plot = last_plot(), scale=1, dpi=350)
-
-```
-
-```{r}
-## Plotting timeseries of other-selected vocal trial Stim 12,13,15
-timeseries_stimothervocal <- subset(timeseries, Stim == 15) # you can pick any stimuli, but I chose 15 here b/c it is other-selected (i.e. everyone heard it) + it has vocals.
-
-onset_value <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  subset(seconds==0.475) %>%
-  mutate(
-    onset_value = pMTGR_univariatecluster #update ROI here
-  )
-onset_value <- cbind(onset_value[3],onset_value[28])
-
-timeseries_stimothervocal <- merge(timeseries_stimothervocal, onset_value, by.x="SUBID", by.y="SUBID")
-timeseries_stimothervocal <- 
-  timeseries_stimothervocal %>%
-  group_by(SUBID) %>%
-  mutate(
-    scaled = ((pMTGR_univariatecluster - onset_value)/sd(pMTGR_univariatecluster)) #update ROI here as well
-  )
-
-ggplot(timeseries_stimothervocal, aes(x=round(seconds), y=scaled)) + #to change the ROI you're plotting, change this y-value
-  geom_smooth() +
-  theme_classic() +
-  annotate(xmin = 0, xmax = 20, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.2, fill="#56B4E9") +
-  #annotate(geom = "text",x = 11, y= 0,label="Vocals \nPresent", fontface="bold",size=6)
-  labs(x= "Time (s)", y="Scaled ROI Activity")+
-  ggtitle(expression(bold("Stimulus 15: ") * bolditalic("Nessun Dorma"))) + #update labels
-  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15))
-
-ggsave('pMTGRStim15.png', plot = last_plot(), scale=1, dpi=350)
-
-```
 
 #investigating differences in liking + familiarity
 ```{r}
@@ -469,4 +125,127 @@ summary(m1)
 
 m1 <- lmer(scale(familiarity) ~ vocal + (vocal|participant_ID), data=vocal_nonvocal_other)
 summary(m1)
+```
+
+#older vs. younger comparisons
+```{r}
+test<-lmer(pMTGR_univariatecluster_scaled~older_younger*vocal.y + RMS_energy + event_density + (vocal.y + RMS_energy + event_density|SUBID), data=MIR_timeseries, control=lmerControl(optimizer="bobyqa"))
+summary(test)
+
+test<-lmer(pMTGL_univariatecluster_scaled~older_younger*vocal.y + RMS_energy + event_density + (vocal.y + RMS_energy + event_density|SUBID), data=MIR_timeseries,control=lmerControl(optimizer="bobyqa"))
+summary(test)
+```
+
+#non-english vs english comparison
+```{r}
+timeseries_language <-
+  MIR_timeseries %>%
+  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13 )
+
+timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "English")
+
+test<-lmer((pMTGL_univariatecluster_scaled) ~ (language) + (language|SUBID), data=timeseries_language) #random  intercepts + slopes
+summary(test)
+
+test<-lmer(((pMTGL_univariatecluster_scaled)) ~ (language) +  scale(RMS_energy) + scale(event_density) + (language + scale(RMS_energy) + scale(event_density)|SUBID), data=timeseries_language,control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
+summary(test)
+
+test<-lmer((pMTGR_univariatecluster_scaled) ~ (language) + (language | SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
+summary(test)
+
+test<-lmer((pMTGR_univariatecluster_scaled) ~ (language) +  (RMS_energy) + (event_density) + (language + (RMS_energy) + (event_density)|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
+summary(test)
+```
+
+#plot
+```{r}
+timeseries_languageplot <-
+  timeseries_scaled %>%
+  subset(Stim == 8 | Stim == 15 | Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13 )
+
+timeseries_languageplot$language <- ifelse(timeseries_languageplot$Stim == 8 | timeseries_languageplot$Stim == 15, "Non-English", "English")
+
+ggplot(timeseries_languageplot, aes(x=round(seconds), y=pMTGL_univariatecluster_scaled)) + 
+  annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.3, fill="#F0E442")+
+  geom_smooth(aes(color=factor(language, labels = c("English Vocals", "Non-English Vocals")), fill=factor(language, labels = c("English Vocals", "Non-English Vocals"))), alpha=0.2) +
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="stimulus type", fill="stimulus type")+
+  ggtitle("Left pMTG Cluster") +
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15)) +
+  scale_color_manual(values=c("#CC79A7", "#009E73")) +
+  scale_fill_manual(values=c("#CC79A7", "#009E73"))
+
+ggplot(timeseries_languageplot, aes(x=round(seconds), y=pMTGR_univariatecluster_scaled)) + 
+  annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.3, fill="#F0E442")+
+  geom_smooth(aes(color=factor(language, labels = c("English Vocals", "Non-English Vocals")), fill=factor(language, labels = c("English Vocals", "Non-English Vocals"))), alpha=0.2) +
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="stimulus type", fill="stimulus type")+
+  ggtitle("Right pMTG Cluster") +
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15)) +
+  scale_color_manual(values=c("#CC79A7", "#009E73")) +
+  scale_fill_manual(values=c("#CC79A7", "#009E73"))
+```
+
+#non-english vs non-vocal comparison
+```{r}
+timeseries_language <-
+  MIR_timeseries %>%
+  subset(Stim == 8 | Stim == 15 | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
+
+timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeseries_language$Stim == 15, "Non-English", "Non-Vocal")
+
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language  + ((RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+summary(test)
+
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (RMS_energy) + (event_density) + (language + (RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+summary(test)
+
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (1|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+summary(test)
+
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (RMS_energy) + (event_density) + (language + (RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+summary(test)
+```
+
+#plot
+```{r}
+timeseries_languageplot <- timeseries_scaled %>%
+ subset(Stim == 8 | Stim == 15 | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
+
+timeseries_languageplot$language <- ifelse(timeseries_languageplot$Stim == 8 | timeseries_languageplot$Stim == 15, "Non-English", "Non-Vocal")
+
+ggplot(timeseries_languageplot, aes(x=round(seconds), y=pMTGR_univariatecluster_scaled)) + 
+  annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.3, fill="#F0E442")+
+  geom_smooth(aes(color=factor(language, labels = c("Non-English Vocals", "Nonvocal")), fill=factor(language, labels = c("Non-English Vocals", "Nonvocal"))), alpha=0.2) +
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="stimulus type", fill="stimulus type")+
+  ggtitle("Right pMTG Cluster") +
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15)) +
+  scale_color_manual(values = c("#009E73", "#D55E00"))+
+  scale_fill_manual(values = c("#009E73", "#D55E00"))
+
+ggplot(timeseries_languageplot, aes(x=round(seconds), y=pMTGL_univariatecluster_scaled)) + 
+  annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.3, fill="#F0E442")+
+  geom_smooth(aes(color=factor(language, labels = c("Non-English Vocals", "Nonvocal")), fill=factor(language, labels = c("Non-English Vocals", "Nonvocal"))), alpha=0.2) +
+  theme_classic()+
+  labs(x= "Time (s)", y="Scaled ROI Activity", color="stimulus type", fill="stimulus type")+
+  ggtitle("Left pMTG Cluster") +
+  theme(plot.title = element_text(face="bold", size = 18, hjust=0.5), axis.text=element_text(size=15), axis.title=element_text(size=15)) +
+  scale_color_manual(values = c("#009E73", "#D55E00"))+
+  scale_fill_manual(values = c("#009E73", "#D55E00"))
+```
+
+#english vs non-vocal comparison
+```{r}
+timeseries_language <-
+  MIR_timeseries%>%
+  subset(Stim == 10 | Stim == 11 | Stim == 12 | Stim == 13  | Stim == 9 | Stim == 7 | Stim == 14 | Stim == 17 )
+
+timeseries_language$language <- ifelse(timeseries_language$Stim == 10 | timeseries_language$Stim == 11 | timeseries_language$Stim == 12 | timeseries_language$Stim == 13, "English", "Non-Vocal")
+
+test<-lmer(pMTGL_univariatecluster_scaled ~ language + RMS_energy + event_density + (RMS_energy + event_density + language|SUBID), data=timeseries_language,control=lmerControl(optimizer="bobyqa")) #random intercepts
+summary(test)
+
+test<-lmer(pMTGR_univariatecluster_scaled ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
+summary(test)
 ```
