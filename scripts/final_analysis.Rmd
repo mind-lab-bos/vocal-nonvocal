@@ -89,13 +89,13 @@ label<-
 label$scaled <- ifelse(label$vocal=="Vocal", 1.25, 0.25)
 timeseries_other$vocal <- ifelse(timeseries_other$vocal=="Y", "Vocal", "Nonvocal")
 
-ggplot(timeseries_other, aes(x=round(seconds), y=pMTGL_univariatecluster_scaled)) + 
+ggplot(timeseries_other, aes(x=round(seconds), y=pMTGR_univariatecluster_scaled)) + 
   annotate(xmin = 6, xmax = 8, ymin = -Inf, ymax = Inf, geom = 'rect', alpha = 0.4, fill="#F0E442") +
   geom_smooth(aes(color=vocal, fill=vocal))+
   theme_classic() +
   xlab("Time (s)") +
   ylab("Scaled ROI Activity") +
-  ggtitle("pMTG Left Cluster") +#update labels
+  ggtitle("Right pMTG Cluster") +#update labels
   theme(plot.title = element_text(face="bold", hjust = 0.5, size=18), axis.text=element_text(size=15), axis.title=element_text(size=15))+
   #geom_label_repel(aes(label = vocal, x=seconds, y=scaled, color=vocal),
    #                na.rm = TRUE,
@@ -107,9 +107,11 @@ ggplot(timeseries_other, aes(x=round(seconds), y=pMTGL_univariatecluster_scaled)
                 #   ) +
   scale_color_manual(values = c("#D55E00", "#56B4E9"))+
   scale_fill_manual(values = c("#D55E00", "#56B4E9"))+
-  theme(legend.position = "none")
+  theme(legend.position = "none")+
+  #ylim(0, 3)
+  scale_y_continuous(breaks=c(0,0.5,1.0,1.5), limits=c(0, 1.8))
 
-#ggsave('pMTGLTimeseriesAllComparison.png', plot = last_plot(), dpi=350) #uncomment when saving
+ggsave('pMTGRAllComparison.png', plot = last_plot(), scale=1, dpi=350)
 ```
 
 
