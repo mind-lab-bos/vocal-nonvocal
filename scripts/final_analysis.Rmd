@@ -131,10 +131,10 @@ summary(m1)
 
 #older vs. younger comparisons
 ```{r}
-test<-lmer(pMTGR_univariatecluster_scaled~older_younger*vocal.y + RMS_energy + event_density + (vocal.y + RMS_energy + event_density|SUBID), data=MIR_timeseries, control=lmerControl(optimizer="bobyqa"))
+test<-lmer(pMTGR_univariatecluster_scaled~older_younger*vocal.y + scale(RMS_energy) + scale(event_density) + (vocal.y + scale(RMS_energy) + scale(event_density)|SUBID), data=MIR_timeseries, control=lmerControl(optimizer="bobyqa"))
 summary(test)
 
-test<-lmer(pMTGL_univariatecluster_scaled~older_younger*vocal.y + RMS_energy + event_density + (vocal.y + RMS_energy + event_density|SUBID), data=MIR_timeseries,control=lmerControl(optimizer="bobyqa"))
+test<-lmer(pMTGL_univariatecluster_scaled~older_younger*vocal.y + scale(RMS_energy) + scale(event_density) + (vocal.y + scale(RMS_energy) + scale(event_density)|SUBID), data=MIR_timeseries,control=lmerControl(optimizer="bobyqa"))
 summary(test)
 ```
 
@@ -155,7 +155,7 @@ summary(test)
 test<-lmer((pMTGR_univariatecluster_scaled) ~ (language) + (language | SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
 summary(test)
 
-test<-lmer((pMTGR_univariatecluster_scaled) ~ (language) +  (RMS_energy) + (event_density) + (language + (RMS_energy) + (event_density)|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
+test<-lmer((pMTGR_univariatecluster_scaled) ~ (language) +  scale(RMS_energy) + scale(event_density) + (language + scale(RMS_energy) + scale(event_density)|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random  intercepts + slopes
 summary(test)
 ```
 
@@ -199,13 +199,13 @@ timeseries_language$language <- ifelse(timeseries_language$Stim == 8 | timeserie
 test<-lmer((pMTGL_univariatecluster_scaled) ~ language  + ((RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 
-test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (RMS_energy) + (event_density) + (language + (RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language + scale(RMS_energy) + scale(event_density) + (language + scale(RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 
 test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (1|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 
-test<-lmer((pMTGL_univariatecluster_scaled) ~ language + (RMS_energy) + (event_density) + (language + (RMS_energy) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
+test<-lmer((pMTGL_univariatecluster_scaled) ~ language + scale(RMS_energy) + scale(event_density) + (language + scale(RMS_energy) + scale(event_density) |SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 ```
 
@@ -245,9 +245,9 @@ timeseries_language <-
 
 timeseries_language$language <- ifelse(timeseries_language$Stim == 10 | timeseries_language$Stim == 11 | timeseries_language$Stim == 12 | timeseries_language$Stim == 13, "English", "Non-Vocal")
 
-test<-lmer(pMTGL_univariatecluster_scaled ~ language + RMS_energy + event_density + (RMS_energy + event_density + language|SUBID), data=timeseries_language,control=lmerControl(optimizer="bobyqa")) #random intercepts
+test<-lmer(pMTGL_univariatecluster_scaled ~ language + scale(RMS_energy) + scale(event_density) + (scale(RMS_energy) + scale(event_density) + language|SUBID), data=timeseries_language,control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 
-test<-lmer(pMTGR_univariatecluster_scaled ~ language + RMS_energy + event_density + (language|SUBID), data=timeseries_language) #random intercepts
+test<-lmer(pMTGR_univariatecluster_scaled ~ language + scale(RMS_energy) + scale(event_density) + (language + scale(RMS_energy) + scale(event_density)|SUBID), data=timeseries_language, control=lmerControl(optimizer="bobyqa")) #random intercepts
 summary(test)
 ```
